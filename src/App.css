@@ -8,8 +8,13 @@ nav{
   align-items: center;
   min-height: 10vh;
   background: #fefefe;
-  border-bottom: 1px solid black;
+}
 
+.navbar-row{
+  display: flex;
+  justify-content: center;
+  background: #fefefe;
+  border-bottom: 1px solid black;
 }
 
 .nav-links{
