@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './container/home/Home';
 import About from './container/about/About';
 import Stories from './container/stories/Stories';
-import Navigation from './container/Navigation';
+import LandingPage from './layouts/LandingPage';
 import './App.css';
 
 class App extends React.Component {
@@ -11,7 +11,7 @@ class App extends React.Component {
     return (
       <Router>
         <div>
-          <Navigation />
+          <LandingPage />
           <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/stories" component={Stories} />
