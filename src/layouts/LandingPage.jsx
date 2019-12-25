@@ -1,7 +1,5 @@
 import React from 'react';
-import Footer from '../container/footer/Footer';
 import Navigation from '../container/Navigation';
-import Main from './main/Main';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class LandingPage extends React.Component {
@@ -9,8 +7,6 @@ class LandingPage extends React.Component {
     return (
       <>
         <Navigation />
-        <Main />
-        <Footer />
       </>
     );
   }

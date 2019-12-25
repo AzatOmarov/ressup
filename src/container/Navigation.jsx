@@ -1,7 +1,7 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
-  Container, Row, Col, Navbar,
+  Row, Col, Navbar,
 } from 'reactstrap';
 import logo from '../assets/img/logo.svg';
 
@@ -18,9 +18,9 @@ const Navigation = () => (
       <Row className="navigation__menu">
         <Navbar className="navbar-light bg-light">
           <div className="navigation-links">
-            <NavLink to="/" className="navigation-links__link-item">Домой</NavLink>
-            <NavLink to="/stories" className="navigation-links__link-item">Наши Проекты</NavLink>
-            <NavLink to="/about" className="navigation-links__link-item">О Нас</NavLink>
+            <Link to="/" className="navigation-links__link-item">Домой</Link>
+            <Link to="/stories" className="navigation-links__link-item">Наши Проекты</Link>
+            <Link to="/about" className="navigation-links__link-item">О Нас</Link>
           </div>
         </Navbar>
       </Row>
