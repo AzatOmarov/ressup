@@ -5,48 +5,28 @@ import {
 } from 'reactstrap';
 import logo from '../assets/img/logo.svg';
 
-
 const Navigation = () => (
-  <Container>
-    <Row>
-      <Col xs={12} sm={12} md={8} lg={8} style={{ float: 'right' }} />
-      <Col xs={12} sm={12} md={4} lg={4} style={{ float: 'left' }}>
-        <img src={logo} alt="logo" width="30%" />
-      </Col>
-    </Row>
-    <Row className="navbar-row">
-      <Navbar className="navbar-light bg-light">
-        <div className="nav-links">
-          <NavLink to="/" className="link">Home</NavLink>
-          <NavLink to="/stories" className="link">Stories</NavLink>
-          <NavLink to="/about" className="link">About</NavLink>
-        </div>
-      </Navbar>
-    </Row>
+  <div className="container">
 
-  </Container>
+    <div className="navigation">
+      <Row>
+        <Col xs={12} sm={12} md={8} lg={8} style={{ float: 'right' }} />
+        <Col xs={12} sm={12} md={4} lg={4} style={{ float: 'left' }}>
+          <img src={logo} alt="logo" className="navigation__logo" />
+        </Col>
+      </Row>
+      <Row className="navigation__menu">
+        <Navbar className="navbar-light bg-light">
+          <div className="navigation-links">
+            <NavLink to="/" className="navigation-links__link-item">Домой</NavLink>
+            <NavLink to="/stories" className="navigation-links__link-item">Наши Проекты</NavLink>
+            <NavLink to="/about" className="navigation-links__link-item">О Нас</NavLink>
+          </div>
+        </Navbar>
+      </Row>
+    </div>
+
+  </div>
 );
 
 export default Navigation;
-
-
-// <Row>
-//       <Col xs={12} sm={12} md={8} lg={8} style={{ float: 'right' }} />
-//       <Col xs={12} sm={12} md={4} lg={4} style={{ float: 'left' }}>
-//         <img src={logo} alt="logo" width="30%" />
-//       </Col>
-//     </Row>
-//     <div className="container">
-//       <ul className="nav nav-tabs">
-//         <li className="nav-item">
-//           <a href="#" className="nav-link active">Item One</a>
-//         </li>
-//         <li className="nav-item">
-//           <a href="#" className="nav-link">Item Two</a>
-//         </li>
-//         <li className="nav-item">
-//           <a href="#" className="nav-link">Item Three</a>
-//         </li>
-//       </ul>
-
-//     </div>
