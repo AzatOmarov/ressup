@@ -1,14 +1,15 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Footer from '../container/footer/Footer';
 import Navigation from '../container/Navigation';
+import Main from './main/Main';
 
+// eslint-disable-next-line react/prefer-stateless-function
 class LandingPage extends React.Component {
   render() {
-    console.info(this.props.children);
     return (
       <>
         <Navigation />
-        {this.props.children}
+        <Main />
         <Footer />
       </>
     );
