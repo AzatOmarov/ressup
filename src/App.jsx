@@ -4,7 +4,7 @@ import Home from './container/home/Home';
 import About from './container/about/About';
 import Stories from './container/stories/Stories';
 import LandingPage from './layouts/LandingPage';
-import './App.scss';
+import './assets/App.scss';
 
 class App extends React.Component {
   render() {
