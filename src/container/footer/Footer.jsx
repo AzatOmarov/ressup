@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import locale from '../../utils/locale';
 import fityLinks from '../../utils/staticLinks';
 
