@@ -1,0 +1,35 @@
+.story{
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    &__title{
+        color: #232227;
+        font-size: 12px;
+    }
+    &__text{
+        color: #232227;
+        font-size: 12px;
+    }
+    a{
+        color: #232227;
+    }
+}
+
+
+// .story > * {
+//     padding: 20px;
+//     font-family: 'PT Sans';
+//     font-style: normal;
+//     font-size: 18px;
+//     line-height: 23px;
+// }
+
+// .story{
+//     color: black;
+//     display: flex;
+//     flex-wrap: wrap;
+//     flex-direction: column;
+// }
