@@ -19,7 +19,7 @@ const Navigation = () => (
         <Navbar className="navbar-light bg-light">
           <div className="navigation-links">
             <Link to="/" className="navigation-links__link-item">Домой</Link>
-            <Link to="/stories" className="navigation-links__link-item">Наши Проекты</Link>
+            <Link to="/story-list" className="navigation-links__link-item">Наши Проекты</Link>
             <Link to="/about" className="navigation-links__link-item">О Нас</Link>
           </div>
         </Navbar>
