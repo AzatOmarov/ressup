@@ -1,22 +1,47 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { string, objectOf, object } from 'prop-types';
 import Stories from '../stories/Stories';
+import locale from '../../utils/locale';
 import NotFound from '../notFound/NotFound';
+import CommentsList from '../commentsList/CommentsList';
 import stories from '../../dummyData/stories';
+
+export const t = (key, def = '') => locale(`Story.${key}`, def);
 
 
 const Story = ({ match }) => {
   const { id } = match.params;
   const story = stories.find((i) => i.id === id);
+
+  const [storyInfo, setStoryInfo] = useState({ upvotes: 0, comments: [] });
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await fetch(`/api/stories/${id}`);
+      const body = await result.json();
+      setStoryInfo(body);
+    };
+    fetchData();
+  }, [id]);
+
   if (!story) return <NotFound />;
   const otherStories = stories.filter((i) => i.id !== id);
 
   return (
     <div className="container">
       <div className="story">
+        <p className="story__title">
+          {t('hasBeenUpvoted')}
+          {' '}
+          {storyInfo.upvotes}
+          {' '}
+          {t('times')}
+        </p>
         <h5 className="story__title">{story.title}</h5>
         <p className="story__text">{ story.text }</p>
       </div>
+      <CommentsList comments={storyInfo.comments} />
+      <h3>Other Stories</h3>
       <Stories stories={otherStories} />
       <NotFound />
     </div>
