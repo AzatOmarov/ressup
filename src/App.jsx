@@ -5,8 +5,8 @@ import Home from './container/home/Home';
 import About from './container/about/About';
 import StoriesPage from './container/stories/StoriesPage';
 import Story from './component/story/Story';
-import LandingPage from './layouts/LandingPage';
 import NotFound from './component/notFound/NotFound';
+import Navigation from './container/Navigation';
 
 import Footer from './container/footer/Footer';
 import './assets/App.scss';
@@ -17,14 +17,15 @@ class App extends React.Component {
     return (
       <Router>
         <div className="wrapper">
-          <LandingPage />
-          <Switch>
-            <Route path="/" component={Home} exact />
-            <Route path="/story-list" component={StoriesPage} />
-            <Route path="/stories/:id" component={Story} />
-            <Route path="/about" component={About} />
-            <Route component={NotFound} />
-          </Switch>
+          <Navigation>
+            <Switch>
+              <Route path="/" component={Home} exact />
+              <Route path="/story-list" component={StoriesPage} />
+              <Route path="/stories/:id" component={Story} />
+              <Route path="/about" component={About} />
+              <Route component={NotFound} />
+            </Switch>
+          </Navigation>
         </div>
         <Footer />
       </Router>
