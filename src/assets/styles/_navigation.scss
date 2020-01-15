@@ -10,17 +10,13 @@
     color: white;
     display: flex;
     
-    
-    // flex-wrap: wrap;
-    // flex-direction: column;
-
-
     .story-list{
       font-size: 12px;
     }
     .story .stories{
       font-size: 0px;
     }
+    
 
     .navigation{
       font-size: 0px;
@@ -56,15 +52,11 @@
       
       a{
         color: #999999;
-        // font-size: 12px;
       }
     }
+
   }
   
 /*
   TODO move to another file
 */
-  .about{
-    text-align: center;
-  }
-  
