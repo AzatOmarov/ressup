@@ -6,13 +6,10 @@ import {
 
 function Stories() {
   return (
-    <Container>
-      <Row>
-        <Col>
-          <h5 className="stories">Stories</h5>
-        </Col>
-      </Row>
-    </Container>
+    <>
+      <h5 className="stories">Stories</h5>
+    </>
+
   );
 }
 export default Stories;
