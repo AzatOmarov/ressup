@@ -5,26 +5,23 @@ import {
 } from 'reactstrap';
 import logo from '../assets/img/logo.svg';
 
-const Navigation = () => (
+const Navigation = ({ children }) => (
   <div className="container">
-
     <div className="navigation">
-      <Row>
-        <Col xs={12} sm={12} md={8} lg={8} style={{ float: 'right' }} />
-        <Col xs={12} sm={12} md={4} lg={4} style={{ float: 'left' }}>
-          <img src={logo} alt="logo" className="navigation__logo" />
-        </Col>
-      </Row>
-      <Row className="navigation__menu">
-        <Navbar className="navbar-light bg-light">
-          <div className="navigation-links">
-            <Link to="/" className="navigation-links__link-item">Домой</Link>
-            <Link to="/story-list" className="navigation-links__link-item">Наши Проекты</Link>
-            <Link to="/about" className="navigation-links__link-item">О Нас</Link>
-          </div>
-        </Navbar>
-      </Row>
+      <img src={logo} alt="logo" className="navigation__logo" />
+      <Navbar className="navbar-light bg-light">
+        <div className="navigation-links" style={{ width: '-webkit-fill-available' }}>
+          <Link to="/about" className="navigation-links__link-item">О Нас</Link>
+          <Link to="/story-list" className="navigation-links__link-item">Наши Проекты</Link>
+          <Link to="/story-list" className="navigation-links__link-item">Истории</Link>
+          <Link to="/story-list" className="navigation-links__link-item">Опросник</Link>
+          <Link to="/story-list" className="navigation-links__link-item">Контакты</Link>
+          <Link to="/" className="navigation-links__link-item" />
+        </div>
+      </Navbar>
+
     </div>
+    {children}
 
   </div>
 );

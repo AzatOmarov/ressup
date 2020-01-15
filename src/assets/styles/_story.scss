@@ -1,10 +1,10 @@
 .story{
     height: max-content;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex: 3 1 0;
     justify-content: center;
+    // flex-direction: row;
     text-align: center;
+
     &__title{
         color: #232227;
         font-size: 12px;

@@ -9,8 +9,11 @@
   .container{
     color: white;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    
+    
+    // flex-wrap: wrap;
+    // flex-direction: column;
+
 
     .story-list{
       font-size: 12px;
@@ -21,21 +24,34 @@
 
     .navigation{
       font-size: 0px;
+      flex: 1 1 0;
       &__logo{
-        width: 30%;
+        width: 100%;
+        padding-bottom: 60px;
       }
       &__menu{
-        /* display: flex; */
-        justify-content: center;
         background: #fefefe;
-        border-bottom: 1px solid black;
+        max-width: fit-content;
+      }
+      .navbar{
+        background-color: #ffffff !important; 
+        padding-right: 0px;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: row-reverse;
       }
     }
     .navigation-links{
       font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      flex: 1 1 0;
+      // width: -webkit-fill-available;
       &__link-item{
         padding-right: 10px; 
         padding-left: 10px; 
+        border-bottom: 1px solid #F86C59;
       }
       
       a{
@@ -48,10 +64,6 @@
 /*
   TODO move to another file
 */
-  .home{
-    text-align: center;
-  }
-  
   .about{
     text-align: center;
   }
