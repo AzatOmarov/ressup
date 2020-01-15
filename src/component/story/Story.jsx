@@ -3,6 +3,7 @@ import { string, objectOf, object } from 'prop-types';
 import Stories from '../stories/Stories';
 import locale from '../../utils/locale';
 import NotFound from '../notFound/NotFound';
+import AddCommentForm from '../comment-form/AddCommentForm';
 import CommentsList from '../commentsList/CommentsList';
 import stories from '../../dummyData/stories';
 
@@ -28,7 +29,7 @@ const Story = ({ match }) => {
   const otherStories = stories.filter((i) => i.id !== id);
 
   return (
-    <div className="container">
+    <>
       <div className="story">
         <p className="story__title">
           {t('hasBeenUpvoted')}
@@ -39,12 +40,13 @@ const Story = ({ match }) => {
         </p>
         <h5 className="story__title">{story.title}</h5>
         <p className="story__text">{ story.text }</p>
+        <CommentsList comments={storyInfo.comments} />
+        <AddCommentForm story={storyInfo} setStoryInfo={setStoryInfo} />
+        <h3 style={{ color: 'black' }}>Other Stories</h3>
+        <Stories stories={otherStories} />
+        <NotFound />
       </div>
-      <CommentsList comments={storyInfo.comments} />
-      <h3>Other Stories</h3>
-      <Stories stories={otherStories} />
-      <NotFound />
-    </div>
+    </>
 
   );
 };

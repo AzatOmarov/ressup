@@ -13,7 +13,7 @@ const Stories = ({ stories }) => (
         </Link>
         <p className="stories__text">
           {story.text.substring(0, 150)}
-        ...
+      ...
         </p>
       </div>
     ))}
