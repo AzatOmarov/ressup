@@ -1,9 +1,15 @@
 import React from 'react';
+import retro from '../../assets/img/retro.svg';
 
 
 function Home() {
   return (
-    <h5 className="home">Home</h5>
+    <>
+      <div className="home">
+        <img src={retro} alt="retro" />
+        <p>За нами будущее</p>
+      </div>
+    </>
   );
 }
 export default Home;
