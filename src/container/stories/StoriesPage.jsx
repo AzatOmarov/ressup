@@ -5,9 +5,11 @@ import stories from '../../dummyData/stories';
 
 function StoriesPage() {
   return (
-    <div className="container">
-      <Stories stories={stories} />
-    </div>
+    <>
+      <div className="stories-page">
+        <Stories stories={stories} />
+      </div>
+    </>
   );
 }
 export default StoriesPage;
