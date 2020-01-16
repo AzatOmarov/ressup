@@ -21,6 +21,17 @@ function About() {
         <section className="team-members">
           {team}
         </section>
+        <p id="about-link">
+          Eсли Вам интересно узнать о нас больше, нажмите на данную
+          {' '}
+          <a
+            href="https://www.youtube.com/channel/UCv-LYTGGNAytZRuGbJhPeRA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+              ссылку
+          </a>
+        </p>
       </div>
     </>
   );

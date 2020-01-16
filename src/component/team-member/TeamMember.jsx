@@ -42,7 +42,7 @@ function TeamMember(props) {
           {text}
         </div>
         <div className="team-member__image">
-          <img src={returnImage(photo)} alt="personal-photo" />
+          <img src={returnImage(photo)} alt="personal" />
         </div>
       </div>
     </>
