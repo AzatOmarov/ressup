@@ -4,6 +4,7 @@ import {
   Row, Col, Navbar,
 } from 'reactstrap';
 import logo from '../assets/img/logo.svg';
+import deineMeinung from '../assets/img/deineMeinung.svg';
 
 const Navigation = ({ children }) => (
   <div className="container">
@@ -19,7 +20,9 @@ const Navigation = ({ children }) => (
           <Link to="/" />
         </div>
       </Navbar>
-
+      <div className="navigation__deineMeinung">
+        <img src={deineMeinung} alt="deineMeinung" />
+      </div>
     </div>
     {children}
 
