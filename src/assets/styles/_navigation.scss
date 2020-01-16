@@ -2,7 +2,7 @@
     padding: 20px;
     font-family: 'PT Sans';
     font-style: normal;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 23px;
   }
   
@@ -10,17 +10,13 @@
     color: white;
     display: flex;
     
-    
-    // flex-wrap: wrap;
-    // flex-direction: column;
-
-
     .story-list{
       font-size: 12px;
     }
     .story .stories{
       font-size: 0px;
     }
+    
 
     .navigation{
       font-size: 0px;
@@ -28,6 +24,14 @@
       &__logo{
         width: 100%;
         padding-bottom: 60px;
+      }
+      &__deineMeinung{
+        padding-top: 50px;
+        padding-bottom: 60px;
+        text-align: right;
+        img{
+          width: 70%;
+        }
       }
       &__menu{
         background: #fefefe;
@@ -56,15 +60,17 @@
       
       a{
         color: #999999;
-        // font-size: 12px;
       }
     }
+    // .navigation-child{
+    //   flex: 3 1 0;
+    //   display: flex;
+    //   flex-direction: column;
+    // }
+
+
   }
   
 /*
   TODO move to another file
 */
-  .about{
-    text-align: center;
-  }
-  

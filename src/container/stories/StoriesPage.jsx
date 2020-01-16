@@ -1,6 +1,6 @@
 import React from 'react';
 import Stories from '../../component/stories/Stories';
-import stories from '../../dummyData/stories';
+import stories from '../../staticData/stories';
 
 
 function StoriesPage() {
