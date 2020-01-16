@@ -1,0 +1,72 @@
+.about{
+    height: max-content;
+    flex: 3 1 0;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 157px;
+
+    a{
+        color: orangered;
+        cursor: pointer;
+    }
+
+    h4{
+        color: #232227;
+        text-align: left;
+    }
+
+    hr{
+        // border-top: 1px solid black;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-bottom: 1px solid black;
+    }
+
+    p{
+        color: #232227;
+        text-align: left;
+    }
+  
+    .section{
+        color: #232227;
+        text-align: left;
+        padding: 10px 20px;
+    }
+    .section:nth-child(1){
+        background: darkcyan;
+    }
+    
+    .team-members{
+        display: flex;
+        color: #232227;
+        flex-direction: column;
+        .team-member{ 
+            text-align: left;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            &__text{
+                flex: 1 0 70%;
+            }
+            &__image{
+                color: blue;
+                flex: 1 0 auto;
+                border-radius: 5px;
+                img{
+                    border-radius: 50%;
+                }
+            }
+
+        }
+       
+    }
+    #about-link{
+        // color: red;
+        padding-top: 40px;
+    }
+
+
+}

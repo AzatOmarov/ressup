@@ -1,0 +1,33 @@
+footer{
+    .container{
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        &__social-media img{
+            padding-bottom: 0px;
+            width: 40px;
+        }
+        
+        &__established{
+            font-size: 18px;
+            color: #232227;
+            padding-top: 10px;
+        }
+            a{
+                padding: 2px;
+            }
+        
+    }
+}
+
+
+
+// .footer{
+//     display: flex;
+//     justify-content: center;
+//     background: #fefefe;
+//     border-bottom: 1px solid black;
+//   }

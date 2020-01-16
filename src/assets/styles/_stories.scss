@@ -1,0 +1,22 @@
+.stories{
+    height: max-content;
+    flex: 3 1 0;
+    justify-content: center;
+    text-align: center;
+    &__title{
+        color: #232227;
+        font-size: 12px;
+    }
+    &__text{
+        color: #232227;
+        font-size: 12px;
+    }
+    a{
+        color: #232227;
+        h5{
+            padding: 0px;
+            margin: 0px;
+        }
+
+    }
+}
