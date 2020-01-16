@@ -5,7 +5,7 @@ import locale from '../../utils/locale';
 import NotFound from '../notFound/NotFound';
 import AddCommentForm from '../comment-form/AddCommentForm';
 import CommentsList from '../commentsList/CommentsList';
-import stories from '../../dummyData/stories';
+import stories from '../../staticData/stories';
 
 export const t = (key, def = '') => locale(`Story.${key}`, def);
 
