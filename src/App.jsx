@@ -27,7 +27,10 @@ class App extends React.Component {
             </Switch>
           </Navigation>
         </div>
-        <Footer />
+
+        {/* <Footer />
+        * disable footer for now
+         */}
       </Router>
     );
   }
