@@ -1,12 +1,64 @@
 .about{
     height: max-content;
     flex: 3 1 0;
+    // display: flex;
+    // flex-direction: column;
     justify-content: center;
     text-align: center;
-    
+    position: relative;
+    top: 157px;
+    // .hr {
+    //     width: 1px;
+    //     size: 500px;
+    //     // transform: rotate(90deg);
+    // }
+    // font-size: 12px;
+    .section{
+        color: #232227;
+        text-align: left;
+        padding: 10px 20px;
+    }
+    .section:nth-child(1){
+        background: darkcyan;
+    }
+    p{
+        color: #232227;
+        text-align: left;
+    }
     h4{
         color: #232227;
         text-align: left;
-        // top: 233px;
     }
+    .team-members{
+        display: flex;
+        color: #232227;
+        flex-direction: column;
+        .team-member{ 
+            text-align: left;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            &__text{
+                flex: 1 0 70%;
+            }
+            &__image{
+                color: blue;
+                flex: 1 0 auto;
+                border-radius: 5px;
+                img{
+                    border-radius: 50%;
+                }
+            }
+
+        }
+        hr{
+            // border-top: 1px solid black;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            border-bottom: 1px solid black;
+        }
+    }
+
 }
