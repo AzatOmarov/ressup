@@ -15,8 +15,9 @@ const Navigation = ({ children }) => (
           <Link to="/about" className="navigation-links__link-item">О нас</Link>
           <Link to="/projects" className="navigation-links__link-item">Наши проекты</Link>
           <Link to="/story-list" className="navigation-links__link-item">Истории</Link>
-          <Link to="/story-list" className="navigation-links__link-item">Опросник</Link>
-          <Link to="/story-list" className="navigation-links__link-item">Контакты</Link>
+          {/* <Link to="/join" className="navigation-links__link-item">Опросник</Link> */}
+          <Link to="/join" className="navigation-links__link-item">Участие</Link>
+          <Link to="/contacts" className="navigation-links__link-item">Контакты</Link>
           <Link to="/" />
         </div>
       </Navbar>
