@@ -1,10 +1,10 @@
 .contacts{
     height: max-content;
-    flex: 3 1 0;
+    flex: 0 1 50%;
     justify-content: center;
     text-align: center;
     position: relative;
-    top: 157px;
+    top: 132px;
 
     a{
         color: orangered;
@@ -14,7 +14,7 @@
     h4{
         color: #232227;
         text-align: left;
-        font-weight: bold;
+        font-weight: 500;
     }
 
     hr{
