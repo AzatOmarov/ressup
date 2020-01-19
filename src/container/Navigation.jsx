@@ -13,14 +13,18 @@ const Navigation = ({ children }) => (
       <Navbar>
         <div className="navigation-links">
           <Link to="/about" className="navigation-links__link-item">О нас</Link>
-          <Link to="/story-list" className="navigation-links__link-item">Наши проекты</Link>
+          <Link to="/projects" className="navigation-links__link-item">Наши проекты</Link>
           <Link to="/story-list" className="navigation-links__link-item">Истории</Link>
-          <Link to="/story-list" className="navigation-links__link-item">Опросник</Link>
-          <Link to="/story-list" className="navigation-links__link-item">Контакты</Link>
+          {/* <Link to="/join" className="navigation-links__link-item">Опросник</Link> */}
+          <Link to="/join" className="navigation-links__link-item">Участие</Link>
+          <Link to="/contacts" className="navigation-links__link-item">Контакты</Link>
           <Link to="/" />
         </div>
       </Navbar>
       <div className="navigation__deineMeinung">
+        {/*
+        TODO: add onClick button to redirect to Home
+        */}
         <img src={deineMeinung} alt="deineMeinung" />
       </div>
     </div>
