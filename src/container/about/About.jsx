@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Timeline from '../time-line/TimeLine';
 import data from '../../staticData/aboutUs';
 import teamMembers from '../../staticData/teamMembers';
@@ -10,13 +10,15 @@ function About() {
   const team = teamMembers.map((member, index) => (
     <TeamMember member={member} />
   ));
+  const { title, description } = data.ressup;
+  const { title: teamTitle, text: teamDescription } = data.team;
   return (
     <>
       <div className="about">
         <section>
-          <Paragraph data={data.ressup} />
+          <Paragraph title={title} description={description} />
           <Timeline />
-          <Paragraph data={data.team} />
+          <Paragraph title={teamTitle} description={teamDescription} />
         </section>
         <section className="team-members">
           {team}

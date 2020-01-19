@@ -20,7 +20,7 @@
 
     .navigation{
       font-size: 0px;
-      flex: 1 1 0;
+      flex: 0 1 225px;
       &__logo{
         width: 100%;
         padding-bottom: 60px;
@@ -59,7 +59,36 @@
       }
       
       a{
-        color: #999999;
+        color: #232227;
+        text-decoration: none;
+      }
+      a:hover {
+        border-bottom: 1px solid #F86C59;
+      }
+    }
+
+    .navigation-links-hovered{
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      flex: 1 1 0;
+      cursor: pointer;
+      // width: -webkit-fill-available;
+      &__link-item{
+        cursor: pointer;
+        padding-right: 10px; 
+        padding-left: 10px; 
+      }
+      
+      a{
+        color: #232227;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      a:hover {
+        border-bottom: 1px solid #F86C59;
+        cursor: pointer;
       }
     }
     // .navigation-child{
