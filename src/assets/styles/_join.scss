@@ -1,0 +1,52 @@
+.join{
+    height: max-content;
+    flex: 3 1 0;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 157px;
+
+    a{
+        color: orangered;
+        cursor: pointer;
+    }
+
+    h4{
+        color: #232227;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    hr{
+        // border-top: 1px solid black;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-bottom: 1px solid black;
+    }
+
+    p, ul{
+        color: #232227;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    ul{
+        padding-left: 0px;
+        color: #232227;
+    }
+    ul li {
+        color: red;
+        list-style-type: disc;
+        margin-left: 2em;
+    }
+    ul li span {
+        color: #232227;
+    }
+    #reg-number{
+     margin-bottom: 10px;   
+     margin-top: 10px;   
+    }
+    #email{
+        text-align: center;
+        display: flex;
+    }
+}
