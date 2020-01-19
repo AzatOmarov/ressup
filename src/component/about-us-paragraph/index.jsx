@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-const Paragraph = ({ data }) => (
+const Paragraph = ({ title, description }) => (
   <>
-    <h4>{data.title}</h4>
-    <p>{data.text}</p>
+    <h4>{title}</h4>
+    <p>{description}</p>
   </>
 );
 
