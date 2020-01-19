@@ -1,0 +1,40 @@
+.contacts{
+    height: max-content;
+    flex: 3 1 0;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 157px;
+
+    a{
+        color: orangered;
+        cursor: pointer;
+    }
+
+    h4{
+        color: #232227;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    hr{
+        // border-top: 1px solid black;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-bottom: 1px solid black;
+    }
+
+    p{
+        color: #232227;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    #reg-number{
+     margin-bottom: 10px;   
+     margin-top: 10px;   
+    }
+    #email{
+        text-align: center;
+        display: flex;
+    }
+}
