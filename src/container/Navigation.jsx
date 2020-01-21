@@ -24,7 +24,7 @@ class Navigation extends React.Component {
   }
 
   redirectToProfile = () => {
-    window.open('http://ec2-3-135-225-8.us-east-2.compute.amazonaws.com/', '_blank');
+    window.open('http://ec2-3-135-225-8.us-east-2.compute.amazonaws.com/');
   };
 
   render() {
