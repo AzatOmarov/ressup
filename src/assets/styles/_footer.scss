@@ -6,13 +6,17 @@ footer{
         justify-content: center;
         flex-direction: column;
         text-align: center;
-        &__social-media img{
-            padding-bottom: 0px;
-            width: 40px;
+        &__social-media{
+            padding: 0px;
+            img{
+                border-radius: 50%;
+                padding-bottom: 0px;
+                width: 30px;
+            }
         }
         
         &__established{
-            font-size: 18px;
+            font-size: 16px;
             color: #232227;
             padding-top: 10px;
         }
