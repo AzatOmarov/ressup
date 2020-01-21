@@ -57,7 +57,7 @@
 
 .timeline-item {
     display: flex;
-    justify-content: flex-end;
+    // justify-content: flex-end;
     padding-right: 30px;
     position: relative;
     margin: 10px 0;
@@ -67,27 +67,27 @@
 .timeline-item:nth-child(odd) {
     align-self: flex-end;
     justify-content: flex-start;
-    padding-left: 30px;
+    padding-left: 0px;
     padding-right: 0;
 }
 
 
 .timeline-item-content {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    // box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    padding: 15px;
+    // align-items: flex-end;
+    padding: 0px 15px 15px 25px; 
     position: relative;
-    width: 400px;
-    max-width: 70%;
+    width: fit-content;
+    max-width: fit-content;
     text-align: right;
 }
 
 .timeline-item-content::after {
-    content: ' ';
+    // content: ' ';
     background-color: #fff;
     box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
     position: absolute;
@@ -126,6 +126,14 @@
     right: 5px;
 }
 
+.timeline-item:nth-child(odd) time {
+    text-align: left;
+}
+
+.timeline-item:nth-child(even) time {
+    text-align: right;
+}
+
 .timeline-item-content time {
     color: #232227;
     font-size: 12px;
@@ -136,7 +144,8 @@
     font-size: 12px;
     line-height: 24px;
     margin: 15px 0;
-    max-width: 250px;
+    max-width: auto;
+    text-align: justify;
 }
 
 .timeline-item-content a {
@@ -145,25 +154,25 @@
 }
 
 .timeline-item-content a::after {
-    content: ' ►';
+    // content: ' ►';
     font-size: 12px;
 }
 
 .timeline-item-content .circle {
-    background-color: #fff;
+    background-color: #e17b77;
     border: 3px solid #e17b77;
     border-radius: 50%;
     position: absolute;
     top: calc(6% - 8px);
-    right: -40px;
-    width: 20px;
-    height: 20px;
+    right: -35px;
+    width: 10px;
+    height: 10px;
     z-index: 100;
 }
 
 .timeline-item:nth-child(odd) .timeline-item-content .circle {
     right: auto;
-    left: -40px;
+    left: -5px;
 }
 
 

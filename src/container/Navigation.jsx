@@ -23,9 +23,12 @@ class Navigation extends React.Component {
     this.setState({ isHovered: false });
   }
 
+  redirectToProfile = () => {
+    window.open('http://ec2-3-135-225-8.us-east-2.compute.amazonaws.com/', '_blank');
+  };
+
   render() {
     const { isHovered } = this.state;
-    console.info(this.state);
     return (
       <div className="container">
         <div className="navigation">
@@ -42,10 +45,7 @@ class Navigation extends React.Component {
             </div>
           </Navbar>
           <div className="navigation__deineMeinung">
-            {/*
-        TODO: add onClick button to redirect to Home
-        */}
-            <img src={deineMeinung} alt="deineMeinung" />
+            <img src={deineMeinung} alt="deineMeinung" onClick={this.redirectToProfile} />
           </div>
         </div>
         {this.props.children}

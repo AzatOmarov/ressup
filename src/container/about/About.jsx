@@ -15,15 +15,13 @@ function About() {
   return (
     <>
       <div className="about">
-        <section>
-          <Paragraph title={title} description={description} />
-          <Timeline />
-          <Paragraph title={teamTitle} description={teamDescription} />
-        </section>
+        <Paragraph title={title} description={description} />
+        <Timeline />
+        <Paragraph title={teamTitle} description={teamDescription} />
         <section className="team-members">
           {team}
         </section>
-        <p id="about-link">
+        <p id="about__link">
           Eсли Вам интересно узнать о нас больше, нажмите на данную
           {' '}
           <a

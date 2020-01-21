@@ -41,11 +41,11 @@ function Footer(props) {
     <footer>
       <div className="container">
         <div className="container__social-media">
-          <a href="google.com" target="_blank">
+          <a href="https://www.facebook.com/groups/1458851604344781/" target="_blank" rel="noopener noreferrer">
             <img src={facebook} alt="facebook" />
           </a>
-          <a href="google.com" target="_blank">
-            <img src={instagram} alt="facebook" />
+          <a href="https://www.instagram.com/cats_of_instagram/" target="_blank" rel="noopener noreferrer">
+            <img src={instagram} alt="instagram" />
           </a>
         </div>
         <div className="container__established">

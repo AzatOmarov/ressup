@@ -2,6 +2,7 @@ import 'whatwg-fetch';
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import { createBrowserHistory } from 'history';
 import About from './container/about/About';
 import Contacts from './component/contacts/Contacts';
 import Home from './container/home/Home';
@@ -14,13 +15,15 @@ import Story from './component/story/Story';
 import Footer from './container/footer/Footer';
 import './assets/App.scss';
 
+const hist = createBrowserHistory();
+
 // eslint-disable-next-line react/prefer-stateless-function
 class App extends React.Component {
   render() {
     return (
-      <Router>
+      <Router history={hist}>
         <div className="wrapper">
-          <Navigation>
+          <Navigation history={hist}>
             <Switch>
               <Route path="/about" component={About} />
               <Route path="/projects" component={Projects} />
@@ -32,6 +35,7 @@ class App extends React.Component {
               <Route component={NotFound} />
             </Switch>
           </Navigation>
+          <Footer />
         </div>
 
         {/* <Footer />
