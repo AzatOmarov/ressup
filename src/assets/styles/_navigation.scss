@@ -4,7 +4,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 25px;
+    line-height: 20px;
   }
   
   .container{
@@ -12,7 +12,7 @@
     display: flex;
     
     .story-list{
-      font-size: 12px;
+      // font-size: 16px;
     }
     .story .stories{
       font-size: 0px;
@@ -20,7 +20,7 @@
     
 
     .navigation{
-      font-size: 0px;
+      // font-size: 16px;
       flex: 0 1 225px;
       &__logo{
         width: 100%;
@@ -47,7 +47,7 @@
       }
     }
     .navigation-links{
-      font-size: 12px;
+      // font-size: 16px;
       display: flex;
       flex-direction: column;
       text-align: right;
@@ -69,7 +69,7 @@
     }
 
     .navigation-links-hovered{
-      font-size: 12px;
+      // font-size: 16px;
       display: flex;
       flex-direction: column;
       text-align: right;
