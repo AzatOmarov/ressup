@@ -23,8 +23,10 @@ class Navigation extends React.Component {
     this.setState({ isHovered: false });
   }
 
-  redirectToProfile = () => {
-    window.open('http://ec2-3-135-225-8.us-east-2.compute.amazonaws.com/');
+  redirectToLandingPage = () => {
+    const { location } = window;
+    const { origin } = location;
+    location.href = `${origin}/`;
   };
 
   render() {
@@ -32,7 +34,7 @@ class Navigation extends React.Component {
     return (
       <div className="container">
         <div className="navigation">
-          <img src={logo} alt="logo" className="navigation__logo" />
+          <img src={logo} alt="logo" className="navigation__logo" onClick={this.redirectToLandingPage} />
           <Navbar>
             <div className={isHovered ? 'navigation-links-hovered' : 'navigation-links'} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
               <Link to="/about" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>О нас</Link>
@@ -45,7 +47,7 @@ class Navigation extends React.Component {
             </div>
           </Navbar>
           <div className="navigation__deineMeinung">
-            <img src={deineMeinung} alt="deineMeinung" onClick={this.redirectToProfile} />
+            <img src={deineMeinung} alt="deineMeinung" />
           </div>
         </div>
         {this.props.children}

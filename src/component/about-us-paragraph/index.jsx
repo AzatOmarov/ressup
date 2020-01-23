@@ -3,7 +3,7 @@ import React from 'react';
 
 const Paragraph = ({ title, description }) => (
   <>
-    <h4>{title}</h4>
+    <h4 className="title">{title}</h4>
     <p>{description}</p>
   </>
 );
