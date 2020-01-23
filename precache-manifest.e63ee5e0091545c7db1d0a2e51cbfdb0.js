@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3040ca3a2948e2f31a55987a4e49a7d7",
+    "revision": "ca6a0ab24ff535a60e792e15e367dd79",
     "url": "/index.html"
   },
   {
-    "revision": "ae334801dce49846be3f",
-    "url": "/static/css/main.358995f0.chunk.css"
+    "revision": "057b9d748cb033a5fe34",
+    "url": "/static/css/main.8dda02a3.chunk.css"
   },
   {
-    "revision": "6313ea724da0a6667478",
-    "url": "/static/js/2.262e6e69.chunk.js"
+    "revision": "ea2b7589ea61f8e470dd",
+    "url": "/static/js/2.75bc0944.chunk.js"
   },
   {
     "revision": "b1953906fcf37f5c263e0254ff985bef",
-    "url": "/static/js/2.262e6e69.chunk.js.LICENSE"
+    "url": "/static/js/2.75bc0944.chunk.js.LICENSE"
   },
   {
-    "revision": "ae334801dce49846be3f",
-    "url": "/static/js/main.b5a22bb0.chunk.js"
+    "revision": "057b9d748cb033a5fe34",
+    "url": "/static/js/main.054dfa4c.chunk.js"
   },
   {
     "revision": "886206c221dc3472652f",
@@ -40,12 +40,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/elvina.cfa2a0ab.svg"
   },
   {
+    "revision": "d99368ca4e133a9917838e76243e8cfb",
+    "url": "/static/media/facebook.d99368ca.svg"
+  },
+  {
+    "revision": "5b23a837268b09d0efa9e307023c1dae",
+    "url": "/static/media/instagram.5b23a837.svg"
+  },
+  {
     "revision": "b99c8ee8864d5115a5b89e0aec0044ba",
     "url": "/static/media/irene.b99c8ee8.svg"
   },
   {
-    "revision": "ad0fb68f90527436a988e4e715de9115",
-    "url": "/static/media/logo.ad0fb68f.svg"
+    "revision": "4c0df579048f33f7371606fb6433eb48",
+    "url": "/static/media/logo.4c0df579.svg"
   },
   {
     "revision": "ebadb21078eddcdd84245143b26f446e",
@@ -60,8 +68,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/nurgul.9e769a8c.svg"
   },
   {
-    "revision": "ed6be45c73fde253231465846c2041bb",
-    "url": "/static/media/retro.ed6be45c.svg"
+    "revision": "5e60ff2bacc801b52a30c5dc81e2f1c5",
+    "url": "/static/media/retro.5e60ff2b.svg"
   },
   {
     "revision": "ac2c7fe1fc0476d9e2132f15d55870fb",

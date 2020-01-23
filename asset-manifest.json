@@ -1,33 +1,35 @@
 {
   "files": {
-    "main.css": "/static/css/main.358995f0.chunk.css",
-    "main.js": "/static/js/main.b5a22bb0.chunk.js",
-    "main.js.map": "/static/js/main.b5a22bb0.chunk.js.map",
+    "main.css": "/static/css/main.8dda02a3.chunk.css",
+    "main.js": "/static/js/main.054dfa4c.chunk.js",
+    "main.js.map": "/static/js/main.054dfa4c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7458fde4.js",
     "runtime-main.js.map": "/static/js/runtime-main.7458fde4.js.map",
-    "static/js/2.262e6e69.chunk.js": "/static/js/2.262e6e69.chunk.js",
-    "static/js/2.262e6e69.chunk.js.map": "/static/js/2.262e6e69.chunk.js.map",
+    "static/js/2.75bc0944.chunk.js": "/static/js/2.75bc0944.chunk.js",
+    "static/js/2.75bc0944.chunk.js.map": "/static/js/2.75bc0944.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a9d0eb08b63b2bcde4066cdc6826f17a.js": "/precache-manifest.a9d0eb08b63b2bcde4066cdc6826f17a.js",
+    "precache-manifest.e63ee5e0091545c7db1d0a2e51cbfdb0.js": "/precache-manifest.e63ee5e0091545c7db1d0a2e51cbfdb0.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.358995f0.chunk.css.map": "/static/css/main.358995f0.chunk.css.map",
-    "static/js/2.262e6e69.chunk.js.LICENSE": "/static/js/2.262e6e69.chunk.js.LICENSE",
+    "static/css/main.8dda02a3.chunk.css.map": "/static/css/main.8dda02a3.chunk.css.map",
+    "static/js/2.75bc0944.chunk.js.LICENSE": "/static/js/2.75bc0944.chunk.js.LICENSE",
     "static/media/aima.svg": "/static/media/aima.3d7c9946.svg",
     "static/media/azat.svg": "/static/media/azat.2729628b.svg",
     "static/media/deineMeinung.svg": "/static/media/deineMeinung.0e6d18b1.svg",
     "static/media/elvina.svg": "/static/media/elvina.cfa2a0ab.svg",
+    "static/media/facebook.svg": "/static/media/facebook.d99368ca.svg",
+    "static/media/instagram.svg": "/static/media/instagram.5b23a837.svg",
     "static/media/irene.svg": "/static/media/irene.b99c8ee8.svg",
-    "static/media/logo.svg": "/static/media/logo.ad0fb68f.svg",
+    "static/media/logo.svg": "/static/media/logo.4c0df579.svg",
     "static/media/madina.svg": "/static/media/madina.ebadb210.svg",
     "static/media/marcel.svg": "/static/media/marcel.bc4c06b3.svg",
     "static/media/nurgul.svg": "/static/media/nurgul.9e769a8c.svg",
-    "static/media/retro.svg": "/static/media/retro.ed6be45c.svg",
+    "static/media/retro.svg": "/static/media/retro.5e60ff2b.svg",
     "static/media/saltanat.svg": "/static/media/saltanat.ac2c7fe1.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.7458fde4.js",
-    "static/js/2.262e6e69.chunk.js",
-    "static/css/main.358995f0.chunk.css",
-    "static/js/main.b5a22bb0.chunk.js"
+    "static/js/2.75bc0944.chunk.js",
+    "static/css/main.8dda02a3.chunk.css",
+    "static/js/main.054dfa4c.chunk.js"
   ]
 }
