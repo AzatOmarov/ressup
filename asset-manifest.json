@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.8dda02a3.chunk.css",
-    "main.js": "/static/js/main.054dfa4c.chunk.js",
-    "main.js.map": "/static/js/main.054dfa4c.chunk.js.map",
+    "main.css": "/static/css/main.46141381.chunk.css",
+    "main.js": "/static/js/main.c6627a28.chunk.js",
+    "main.js.map": "/static/js/main.c6627a28.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7458fde4.js",
     "runtime-main.js.map": "/static/js/runtime-main.7458fde4.js.map",
-    "static/js/2.75bc0944.chunk.js": "/static/js/2.75bc0944.chunk.js",
-    "static/js/2.75bc0944.chunk.js.map": "/static/js/2.75bc0944.chunk.js.map",
+    "static/js/2.8574f158.chunk.js": "/static/js/2.8574f158.chunk.js",
+    "static/js/2.8574f158.chunk.js.map": "/static/js/2.8574f158.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e63ee5e0091545c7db1d0a2e51cbfdb0.js": "/precache-manifest.e63ee5e0091545c7db1d0a2e51cbfdb0.js",
+    "precache-manifest.d209bdd4e18e5ab5d03dfcf6d114959f.js": "/precache-manifest.d209bdd4e18e5ab5d03dfcf6d114959f.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.8dda02a3.chunk.css.map": "/static/css/main.8dda02a3.chunk.css.map",
-    "static/js/2.75bc0944.chunk.js.LICENSE": "/static/js/2.75bc0944.chunk.js.LICENSE",
+    "static/css/main.46141381.chunk.css.map": "/static/css/main.46141381.chunk.css.map",
+    "static/js/2.8574f158.chunk.js.LICENSE": "/static/js/2.8574f158.chunk.js.LICENSE",
     "static/media/aima.svg": "/static/media/aima.3d7c9946.svg",
     "static/media/azat.svg": "/static/media/azat.2729628b.svg",
     "static/media/deineMeinung.svg": "/static/media/deineMeinung.0e6d18b1.svg",
@@ -23,13 +23,14 @@
     "static/media/madina.svg": "/static/media/madina.ebadb210.svg",
     "static/media/marcel.svg": "/static/media/marcel.bc4c06b3.svg",
     "static/media/nurgul.svg": "/static/media/nurgul.9e769a8c.svg",
+    "static/media/ogorod.svg": "/static/media/ogorod.d206b643.svg",
     "static/media/retro.svg": "/static/media/retro.5e60ff2b.svg",
     "static/media/saltanat.svg": "/static/media/saltanat.ac2c7fe1.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.7458fde4.js",
-    "static/js/2.75bc0944.chunk.js",
-    "static/css/main.8dda02a3.chunk.css",
-    "static/js/main.054dfa4c.chunk.js"
+    "static/js/2.8574f158.chunk.js",
+    "static/css/main.46141381.chunk.css",
+    "static/js/main.c6627a28.chunk.js"
   ]
 }
