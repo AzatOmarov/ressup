@@ -17,6 +17,12 @@
     .story .stories{
       font-size: 0px;
     }
+    .nfp{
+      color: black;
+      position: relative;
+      top: 100%;
+      left: 40%;
+    }
     
 
     .navigation{
@@ -25,6 +31,7 @@
       &__logo{
         width: 100%;
         padding-bottom: 60px;
+        cursor: pointer;
       }
       &__deineMeinung{
         padding-top: 50px;
