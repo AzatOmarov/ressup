@@ -36,6 +36,26 @@
         margin-bottom: 0px;
         border-bottom: 1px solid black;
     }
+    img{
+        width: 100%;
+    }
+
+    .nextButton{
+        display: block;
+border-bottom: 20px solid transparent;
+border-left: 50px solid red;
+overflow: hidden;
+        &__text{
+            position: relative;
+            left: 71.56%;
+            right: -43.12%;
+            top: 0%;
+            bottom: 28.57%;
+            background: #000000;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+        
+    }
 
     p{
         color: #232227;
@@ -73,10 +93,11 @@
                     border-radius: 50%;
                 }
             }
-
         }
-       
     }
+    // .title{
+    //     padding-left: 10px;
+    // }
     #about-link{
         // color: red;
         padding-top: 40px;
