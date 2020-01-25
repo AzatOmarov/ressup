@@ -10,6 +10,7 @@ import Join from './component/join/Join';
 import NotFound from './component/notFound/NotFound';
 import Navigation from './container/Navigation';
 import Projects from './container/projects/Projects';
+import ProjectsPage from './container/projects-page/Projects';
 import StoriesPage from './container/stories/StoriesPage';
 import Story from './component/story/Story';
 import Footer from './container/footer/Footer';
@@ -23,10 +24,11 @@ class App extends React.Component {
     return (
       <Router history={hist}>
         <div className="wrapper">
-          <Navigation history={hist}>
+          <NotFound />
+          {/* <Navigation history={hist}>
             <Switch>
               <Route path="/about" component={About} />
-              <Route path="/projects" component={Projects} />
+              <Route path="/projects" component={ProjectsPage} />
               <Route path="/story-list" component={StoriesPage} />
               <Route path="/stories/:id" component={Story} />
               <Route path="/join" component={Join} />
@@ -35,7 +37,7 @@ class App extends React.Component {
               <Route component={NotFound} />
             </Switch>
           </Navigation>
-          <Footer />
+          <Footer /> */}
         </div>
 
         {/* <Footer />
