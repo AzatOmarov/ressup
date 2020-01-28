@@ -24,8 +24,7 @@ class App extends React.Component {
     return (
       <Router history={hist}>
         <div className="wrapper">
-          <NotFound />
-          {/* <Navigation history={hist}>
+          <Navigation history={hist}>
             <Switch>
               <Route path="/about" component={About} />
               <Route path="/projects" component={ProjectsPage} />
@@ -37,12 +36,8 @@ class App extends React.Component {
               <Route component={NotFound} />
             </Switch>
           </Navigation>
-          <Footer /> */}
+          <Footer />
         </div>
-
-        {/* <Footer />
-        * disable footer for now
-         */}
       </Router>
     );
   }
