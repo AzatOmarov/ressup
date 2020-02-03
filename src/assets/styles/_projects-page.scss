@@ -1,0 +1,65 @@
+.projects-page {
+  height: max-content;
+  flex: 3 1 0;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: 132px;
+  color: #232227;
+  text-align: left;
+  &__image {
+    width: 100%;
+  }
+  &__text-and-button {
+    display: flex;
+    p {
+      flex: 1 1 100%;
+    }
+  }
+  .nextButton {
+    width: 0;
+    height: 0;
+    border-top: 40px solid red;
+    border-right: 66px solid transparent;
+    // background-color: grey;
+  }
+  div.fill {
+    position: relative;
+    // border: 1px dashed red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  div.fill .nextButton {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  header {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    font-size: 14px;
+  }
+
+  hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid black;
+  }
+
+  //   .nextButton {
+
+  //     &__text {
+  //       position: relative;
+  //       left: 71.56%;
+  //       right: -43.12%;
+  //       top: 0%;
+  //       bottom: 28.57%;
+  //       background: #000000;
+  //       transform: matrix(-1, 0, 0, 1, 0, 0);
+  //     }
+  //   }
+}
