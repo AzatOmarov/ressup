@@ -2,6 +2,8 @@ import React from 'react';
 import { Row, Col } from 'reactstrap';
 import locale from '../../utils/locale';
 import fityLinks from '../../utils/staticLinks';
+import facebook from '../../assets/img/facebook.svg';
+import instagram from '../../assets/img/instagram.svg';
 
 export const t = (key, def = '') => locale(`Footer.${key}`, def);
 
@@ -36,7 +38,6 @@ const footer = (
 );
 
 function Footer(props) {
-  const { facebook, instagram } = fityLinks;
   return (
     <footer>
       <div className="container">
@@ -49,9 +50,15 @@ function Footer(props) {
           </a>
         </div>
         <div className="container__established">
-          <i className="fa fa-copyright" aria-hidden="true" />
-          {' '}
-          2019 Ressup
+          <div className="policy">
+            <p>Политика конфиденциальности</p>
+            <p>Импрессум</p>
+          </div>
+          <p>
+            <i className="fa fa-copyright" style={{ paddingRight: '5px' }} aria-hidden="true" />
+            {' '}
+            2019 Ressup
+          </p>
         </div>
       </div>
     </footer>

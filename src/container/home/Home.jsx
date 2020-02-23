@@ -7,7 +7,7 @@ function Home() {
     <>
       <div className="home">
         <img src={retro} alt="retro" />
-        <p>За нами будущее</p>
+        <p>Denn so verändern sich die Dinge.</p>
       </div>
     </>
   );

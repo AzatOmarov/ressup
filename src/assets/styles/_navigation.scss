@@ -1,36 +1,60 @@
+@media screen and (min-width: 52em) {
   .container > * {
+    // max-width: 52em;  
     padding: 20px;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans Narrow';
     font-style: normal;
-    font-size: 12px;
-    line-height: 23px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
   }
+}
+  
   
   .container{
     color: white;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    // flex: 1 1 100%;
     
-    .story-list{
-      font-size: 12px;
-    }
     .story .stories{
       font-size: 0px;
     }
-    
+    .nfp{
+      color: black;
+      position: relative;
+      top: 100%;
+      left: 40%;
+    }
 
+    .login{
+      color: black;
+      position: relative;
+      top: 100%;
+      left: 30%;
+    }
+    
+  @media screen and (min-width: 32em) {
     .navigation{
-      font-size: 0px;
-      flex: 0 1 225px;
+      display: flex;
+      flex: 1 1 25%;
+      flex-direction: column;
+      // align-self: center;
+      // font-size: 16px;
+      // flex: 0 1 225px;
       &__logo{
         width: 100%;
         padding-bottom: 60px;
+        cursor: pointer;
       }
       &__deineMeinung{
         padding-top: 50px;
         padding-bottom: 60px;
         text-align: right;
         img{
-          width: 70%;
+          min-width: 10%;
+          max-width:  70%;
         }
       }
       &__menu{
@@ -45,8 +69,9 @@
         flex-direction: row-reverse;
       }
     }
+  }
     .navigation-links{
-      font-size: 12px;
+      // font-size: 16px;
       display: flex;
       flex-direction: column;
       text-align: right;
@@ -68,7 +93,7 @@
     }
 
     .navigation-links-hovered{
-      font-size: 12px;
+      // font-size: 16px;
       display: flex;
       flex-direction: column;
       text-align: right;
@@ -103,3 +128,5 @@
 /*
   TODO move to another file
 */
+
+

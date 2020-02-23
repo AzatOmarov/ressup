@@ -50,6 +50,7 @@
     background-color: #999999;
     content: '';
     position: absolute;
+    top: 25px;
     left: calc(50%);
     width: 1px;
     height: 100%;
@@ -111,7 +112,7 @@
 
 .timeline-item-content .tag {
     color: #fff;
-    font-size: 12px;
+    // font-size: 12px;
     font-weight: bold;
     top: 5px;
     left: 5px;
@@ -136,20 +137,20 @@
 
 .timeline-item-content time {
     color: #232227;
-    font-size: 12px;
+    // font-size: 12px;
     font-weight: bold;
 }
 
 .timeline-item-content p {
-    font-size: 12px;
-    line-height: 24px;
+    // font-size: 12px;
+    line-height: 20px;
     margin: 15px 0;
     max-width: auto;
     text-align: justify;
 }
 
 .timeline-item-content a {
-    font-size: 14px;
+    // font-size: 14px;
     font-weight: bold;
 }
 

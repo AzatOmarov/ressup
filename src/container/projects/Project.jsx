@@ -13,15 +13,13 @@ import nurgul from '../../assets/img/nurgul.svg';
 import saltanat from '../../assets/img/saltanat.svg';
 
 
-function Projects() {
-  // const team = teamMembers.map((member, index) => (
-  //   <TeamMember member={member} />
-  // ));
+function Project(props) {
+  const { match: { params: { id: index } } } = props;
   return (
     <>
       <div className="projects">
         <div>
-          <ProjectHeader data={data[0]} />
+          <ProjectHeader data={data[index]} />
           <QALine />
         </div>
         <div className="carousel">
@@ -32,7 +30,6 @@ function Projects() {
               slideWidth="500px"
               width="auto"
               cellAlign="center"
-              // withoutControls="false"
             >
               <img src={aima} alt="Ph" />
               <img src={irene} alt="Ph" />
@@ -46,4 +43,4 @@ function Projects() {
     </>
   );
 }
-export default Projects;
+export default Project;
