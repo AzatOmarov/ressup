@@ -9,7 +9,7 @@ import Home from './container/home/Home';
 import Join from './component/join/Join';
 import NotFound from './component/notFound/NotFound';
 import Navigation from './container/Navigation';
-import Projects from './container/projects/Projects';
+import Project from './container/projects/Project';
 import ProjectsPage from './container/projects-page/Projects';
 import StoriesPage from './container/stories/StoriesPage';
 import Story from './component/story/Story';
@@ -26,13 +26,14 @@ class App extends React.Component {
         <div className="wrapper">
           <Navigation history={hist}>
             <Switch>
+              <Route path="/" component={Home} exact />
               <Route path="/about" component={About} />
               <Route path="/projects" component={ProjectsPage} />
+              <Route path="/procs/:id" component={Project} />
               <Route path="/story-list" component={StoriesPage} />
               <Route path="/stories/:id" component={Story} />
               <Route path="/join" component={Join} />
               <Route path="/contacts" component={Contacts} />
-              <Route path="/" component={Home} exact />
               <Route component={NotFound} />
             </Switch>
           </Navigation>

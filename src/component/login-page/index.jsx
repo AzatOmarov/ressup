@@ -15,8 +15,6 @@ class LoginForm extends React.Component {
   onSubmit = (event) => {
     event.preventDefault();
     const { userName, password } = this.state;
-    console.info(userName);
-    console.info(password);
   }
 
   isAuthenticated = () => {
