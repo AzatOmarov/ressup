@@ -1,21 +1,44 @@
 import React from 'react';
-import data from '../../staticData/aboutUs';
+import { objectOf, object } from 'prop-types';
+import data from '../../staticData/projects';
 import Paragraph from '../../component/project/paragraph/index';
 
 
-function ProjectsPage() {
-//   const team = teamMembers.map((member, index) => (
-//     <TeamMember member={member} />
-//   ));
-  const { title, description } = data.ressup;
-  const { title: teamTitle, text: teamDescription } = data.team;
-  return (
-    <>
-      <div className="projects">
-        <Paragraph title={title} description={description} />
-        <Paragraph title={teamTitle} description={teamDescription} />
+class ProjectsPage extends React.Component {
+  openProjectItem = (projectID) => {
+    const { history } = this.props;
+    history.push(`/procs/${projectID}`);
+  }
+
+  renderProjects = () => data.map((project, index) => {
+    if (project) {
+      const { projectData: { title, subTitle } } = project;
+      const { history } = this.props;
+      return (
+        <Paragraph
+          title={title}
+          description={subTitle}
+          index={index}
+          history={history}
+          onClick={() => this.openProjectItem(index)}
+        />
+      );
+    }
+  })
+
+  render() {
+    const projects = this.renderProjects();
+    return (
+      <div className="projects-page">
+        { projects || null }
       </div>
-    </>
-  );
+    );
+  }
 }
+
+ProjectsPage.propTypes = {
+  history: objectOf(object).isRequired,
+};
+
+
 export default ProjectsPage;
