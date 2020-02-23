@@ -35,14 +35,14 @@ function TeamMember(props) {
   const { member: { name, text, photo } } = props;
   return (
     <>
-      <div className="team-member">
+      <div className="team-member" style={{color: 'black'}}>
         <div className="team-member__text">
-          <span>{name}</span>
+          <h4>{name}</h4>
           <hr />
-          {text}
+          <p>{text}</p>
         </div>
         <div className="team-member__image">
-          <img src={returnImage(photo)} alt="personal" />
+          <img src={returnImage(photo)} alt="personal" style={{minWidth: '10%', maxWidth: '70%' }} />
         </div>
       </div>
     </>
