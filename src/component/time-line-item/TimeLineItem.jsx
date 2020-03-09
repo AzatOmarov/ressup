@@ -1,5 +1,5 @@
 import React from 'react';
-import { string, objectOf, object } from 'prop-types';
+import { objectOf, object } from 'prop-types';
 
 
 function TimelineItem(props) {

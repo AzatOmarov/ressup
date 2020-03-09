@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { string, func } from 'prop-types';
+import { string, number } from 'prop-types';
 import ogorod from '../../../assets/img/ogorod.svg';
 
 
-function Paragraph(props) {
-  const {
-    title, description, index, onClick,
-  } = props;
+export default function Paragraph(props) {
+  const { title, description, index } = props;
   return (
     <div className="project-item">
       <img src={ogorod} alt="ogorod" className="project-item__image" />
@@ -15,9 +13,10 @@ function Paragraph(props) {
       <hr />
       <div className="project-item__text-and-button">
         <div className="description">{description}</div>
-        <div className="nextButton" onClick={onClick}>
-          <Link to={`/procs/${index}`} className="fill" />
-          <p>далее</p>
+        <div className="nextButton">
+          <Link to={`/projects/${index}`} className="fill">
+            далее
+          </Link>
         </div>
       </div>
     </div>
@@ -27,8 +26,5 @@ function Paragraph(props) {
 Paragraph.propTypes = {
   title: string.isRequired,
   description: string.isRequired,
-  index: string.isRequired,
-  onClick: func.isRequired,
+  index: number.isRequired,
 };
-
-export default Paragraph;

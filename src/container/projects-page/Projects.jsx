@@ -1,44 +1,27 @@
 import React from 'react';
 import { objectOf, object } from 'prop-types';
-import data from '../../staticData/projects';
 import Paragraph from '../../component/project/paragraph/index';
 
 
-class ProjectsPage extends React.Component {
-  openProjectItem = (projectID) => {
-    const { history } = this.props;
-    history.push(`/procs/${projectID}`);
+export default function ProjectsPage(props) {
+  function renderProjects() {
+    return props.projects.map((project, index) => {
+      let p = null;
+      if (project) {
+        const { projectData: { title, subTitle } } = project;
+        p = <Paragraph title={title} description={subTitle} index={index} key={project.id} />;
+      }
+      return p;
+    });
   }
 
-  renderProjects = () => data.map((project, index) => {
-    if (project) {
-      const { projectData: { title, subTitle } } = project;
-      const { history } = this.props;
-      return (
-        <Paragraph
-          title={title}
-          description={subTitle}
-          index={index}
-          history={history}
-          onClick={() => this.openProjectItem(index)}
-        />
-      );
-    }
-  })
-
-  render() {
-    const projects = this.renderProjects();
-    return (
-      <div className="projects-page">
-        { projects || null }
-      </div>
-    );
-  }
+  return (
+    <div className="projects-page">
+      {renderProjects() || null}
+    </div>
+  );
 }
 
 ProjectsPage.propTypes = {
-  history: objectOf(object).isRequired,
+  projects: objectOf(object).isRequired,
 };
-
-
-export default ProjectsPage;

@@ -1,20 +1,20 @@
 import React from 'react';
-import { objectOf, object } from 'prop-types';
+import { string } from 'prop-types';
 
 function QAItem(props) {
-  const { data } = props;
+  const { question, answer } = props;
   return (
     <>
       <div className="qa-wrapper">
         <p className="qa-wrapper-left-item">
           <span className="qa-wrapper-left-item-content">
-            {data.question}
+            {question}
           </span>
         </p>
         <span className="circle" />
         <p className="qa-wrapper-right-item">
           <span className="qa-wrapper-right-item-content">
-            {data.answer}
+            {answer}
           </span>
         </p>
 
@@ -24,7 +24,8 @@ function QAItem(props) {
 }
 
 QAItem.propTypes = {
-  data: objectOf(object).isRequired,
+  answer: string.isRequired,
+  question: string.isRequired,
 };
 
 export default QAItem;

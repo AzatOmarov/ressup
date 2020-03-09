@@ -1,5 +1,5 @@
-import 'whatwg-fetch';
 import React from 'react';
+import { objectOf, object } from 'prop-types';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import { createBrowserHistory } from 'history';
@@ -15,33 +15,49 @@ import StoriesPage from './container/stories/StoriesPage';
 import Story from './component/story/Story';
 import Footer from './container/footer/Footer';
 import './assets/App.scss';
+import projects from './staticData/projects';
 
 const hist = createBrowserHistory();
 
-// eslint-disable-next-line react/prefer-stateless-function
-class App extends React.Component {
-  render() {
-    return (
-      <Router history={hist}>
-        <div className="wrapper">
-          <Navigation history={hist}>
-            <Switch>
-              <Route path="/" component={Home} exact />
-              <Route path="/about" component={About} />
-              <Route path="/projects" component={ProjectsPage} />
-              <Route path="/procs/:id" component={Project} />
-              <Route path="/story-list" component={StoriesPage} />
-              <Route path="/stories/:id" component={Story} />
-              <Route path="/join" component={Join} />
-              <Route path="/contacts" component={Contacts} />
-              <Route component={NotFound} />
-            </Switch>
-          </Navigation>
-          <Footer />
-        </div>
-      </Router>
-    );
-  }
+export default function App() {
+  return (
+    <Router history={hist}>
+      <div className="wrapper">
+        <Navigation history={hist}>
+          <Switch>
+            <Route path="/" component={Home} exact />
+            <Route path="/about" component={About} />
+            <Route
+              exact
+              path="/projects"
+              render={() => (<ProjectsPage projects={projects} />)}
+            />
+            <Route
+              exact
+              path="/projects/:id"
+              render={(props) => {
+                let projectId = props.location.pathname.replace('/projects/', '');
+                projectId = parseInt(projectId, 10);
+                return (
+                  <Project
+                    index={projectId}
+                  />
+                );
+              }}
+            />
+            <Route path="/story-list" component={StoriesPage} />
+            <Route path="/stories/:id" component={Story} />
+            <Route path="/join" component={Join} />
+            <Route path="/contacts" component={Contacts} />
+            <Route component={NotFound} />
+          </Switch>
+        </Navigation>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
-export default App;
+App.propTypes = {
+  location: objectOf(object).isRequired,
+};
