@@ -1,7 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
 import locale from '../../utils/locale';
-import fityLinks from '../../utils/staticLinks';
 import facebook from '../../assets/img/facebook.svg';
 import instagram from '../../assets/img/instagram.svg';
 

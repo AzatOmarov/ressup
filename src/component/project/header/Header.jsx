@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { number } from 'prop-types';
+import data from '../../../staticData/projects';
 
 
-const ProjectHeader = ({ data }) => (
-  <>
-    <h2>{data.title}</h2>
-    <h4>{data.subTitle}</h4>
-    <p>{data.text}</p>
-  </>
-);
+export default function ProjectHeader(props) {
+  const { index: nIndex } = props;
+  const [index, setIndex] = useState(0);
+  const { title, subTitle, text } = data[index];
+  useEffect(() => {
+    setIndex(nIndex);
+  }, [nIndex]);
 
-export default ProjectHeader;
+  return (
+    <>
+      <h2>{title}</h2>
+      <h4>{subTitle}</h4>
+      <p>{text}</p>
+    </>
+  );
+}
+
+ProjectHeader.propTypes = {
+  index: number.isRequired,
+};

@@ -8,7 +8,7 @@ function Join() {
   } = data;
   const importants = important.items.map((item, id) => <li className="people"><span>{item}</span></li>);
   const people = weLookingFor.people.map((item, id) => <li className="people"><span>{item}</span></li>);
-  const email = <a href="mailto:cooperation@ressup.org">cooperation@ressup.org</a>;
+  const email = <a href="mailto:contact@ressup.org">contact@ressup.org</a>;
   return (
     <>
       <div className="join">
