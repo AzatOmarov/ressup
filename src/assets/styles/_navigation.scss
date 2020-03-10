@@ -15,7 +15,7 @@
     color: white;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     // flex: 1 1 100%;
     
     .story .stories{
@@ -111,10 +111,18 @@
         cursor: pointer;
       }
     }
-    .footer-container{
-      flex-direction: column;
-    }
-    }
+    // .footer-container{
+    //   padding-right: 10px;
+    //   clear: both;
+    //   top: auto;
+    //   position: relative;
+    //   height: 4vh;
+    //   bottom: -7%;
+    //   flex-direction: row;
+    //   flex: 1 1 100%;
+    //   padding: 10px;
+    // }
+  }
   
 /*
   TODO move to another file
