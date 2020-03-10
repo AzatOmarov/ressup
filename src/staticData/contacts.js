@@ -8,4 +8,5 @@ const data = {
   yourMessage: 'Ваш текст письма',
 };
 
+
 export default data;
