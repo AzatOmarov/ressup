@@ -1,14 +1,13 @@
-    .footer-container{
+@media screen and (min-width: 52em) {
+    .container2{
         display: flex;
+        flex-wrap: wrap;
         flex: 1 1 100%;
-        flex-direction: row;
-        position: relative;
-        bottom: -10%;
         justify-content: space-between;
+        flex-direction: row;
         color: #232227;
         align-items: center;
         background: rgba(196, 196, 196, 0.4);
-        padding: 0px;
         &__social-media{
             display: flex;
             flex-direction: row;
@@ -48,3 +47,4 @@
             padding: 2px;
         }
     }
+}

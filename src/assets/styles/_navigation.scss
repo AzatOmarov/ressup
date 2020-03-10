@@ -38,19 +38,16 @@
   @media screen and (min-width: 32em) {
     .navigation{
       display: flex;
-      flex: 1 1 25%;
+      flex: 0 1 25%;
       flex-direction: column;
-      // align-self: center;
-      // font-size: 16px;
-      // flex: 0 1 225px;
+      height: fit-content;
+      z-index: 5;
       &__logo{
         width: 100%;
         padding-bottom: 60px;
         cursor: pointer;
       }
       &__deineMeinung{
-        padding-top: 50px;
-        padding-bottom: 60px;
         text-align: right;
         img{
           min-width: 10%;
@@ -71,12 +68,10 @@
     }
   }
     .navigation-links{
-      // font-size: 16px;
       display: flex;
       flex-direction: column;
       text-align: right;
       flex: 1 1 0;
-      // width: -webkit-fill-available;
       &__link-item{
         padding-right: 10px; 
         padding-left: 10px; 
@@ -116,13 +111,17 @@
         cursor: pointer;
       }
     }
-    // .navigation-child{
-    //   flex: 3 1 0;
-    //   display: flex;
-    //   flex-direction: column;
+    // .footer-container{
+    //   padding-right: 10px;
+    //   clear: both;
+    //   top: auto;
+    //   position: relative;
+    //   height: 4vh;
+    //   bottom: -7%;
+    //   flex-direction: row;
+    //   flex: 1 1 100%;
+    //   padding: 10px;
     // }
-
-
   }
   
 /*

@@ -8,13 +8,35 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  footer{
-    clear: both;
-    top: auto;
-    position: inherit;
-    height: 4vh;
-    bottom: -38%;
+  .box{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    position: absolute;
+    top: 298px;
+    .rectangle{
+      padding: 0px;
+      height: 400px;
+      background: #F86C59;
+    }
+    .triangle{
+      padding: 0px;
+      width: 0;
+      height: 0;
+      border-bottom: 554px solid #F86C59;
+      border-left: 1105px solid transparent;
+    }
+    footer{
+      clear: both;
+      top: auto;
+      position: inherit;
+      height: 4vh;
+      left: 18px;
+      bottom: -7%;
+    }
+
   }
+
   p{
     margin-bottom: 0px;
   }

@@ -1,8 +1,9 @@
 .projects-page {
   display: inline-block;
-  flex: 1 1 75%;
+  flex: 0 1 55%;
   position: relative;
   top: 12px;
+  z-index: 5;
   .project-item {
     padding: 10px 0px;
     height: max-content;

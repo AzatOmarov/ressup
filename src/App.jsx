@@ -52,8 +52,8 @@ export default function App() {
             <Route component={NotFound} />
           </Switch>
         </Navigation>
-        <Footer />
       </div>
+      {/* <Footer /> */}
     </Router>
   );
 }
