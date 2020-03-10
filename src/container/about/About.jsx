@@ -4,6 +4,7 @@ import data from '../../staticData/aboutUs';
 import teamMembers from '../../staticData/teamMembers';
 import Paragraph from '../../component/about-us-paragraph/index';
 import TeamMember from '../../component/team-member/TeamMember';
+import Footer from '../footer/Footer';
 
 
 function About() {
@@ -33,6 +34,7 @@ function About() {
           </a>
         </p>
       </div>
+      <Footer />
     </>
   );
 }
