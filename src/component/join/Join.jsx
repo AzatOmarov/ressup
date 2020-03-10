@@ -1,5 +1,10 @@
 import React from 'react';
 import data from '../../staticData/join';
+import Footer from '../../container/footer/Footer';
+
+const style = {
+  bottom: '-22%',
+};
 
 function Join() {
   const {
@@ -44,6 +49,7 @@ function Join() {
         </div>
 
       </div>
+      <Footer style={style} />
     </>
   );
 }

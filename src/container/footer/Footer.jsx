@@ -8,9 +8,10 @@ export const t = (key, def = '') => locale(`Footer.${key}`, def);
 
 
 function Footer(props) {
+  const { style } = props;
   return (
   // <footer>
-    <div className="footer-container">
+    <div className="footer-container" style={style}>
       <div className="footer-container__social-media">
         <a href="https://www.facebook.com/groups/1458851604344781/" target="_blank" rel="noopener noreferrer">
           <img src={facebook} alt="facebook" />

@@ -6,6 +6,9 @@ import Paragraph from '../../component/about-us-paragraph/index';
 import TeamMember from '../../component/team-member/TeamMember';
 import Footer from '../footer/Footer';
 
+const style = {
+  bottom: '-10%',
+};
 
 function About() {
   const team = teamMembers.map((member, index) => (
@@ -30,11 +33,11 @@ function About() {
             target="_blank"
             rel="noopener noreferrer"
           >
-              ссылку
+            ссылку
           </a>
         </p>
       </div>
-      <Footer />
+      <Footer style={style} />
     </>
   );
 }

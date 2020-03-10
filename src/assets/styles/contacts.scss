@@ -5,6 +5,19 @@
     text-align: center;
     position: relative;
     top: 150px;
+    .user-data{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        p{
+            color: orangered;
+        }
+        input{
+            margin-bottom: 10px;
+            border: 1px solid;
+        }
+        
+    }
 
     a{
         color: orangered;
@@ -36,5 +49,24 @@
     #email{
         text-align: center;
         display: flex;
+    }
+    // .user-email{
+    //     color: orangered;
+    // }
+    // .user-name{
+    //     color: orangered;
+    // }
+    // .user-message{
+    //     color: orangered;
+    // }
+    .or{
+        padding-top: 5px;
+        padding-bottom: 20px;
+    }
+    #message-name{
+        margin-top: 15px;
+    }
+    #message-field{
+        height: 250px;
     }
 }

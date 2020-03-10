@@ -1,8 +1,11 @@
 const data = {
   title: 'Контакты',
-  description: 'Международная общественная организация по исследованию и поддержке социальных проектов International Union for Research and Support of Social Projects (ressup)',
-  registrationNumber: 'ZVR-Zahl 852567611',
+  howToContactUs: 'Связаться с нами можно, написав на',
   email: 'contact@ressup.org',
+  or: 'или используя форму ниже',
+  yourEmail: 'Ваш e-mail',
+  yourName: 'Ваше имя',
+  yourMessage: 'Ваш текст письма',
 };
 
 export default data;
