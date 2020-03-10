@@ -22,9 +22,11 @@ function Footer(props) {
           <p>Импрессум</p>
         </div>
         <p>
-          <i className="fa fa-copyright" style={{ paddingRight: '5px' }} aria-hidden="true" />
+          <span className="copyright">
+            <i className="fa fa-copyright" aria-hidden="true" />
+          </span>
           {' '}
-            2019 Ressup
+          2020 Ressup
         </p>
       </div>
     </div>
