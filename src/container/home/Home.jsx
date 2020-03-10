@@ -9,7 +9,7 @@ function Home() {
       <div className="home">
         <div className="title">
           <h1>Все дело в вдохновении</h1>
-          <h1>и поддержке</h1>
+          <h1>и поддержке.</h1>
         </div>
 
 
