@@ -8,7 +8,32 @@
         position: relative;
         top: 145px;
         &__link{
+            color: #232227;
             padding-top: 40px;
+            display: flex;
+            flex-direction: row; 
+            margin-bottom: 50px;
+            .interested{
+                padding-right: 5px;
+            }
+            .nextButton {
+                display: flex;
+                flex-direction: column-reverse;
+                width: 0;
+                height: 0;
+                border-top: 40px solid #232227;
+                border-right: 80px solid transparent;
+                cursor: pointer;
+                position: relative;
+                top: 7px;
+                a{
+                  color: #F86C59;
+                  position: relative;
+                  top: -18px;
+                  left: 5px;
+                  margin: 0;
+                }
+              }
         }
     
         a{
