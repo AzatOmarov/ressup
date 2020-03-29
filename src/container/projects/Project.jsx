@@ -8,11 +8,6 @@ import aima from '../../assets/img/aima.svg';
 import elvina from '../../assets/img/elvina.svg';
 import irene from '../../assets/img/irene.svg';
 import madina from '../../assets/img/madina.svg';
-/* import azat from '../../assets/img/azat.svg';
-import marcel from '../../assets/img/marcel.svg';
-import nurgul from '../../assets/img/nurgul.svg';
-import saltanat from '../../assets/img/saltanat.svg';
- */
 
 export default function Project(props) {
   const { index } = props;
@@ -28,7 +23,8 @@ export default function Project(props) {
             <Carousel
               transitionMode="fade"
               slidesToShow="1"
-              slideWidth="500px"
+              slideWidth="790px"
+              height="500px"
               width="auto"
               cellAlign="center"
             >

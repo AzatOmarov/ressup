@@ -45,8 +45,27 @@ export default function App() {
                 );
               }}
             />
-            <Route path="/story-list" component={StoriesPage} />
-            <Route path="/stories/:id" component={Story} />
+
+            <Route
+              exact
+              path="/stories"
+              render={() => (<StoriesPage />)}
+            />
+            <Route
+              exact
+              path="/stories/:id"
+              render={(props) => {
+                let storyId = props.location.pathname.replace('/stories/', '');
+                storyId = parseInt(storyId, 10);
+                console.info(storyId);
+                return (
+                  <Story
+                    index={storyId}
+                  />
+                );
+              }}
+            />
+            {/* <Route path="/stories/:id" component={Story} /> */}
             <Route path="/join" component={Join} />
             <Route path="/contacts" component={Contacts} />
             <Route component={NotFound} />
