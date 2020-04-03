@@ -83,7 +83,7 @@ class Navigation extends React.Component {
     );
 
     return (
-      // isAuthenticatedUser ? (
+      isAuthenticatedUser ? (
         <div className="container">
           <div className="navigation">
             <img src={logo} alt="logo" className="navigation__logo" onClick={this.redirectToLandingPage} role="button" />
@@ -104,7 +104,7 @@ class Navigation extends React.Component {
           </div>
           {this.props.children}
         </div>
-      // ) : formInput
+      ) : formInput
     );
   }
 }
