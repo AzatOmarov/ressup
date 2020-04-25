@@ -11,8 +11,8 @@ function Join() {
     title, description, cooperation, weLookingFor, messageUs,
     important,
   } = data;
-  const importants = important.items.map((item, id) => <li className="people"><span>{item}</span></li>);
-  const people = weLookingFor.people.map((item, id) => <li className="people"><span>{item}</span></li>);
+  const importants = important.items.map((item, id) => <li className="people" key={id++}><span>{item}</span></li>);
+  const people = weLookingFor.people.map((item, id) => <li className="people" key={id++}><span>{item}</span></li>);
   const email = <a href="mailto:contact@ressup.org">contact@ressup.org</a>;
   return (
     <>
