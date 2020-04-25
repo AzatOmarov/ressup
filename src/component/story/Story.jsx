@@ -50,7 +50,7 @@ export default function Story(props) {
         <iframe
           width="700"
           height="400"
-          src={activeIndex === 7 ? 'https://www.youtube.com/embed/E7wJTI-1dvQ' : ''}
+          src={activeIndex === 7 ? 'https://www.youtube.com/embed/dyj2ZlIpyjQ' : ''}
           frameBorder="0"
           allow="autoplay; encrypted-media"
           allowFullScreen
