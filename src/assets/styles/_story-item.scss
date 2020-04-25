@@ -15,13 +15,13 @@
   
     &__text{
       text-align: left;
-      margin-bottom: 5px;
+      margin-bottom: 20px;
       color: #232227;
     }
 
     &__subTitle{
       text-align: left;
-      margin-bottom: 10px !important;
+      margin-bottom: 20px !important;
       color: #232227;
     }
 
@@ -31,13 +31,49 @@
     }
     .carousel {
       display: flex;
+      flex: 1;
       margin-top: 10px;
-      &__item {
-        margin: 0 auto;
-        img {
-          width: 100%;
+      margin-bottom: 20px;
+      justify-content: center;
+      .carousel-control-prev, .carousel-control-next{
+        opacity: 0;
+        &:hover{
+          opacity: 1;
         }
       }
+      .carousel-indicators{
+        bottom: -55px;
+      }
+      li{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: orangered;
+        opacity: 1;
+
+      }
+      .active{
+        background-color: black;
+      }
+
+      &__item {
+        display: flex;
+        flex: 1 1 100%;
+        margin: 0 auto;
+        p{
+          display: none;
+        }
+      }
+      h3{
+        font-size: 1.2rem;
+      }
+      .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='orangered' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+    
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='orangered' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
     }
     &__text-and-button {
       display: flex;
