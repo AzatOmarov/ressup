@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'reactstrap';
 import data from '../../staticData/contacts';
 import Footer from '../../container/footer/Footer';
 
@@ -21,7 +22,15 @@ const Contacts = () => (
         <p>{data.yourName}</p>
         <input type="text" />
         <p id="message-name">{data.yourMessage}</p>
-        <input id="message-field" type="text" />
+        <textarea id="message-field" type="text" />
+        <Button
+          type="submit"
+          block
+          size="sm"
+          color="info"
+        >
+         Отправить
+        </Button>
       </div>
     </div>
     <Footer style={style} />
