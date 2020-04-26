@@ -7,6 +7,7 @@ const style = {
   bottom: '-56%',
 };
 
+
 const Contacts = () => (
   <>
     <div className="contacts">
