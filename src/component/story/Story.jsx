@@ -40,13 +40,13 @@ export default function Story(props) {
       <CarouselItem
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
-        key={item.src}
+        key={idx++}
       >
         <img src={item.src} alt={item.altText} style={{ width: '100%', height: '400px' }} />
-        <CarouselCaption captionHeader={item.caption} />
+        <CarouselCaption captionText="" captionHeader={item.caption} />
       </CarouselItem>
     ) : (
-      <div className="iframe" style={{ display: activeIndex === 7 ? 'block' : 'none' }}>
+      <div className="iframe" style={{ display: activeIndex === 7 ? 'block' : 'none' }} key={idx++}>
         <iframe
           width="700"
           height="400"
@@ -71,6 +71,8 @@ export default function Story(props) {
         <div className="carousel">
           <Carousel
             activeIndex={activeIndex}
+            next={() => {}}
+            previous={() => {}}
           >
             <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
             {slides}
