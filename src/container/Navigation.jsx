@@ -1,112 +1,104 @@
-import React from 'react';
+/* eslint-disable jsx-a11y/interactive-supports-focus */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-noninteractive-element-to-interactive-role */
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar } from 'reactstrap';
 import logo from '../assets/img/logo.svg';
 import deineMeinung from '../assets/img/deineMeinung.svg';
 
 
-class Navigation extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      isHovered: false,
-      userName: '',
-      password: '',
-    };
-    this.handleChange = this.handleChange.bind(this);
-  }
+function Navigation(props) {
+  const [isHovered, setIsHovered] = useState(false);
+  const [userName, setUserName] = useState('');
+  const [password, setPassword] = useState('');
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isQuestionarePage, setIsQuestionarePage] = useState(false);
 
-  onMouseEnter = () => {
-    this.setState({ isHovered: true });
-  }
+  useEffect(() => {
+    if (window.location.pathname === '/questionaire' && !props.isQuestionarePage) {
+      setIsQuestionarePage(true);
+      props.setIsQuestionarePage(true);
+    }
+    if (window.location.pathname !== '/questionaire') {
+      setIsQuestionarePage(false);
+      props.setIsQuestionarePage(false);
+    }
+  }, [props.isQuestionarePage, window.location.pathname, isQuestionarePage, userName, password]);
 
-  onMouseLeave = () => {
-    this.setState({ isHovered: false });
-  }
-
-  redirectToLandingPage = () => {
+  const redirect = (to) => {
     const { location } = window;
     const { origin } = location;
-    location.href = `${origin}/`;
+    location.href = `${origin}/${to}`;
+    if (to === 'questionaire') props.setIsQuestionarePage(true);
   };
 
-  onSubmit = (event) => {
+  const onSubmit = (event) => {
     event.preventDefault();
-    const { userName, password } = this.state;
-  }
+    if(authenticate()) setIsAuthenticated(true);
+  };
 
-  isAuthenticated = () => {
-    const { userName, password } = this.state;
-    if (userName && userName === 'admin' && password && password === 'admin') {
+  const authenticate = () => {
+    if (userName && userName === 'admin' && password && password === 'ressup') {
       return true;
     }
     return false;
-  }
+  };
 
-  handleChange(event) {
-    this.setState({
-      [event.target.name]: event.target.value,
-    });
-  }
-
-
-  render() {
-    const { isHovered, userName, password } = this.state;
-    const isAuthenticatedUser = this.isAuthenticated();
-    const formInput = (
-      <div className="container">
-        <div className="login">
-          <p>Please enter your name and password below</p>
-          <input
-            type="name"
-            name="userName"
-            value={userName}
-            placeholder="Name"
-            onChange={this.handleChange}
-          />
-          <input
-            type="password"
-            name="password"
-            value={password}
-            placeholder="Password"
-            onChange={this.handleChange}
-          />
-          <button
-            type="submit"
-            label="submit"
-            onClick={this.onSubmit}
-          >
+  const formInput = (
+    <div className="container">
+      <div className="login">
+        <p>Please enter your name and password below</p>
+        <input
+          type="text"
+          name="userName"
+          value={userName}
+          placeholder="Name"
+          onChange={(e) => {e.preventDefault(); setUserName(e.target.value)}}
+        />
+        <input
+          type="password"
+          name="password"
+          value={password}
+          placeholder="Password"
+          onChange={(e) => {e.preventDefault(); setPassword(e.target.value)}}
+        />
+        <button
+          type="submit"
+          label="submit"
+          onClick={onSubmit}
+        >
           submit
-          </button>
-        </div>
+        </button>
       </div>
-    );
+    </div>
+  );
 
-    return (
-      isAuthenticatedUser ? (
-        <div className="container">
-          <div className="navigation">
-            <img src={logo} alt="logo" className="navigation__logo" onClick={this.redirectToLandingPage} role="button" />
-            <Navbar>
-              <div className={isHovered ? 'navigation-links-hovered' : 'navigation-links'} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
-                <Link to="/about" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>О нас</Link>
-                <Link to="/projects" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Наши проекты</Link>
-                <Link to="/stories" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Истории</Link>
-                {/* <Link to="/join" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Опросник</Link> */}
-                <Link to="/join" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Участие</Link>
-                <Link to="/contacts" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Контакты</Link>
-                <Link to="/" />
-              </div>
-            </Navbar>
-            <div className="navigation__deineMeinung">
+  return (
+    isAuthenticated ? (
+      <div className="container">
+        <div className="navigation">
+          <img src={logo} alt="logo" className="navigation__logo" onClick={() => redirect('')} role="button" />
+          <Navbar>
+            <div className={isHovered ? 'navigation-links-hovered' : 'navigation-links'} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+              <Link to="/about" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>О нас</Link>
+              <Link to="/projects" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Наши проекты</Link>
+              <Link to="/stories" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Истории</Link>
+              <Link to="/join" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Участие</Link>
+              <Link to="/contacts" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Контакты</Link>
+              <Link to="/" />
+            </div>
+          </Navbar>
+          {!isQuestionarePage ? (
+            <div className="navigation__deineMeinung" role="link" onClick={(e) => { e.stopPropagation(); e.preventDefault(); redirect('questionaire'); }}>
               <img src={deineMeinung} alt="deineMeinung" />
             </div>
-          </div>
-          {this.props.children}
+          ) : null}
         </div>
-      ) : formInput
-    );
-  }
+        {props.children}
+      </div>
+    ) : formInput
+  );
 }
 
 export default Navigation;

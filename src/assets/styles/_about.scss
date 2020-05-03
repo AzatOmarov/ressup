@@ -1,20 +1,29 @@
 @media screen and (min-width: 30em) {
     .about{
-        flex: 1 1 75%;
+        flex: 1 1 60%;
         flex-wrap: wrap;
         height: max-content;
         justify-content: flex-end;
         text-align: center;
         position: relative;
         top: 145px;
+        margin-left: 50px;
+        
+        .pre-interested{
+            padding-bottom: 0px;
+            color: black;
+            text-align: left;
+            margin: 0;
+            padding-top: 40px;
+        }
         &__link{
             color: #232227;
-            padding-top: 40px;
             display: flex;
             flex-direction: row; 
             margin-bottom: 50px;
             .interested{
                 padding-right: 5px;
+                text-align: left;
             }
             .nextButton {
                 display: flex;
@@ -34,6 +43,20 @@
                   margin: 0;
                 }
               }
+        }
+
+        #circle {
+            background-color: #F86C59;
+            border: 3px solid #F86C59;
+            border-radius: 50%;
+            position: relative;
+            top: calc(5% + 15px);
+            // right: calc(50% - 5px);
+            width: 10px;
+            height: 10px;
+            z-index: 100;
+            margin-bottom: 20px;
+            left: 49.3%;
         }
     
         a{

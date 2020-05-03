@@ -16,10 +16,10 @@ function TimelineItem(props) {
     <div className="timeline-item">
       <div className="timeline-item-content">
         <time>{data.title}</time>
+        <span className="circle" />
         <ul>
           { returnText() }
         </ul>
-        <span className="circle" />
       </div>
     </div>
   );

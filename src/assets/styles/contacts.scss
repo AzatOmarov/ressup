@@ -1,14 +1,15 @@
 .contacts{
     height: max-content;
-    flex: 1 1 75%;
+    flex: 1 1 65%;
     justify-content: center;
     text-align: center;
     position: relative;
     top: 150px;
+    margin-left: 50px;
     .user-data{
         display: flex;
         flex-direction: column;
-        width: 400px;
+        width: 490px;
         p{
             color: orangered;
         }
@@ -16,6 +17,41 @@
             margin-bottom: 10px;
             border: 1px solid;
             padding-left: 3px;
+        }
+        &__link{
+            color: #232227;
+            display: flex;
+            flex-direction: row; 
+            justify-content: space-between;
+            .interested{
+                padding-right: 5px;
+            }
+            .nextButton {
+                display: flex;
+                flex-direction: column-reverse;
+                width: 0;
+                height: 0;
+                border-top: 50px solid #232227;
+                border-right: 110px solid transparent;
+                cursor: pointer;
+                position: relative;
+                div{
+                  color: #F86C59;
+                  position: relative;
+                  top: -25px;
+                  left: 0px;
+                  margin: 0;
+    
+                  &:hover{
+                      text-decoration: underline;
+                  }
+                }
+                a{
+                  color: #F86C59;
+                  position: relative;
+                  top: -33px;
+                }
+              }
         }
         
     }
@@ -51,15 +87,6 @@
         text-align: center;
         display: flex;
     }
-    // .user-email{
-    //     color: orangered;
-    // }
-    // .user-name{
-    //     color: orangered;
-    // }
-    // .user-message{
-    //     color: orangered;
-    // }
     .or{
         padding-top: 5px;
         padding-bottom: 20px;
@@ -70,7 +97,7 @@
     #message-field{
         height: 250px;
         border: 1px solid black;
-        border-bottom: 0;
+        margin-bottom: 5px;
     }
     button{
         background-color: orangered;
@@ -81,14 +108,11 @@
         border-bottom: 1px solid black;
         border-left: 1px solid black;
         border-right: 1px solid black;
-        // border: 0px 1px 1px 1px solid black;
         &:hover{
             background-color: orangered;
             border-bottom: 1px solid black;
             border-left: 1px solid black;
             border-right: 1px solid black;
-            // border-color: orangered;
-
             border-radius: 0;
             opacity: 1;
         }

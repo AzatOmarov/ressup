@@ -1,10 +1,11 @@
 .projects {
   height: max-content;
-  flex: 1 1 75%;
+  flex: 1 1 65%;
   justify-content: center;
   text-align: center;
   position: relative;
   top: 132px;
+  margin-left: 50px;
 
   a {
     color: orangered;
@@ -144,7 +145,8 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 40px 0;
+    // margin: 40px 0;
+    margin-bottom: 0;
     .qa-wrapper{
         display: flex;
         p{
@@ -195,7 +197,7 @@
     top: 25px;
     left: calc(50%);
     width: 1px;
-    height: 93.5%;
+    height: 99.5%;
 }
 
 .timeline-item {
@@ -318,8 +320,18 @@
     left: -5px;
 }
 
-
-
-
+#circle {
+  background-color: #F86C59;
+  border: 3px solid #F86C59;
+  border-radius: 50%;
+  position: relative;
+  top: calc(5% + 15px);
+  // right: calc(50% - 5px);
+  width: 10px;
+  height: 10px;
+  z-index: 100;
+  margin-bottom: 20px;
+  left: 49.3%;
+}
 
 }

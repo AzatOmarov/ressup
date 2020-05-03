@@ -4,7 +4,7 @@ import TimelineItem from '../../component/time-line-item/TimeLineItem';
 
 
 const Timeline = () => timelineData.length > 0 && (
-<div className="timeline-container">
+<div className="timeline-container2">
   {timelineData.map((data, idx) => (
     <TimelineItem data={data} key={idx} />
   ))}
