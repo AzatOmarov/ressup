@@ -25,9 +25,11 @@ function About() {
       <div className="about">
         <Paragraph title={title} description={description} />
         <Timeline />
+        <div id="circle" />
         <Paragraph title={teamTitle} description={teamDescription} />
+        <div className="pre-interested">Если вам интересно узнать о предыдущих социальных проектах с нашим участием , то вы можете </div>
         <div className="about__link">
-          <div className="interested">Если вам интересно узнать о предыдущих социальных проектах с нашим участием , то вы можете почитать о них тут.</div>
+          <div className="interested">почитать о них тут.</div>
           <div className="nextButton">
             <Link to="https://www.youtube.com/channel/UCv-LYTGGNAytZRuGbJhPeRA" className="fill">
             далее

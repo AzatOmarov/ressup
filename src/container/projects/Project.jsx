@@ -50,6 +50,7 @@ export default function Project(props) {
         <div>
           <ProjectHeader index={index} />
           <QALine />
+          <div id="circle" />
         </div>
         <div className="carousel">
           <div className="carousel__item">

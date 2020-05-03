@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { objectOf, object } from 'prop-types';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -13,17 +13,23 @@ import Project from './container/projects/Project';
 import ProjectsPage from './container/projects-page/Projects';
 import StoriesPage from './container/stories/StoriesPage';
 import Story from './component/story/Story';
-import Footer from './container/footer/Footer';
+import Questionaire from './component/questionaire/Questionaire';
+// import Footer from './container/footer/Footer';
 import './assets/App.scss';
 import projects from './staticData/projects';
 
 const hist = createBrowserHistory();
 
 export default function App() {
+  const [isQuestionarePage, setIsQuestionarePage] = useState(false);
   return (
     <Router history={hist}>
       <div className="wrapper">
-        <Navigation history={hist}>
+        <Navigation
+          history={hist}
+          isQuestionarePage={isQuestionarePage}
+          setIsQuestionarePage={setIsQuestionarePage}
+        >
           <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/about" component={About} />
@@ -57,7 +63,6 @@ export default function App() {
               render={(props) => {
                 let storyId = props.location.pathname.replace('/stories/', '');
                 storyId = parseInt(storyId, 10);
-                console.info(storyId);
                 return (
                   <Story
                     index={storyId}
@@ -65,9 +70,9 @@ export default function App() {
                 );
               }}
             />
-            {/* <Route path="/stories/:id" component={Story} /> */}
             <Route path="/join" component={Join} />
             <Route path="/contacts" component={Contacts} />
+            <Route path="/questionaire" component={Questionaire} />
             <Route component={NotFound} />
           </Switch>
         </Navigation>
