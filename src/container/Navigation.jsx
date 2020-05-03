@@ -18,6 +18,7 @@ function Navigation(props) {
   useEffect(() => {
     if (window.location.pathname === '/questionaire' && !props.isQuestionarePage) {
       setIsQuestionarePage(true);
+      setIsAuthenticated(true)
       props.setIsQuestionarePage(true);
     }
     if (window.location.pathname !== '/questionaire') {
