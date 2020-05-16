@@ -5,9 +5,7 @@
     flex: 1 1 75%;
     justify-content: center;
     text-align: center;
-    .title{
-        position: relative;
-        left: -90px;
+    &__title{
         h1{
             color: #232227;
             font-size: 3.5rem;

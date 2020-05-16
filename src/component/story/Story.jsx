@@ -11,6 +11,11 @@ import { Link } from 'react-router-dom';
 
 import data from '../../staticData/stories';
 import items from '../../staticData/storyImages';
+import Footer from '../../container/footer/Footer2';
+
+const style = {
+  bottom: '-17%',
+};
 
 
 export default function Story(props) {
@@ -46,11 +51,11 @@ export default function Story(props) {
         <CarouselCaption captionText="" captionHeader={item.caption} />
       </CarouselItem>
     ) : (
-      <div className="iframe" style={{ display: activeIndex === 7 ? 'block' : 'none' }} key={idx++}>
+      <div className="iframe" style={{ display: activeIndex === 4 ? 'block' : 'none' }} key={idx++}>
         <iframe
           width="700"
           height="400"
-          src={activeIndex === 7 ? 'https://www.youtube.com/embed/dyj2ZlIpyjQ' : ''}
+          src={activeIndex === 4 ? 'https://www.youtube.com/embed/NqQ4bFkb9FU' : ''}
           frameBorder="0"
           allow="autoplay; encrypted-media"
           allowFullScreen
@@ -90,6 +95,7 @@ export default function Story(props) {
           </div>
         </div>
       </div>
+      <Footer style={style} />
     </>
   );
 }

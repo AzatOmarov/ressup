@@ -1,6 +1,7 @@
 import React from 'react';
 import Paragraph from '../../component/stories/Paragraph';
 import stories from '../../staticData/stories';
+import Footer from '../footer/Footer';
 
 
 function StoriesPage() {
@@ -20,6 +21,7 @@ function StoriesPage() {
       <div className="stories-page">
         {renderStories()}
       </div>
+      <Footer />
     </>
   );
 }

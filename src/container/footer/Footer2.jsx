@@ -32,7 +32,6 @@ function Footer(props) {
             2020 Ressup
         </p>
       </div>
-      <div className="triangle" />
     </div>
   );
 }

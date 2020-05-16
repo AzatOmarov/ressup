@@ -1,7 +1,7 @@
 import React from 'react';
 import { objectOf, object } from 'prop-types';
 import Paragraph from '../../component/project/paragraph/index';
-import Footer from '../../component/footer/index';
+import Footer from '../footer/Footer';
 
 
 export default function ProjectsPage(props) {
@@ -21,11 +21,7 @@ export default function ProjectsPage(props) {
       <div className="projects-page">
         {renderProjects() || null}
       </div>
-      <div className="box">
-        <div className="triangle" />
-        <div className="rectangle" />
-        <Footer />
-      </div>
+      <Footer />
     </>
   );
 }
