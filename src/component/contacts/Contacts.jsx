@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import data from '../../staticData/contacts';
-import Footer from '../../container/footer/Footer';
+import Footer from '../../container/footer/Footer2';
 
 const style = {
   bottom: '-42%',

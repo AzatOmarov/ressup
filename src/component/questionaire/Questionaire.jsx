@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Button } from 'reactstrap';
 import data from '../../staticData/questionaire';
-import Footer from '../../container/footer/Footer';
+import Footer from '../../container/footer/Footer2';
 import deineMeinung from '../../assets/img/btnMeinung.svg';
 
 const style = {

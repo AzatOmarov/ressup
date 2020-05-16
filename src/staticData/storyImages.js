@@ -1,51 +1,34 @@
-import fontStoryImage from '../assets/img/fontStoryImage.svg';
-import madina from '../assets/img/madina.svg';
-import marcel from '../assets/img/marcel.svg';
-import aima from '../assets/img/aima.svg';
-import elvina from '../assets/img/elvina.svg';
-import nurgul from '../assets/img/nurgul.svg';
-import saltanat from '../assets/img/saltanat.svg';
+import lorain1 from '../assets/img/font-story/lorain1.png';
+import lorain2 from '../assets/img/font-story/lorain2.jpg';
+import lorain3 from '../assets/img/font-story/lorain3.jpg';
+import lorain4 from '../assets/img/font-story/lorain4.png';
+
 
 const storyImages = [
   {
-    src: `${fontStoryImage}`,
-    altText: 'Font story 1',
-    caption: 'Font story',
+    src: `${lorain1}`,
+    altText: '',
+    caption: '',
   },
   {
-    src: `${aima}`,
-    altText: 'Slide 1',
-    caption: 'Aima',
+    src: `${lorain2}`,
+    altText: '',
+    caption: '',
   },
   {
-    src: `${nurgul}`,
-    altText: 'Slide 2',
-    caption: 'Nurgul',
+    src: `${lorain3}`,
+    altText: '',
+    caption: '',
   },
   {
-    src: `${marcel}`,
-    altText: 'Slide 3',
-    caption: 'Marcel',
-  },
-  {
-    src: `${elvina}`,
-    altText: 'Slide 3',
-    caption: 'Elvina',
-  },
-  {
-    src: `${saltanat}`,
-    altText: 'Slide 3',
-    caption: 'Saltanat',
-  },
-  {
-    src: `${madina}`,
-    altText: 'Slide 3',
-    caption: 'Madina',
+    src: `${lorain4}`,
+    altText: '',
+    caption: '',
   },
   {
     src: '',
-    altText: 'Slide 3',
-    caption: 'Madina',
+    altText: '',
+    caption: '',
   },
 ];
 

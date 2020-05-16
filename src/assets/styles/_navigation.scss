@@ -91,6 +91,7 @@
     flex-direction: column;
     text-align: right;
     flex: 1 1 0;
+    margin-bottom: 5px;
     &__link-item {
       padding-right: 10px;
       padding-left: 10px;
@@ -124,6 +125,10 @@
       cursor: pointer;
       padding-right: 10px;
       padding-left: 10px;
+      margin-bottom: 5px;
+      &:hover{
+        margin-bottom: 5px;
+      }
     }
 
     a {
@@ -131,11 +136,11 @@
       text-decoration: none;
       cursor: pointer;
       margin-bottom: 5px;
-    }
-    a:hover {
-      border-bottom: 1px solid #f86c59;
-      cursor: pointer;
-      margin-bottom: 5px;
+      &:hover {
+        border-bottom: 1px solid #f86c59;
+        cursor: pointer;
+        margin-bottom: 5px;
+      }
     }
   }
   // .footer-container{

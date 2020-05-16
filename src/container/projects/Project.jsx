@@ -10,6 +10,12 @@ import {
 import QALine from './time-line/QALine';
 import ProjectHeader from '../../component/project/header/Header';
 import items from '../../staticData/projectImages';
+import Footer from '../footer/Footer2';
+
+const style = {
+  bottom: '-4%',
+};
+
 
 export default function Project(props) {
   const { index } = props;
@@ -64,8 +70,8 @@ export default function Project(props) {
             </Carousel>
           </div>
         </div>
-
       </div>
+      <Footer style={style} />
     </>
   );
 }
