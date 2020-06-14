@@ -18,7 +18,7 @@ function Navigation(props) {
   useEffect(() => {
     if (window.location.pathname === '/questionaire' && !props.isQuestionarePage) {
       setIsQuestionarePage(true);
-      setIsAuthenticated(true)
+      setIsAuthenticated(true);
       props.setIsQuestionarePage(true);
     }
     if (window.location.pathname !== '/questionaire') {
@@ -76,7 +76,7 @@ function Navigation(props) {
   );
 
   return (
-    // isAuthenticated ? (
+    isAuthenticated ? (
       <div className="container">
         <div className="navigation">
           <img src={logo} alt="logo" className="navigation__logo" onClick={() => redirect('')} role="button" />
@@ -98,7 +98,7 @@ function Navigation(props) {
         </div>
         {props.children}
       </div>
-    // ) : formInput
+    ) : formInput
   );
 }
 
