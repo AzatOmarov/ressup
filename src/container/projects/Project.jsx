@@ -53,7 +53,7 @@ export default function Project(props) {
   return (
     <>
       <div className="projects">
-        <div>
+        <div className='projects__header'>
           <ProjectHeader index={index} />
           <QALine />
           <div id="circle" />
@@ -71,7 +71,6 @@ export default function Project(props) {
           </div>
         </div>
       </div>
-      <Footer style={style} />
     </>
   );
 }

@@ -1,15 +1,31 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .projects-page {
   display: inline-block;
-  flex: 0 1 65%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 65%;
+          flex: 0 1 65%;
   position: relative;
   top: 12px;
   z-index: 5;
   margin-left: 50px;
+  margin-bottom: 100px;
   .project-item {
     padding: 10px 0px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
-    flex: 3 1 0;
-    justify-content: center;
+    -webkit-box-flex: 3;
+        -ms-flex: 3 1 0px;
+            flex: 3 1 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     position: relative;
     top: 132px;
@@ -20,20 +36,33 @@
       width: 100%;
     }
     &__text-and-button {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       p {
-        flex: 1 1 100%;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 100%;
+                flex: 1 1 100%;
         color: #F86C59;
         margin-left: 3px;
         padding-bottom: 16px;
       }
       .description {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex: 1 1 93%;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 93%;
+                flex: 1 1 93%;
       }
       .nextButton {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
         width: 0;
         height: 0;
         border-top: 40px solid #232227;
@@ -42,7 +71,7 @@
         a{
           color: #F86C59;
           position: relative;
-          top: -22px;
+          top: -18px;
           left: 2px;
           margin: 0;
         }

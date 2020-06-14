@@ -53,7 +53,7 @@ export default function Story(props) {
     ) : (
       <div className="iframe" style={{ display: activeIndex === 4 ? 'block' : 'none' }} key={idx++}>
         <iframe
-          width="700"
+          width="100%"
           height="400"
           src={activeIndex === 4 ? 'https://www.youtube.com/embed/NqQ4bFkb9FU' : ''}
           frameBorder="0"
@@ -68,35 +68,32 @@ export default function Story(props) {
 
 
   return (
-    <>
-      <div className="story-item">
-        <h2 className="story-item__title">{title}</h2>
-        <p className="story-item__subTitle">{subTitle}</p>
-        <p className="story-item__text">{text}</p>
-        <div className="carousel">
-          <Carousel
-            activeIndex={activeIndex}
-            next={() => {}}
-            previous={() => {}}
-          >
-            <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-            {slides}
-            <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-            <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-          </Carousel>
-        </div>
+    <div className="story-item">
+      <h2 className="story-item__title">{title}</h2>
+      <p className="story-item__subTitle">{subTitle}</p>
+      <p className="story-item__text">{text}</p>
+      <div className="carousel">
+        <Carousel
+          activeIndex={activeIndex}
+          next={() => { }}
+          previous={() => { }}
+        >
+          <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+          {slides}
+          <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+          <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+        </Carousel>
+      </div>
 
-        <div className="story-item__text-and-button">
-          <div className="description">Сайт проекта</div>
-          <div className="nextButton">
-            <Link to={`/stories/${index}`} className="fill">
-              далее
-            </Link>
-          </div>
+      <div className="story-item__text-and-button">
+        <a href="https://www.homelessfonts.org/" target="_blank" rel="noopener noreferrer" className="description">Сайт проекта</a>
+        <div className="nextButton">
+          <Link to={`/stories/${index}`} className="fill">
+            далее
+          </Link>
         </div>
       </div>
-      <Footer style={style} />
-    </>
+    </div>
   );
 }
 

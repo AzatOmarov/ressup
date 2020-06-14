@@ -7,8 +7,7 @@ import instagram from '../../assets/img/instagram.svg';
 export const t = (key, def = '') => locale(`Footer.${key}`, def);
 
 
-function Footer(props) {
-  
+function Footer() {
   return (
     <div className="footer-container">
       <div className="footer-container__social-media">
@@ -32,7 +31,6 @@ function Footer(props) {
             2020 Ressup
         </p>
       </div>
-      <div className="triangle" />
     </div>
   );
 }

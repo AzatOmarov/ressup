@@ -11,7 +11,6 @@ function Home() {
           <h1>и поддержке.</h1>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

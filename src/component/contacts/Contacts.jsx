@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
 import data from '../../staticData/contacts';
-import Footer from '../../container/footer/Footer2';
-
-const style = {
-  bottom: '-42%',
-};
 
 
 function Contacts() {
@@ -89,13 +84,12 @@ function Contacts() {
                 className="fill"
                 href={`mailto:contact@ressup.org?subject=&body=${message}%0D%0A%0D%0A${contacts}%0D%0A%0D%0A${company}%0D%0A%0D%0A Я ${isAgreedCon} с политикой конфиденциальности.`}
               >
-                отправить
+                Отправить
               </a>
             </div>
           </div>
         </div>
       </div>
-      <Footer style={style} />
     </>
   );
 }
