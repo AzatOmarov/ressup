@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar } from 'reactstrap';
 import logo from '../assets/img/logo.svg';
-import deineMeinung from '../assets/img/deineMeinung.svg';
+import deineMeinung from '../assets/img/mein.png';
 
 
 function Navigation(props) {
@@ -34,16 +34,16 @@ function Navigation(props) {
     if (to === 'questionaire') props.setIsQuestionarePage(true);
   };
 
-  const onSubmit = (event) => {
-    event.preventDefault();
-    if(authenticate()) setIsAuthenticated(true);
-  };
-
   const authenticate = () => {
     if (userName && userName === 'admin' && password && password === 'ressup') {
       return true;
     }
     return false;
+  };
+
+  const onSubmit = (event) => {
+    event.preventDefault();
+    if (authenticate()) setIsAuthenticated(true);
   };
 
   const formInput = (
@@ -76,7 +76,7 @@ function Navigation(props) {
   );
 
   return (
-    isAuthenticated ? (
+    // isAuthenticated ? (
       <div className="container">
         <div className="navigation">
           <img src={logo} alt="logo" className="navigation__logo" onClick={() => redirect('')} role="button" />
@@ -98,7 +98,7 @@ function Navigation(props) {
         </div>
         {props.children}
       </div>
-    ) : formInput
+    // ) : formInput
   );
 }
 

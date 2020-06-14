@@ -1,14 +1,8 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { useState } from 'react';
-import { Button } from 'reactstrap';
 import data from '../../staticData/questionaire';
-import Footer from '../../container/footer/Footer2';
-import deineMeinung from '../../assets/img/btnMeinung.svg';
-
-const style = {
-  bottom: '-10%',
-};
+import deineMeinung from '../../assets/img/btnMeinung.png';
 
 
 function Questionaire() {
@@ -245,7 +239,6 @@ function Questionaire() {
           </div>
         </div>
       </div>
-      <Footer style={style} />
     </>
   );
 }

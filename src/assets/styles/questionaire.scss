@@ -1,15 +1,31 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .questionaire{
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
-    flex: 1 1 65%;
-    justify-content: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 65%;
+            flex: 1 1 65%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     position: relative;
     top: 70px;
     color: black;
     text-align: left;
     width: 400px;
+    margin-bottom: 100px;
 
     &__logo{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         img{
             position: relative;
@@ -18,8 +34,13 @@
         }
     }
     &__textBlock{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         position: relative;
         top: -70px;
         left: 101px;
@@ -38,8 +59,13 @@
             margin: 0;
         }
         .form-group2{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: row;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
             padding-bottom: 0;
             margin: 0;
             .custom-checkbox{
@@ -62,15 +88,27 @@
     }
     &__link{
         color: #232227;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row; 
-        justify-content: flex-end;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; 
+        -webkit-box-pack: end; 
+            -ms-flex-pack: end; 
+                justify-content: flex-end;
         .interested{
             padding-right: 5px;
         }
         .nextButton {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column-reverse;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: reverse;
+                -ms-flex-direction: column-reverse;
+                    flex-direction: column-reverse;
             width: 0;
             height: 0;
             border-top: 40px solid #232227;
@@ -80,7 +118,6 @@
             div{
               color: #F86C59;
               position: relative;
-            //   top: -33px;
               left: 0px;
               margin: 0;
 

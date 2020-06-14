@@ -1,7 +1,6 @@
 import React from 'react';
 import { objectOf, object } from 'prop-types';
 import Paragraph from '../../component/project/paragraph/index';
-import Footer from '../footer/Footer';
 
 
 export default function ProjectsPage(props) {
@@ -17,12 +16,9 @@ export default function ProjectsPage(props) {
   }
 
   return (
-    <>
-      <div className="projects-page">
-        {renderProjects() || null}
-      </div>
-      <Footer />
-    </>
+    <div className="projects-page">
+      {renderProjects() || null}
+    </div>
   );
 }
 

@@ -1,14 +1,28 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @media screen and (min-width: 30em) {
     .about{
-        flex: 1 1 60%;
-        flex-wrap: wrap;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 60%;
+                flex: 1 1 60%;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        height: -webkit-max-content;
+        height: -moz-max-content;
         height: max-content;
-        justify-content: flex-end;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
         text-align: center;
         position: relative;
-        top: 145px;
+        margin-top: 145px;
         margin-left: 50px;
-        
+        margin-bottom: 100px;
         .pre-interested{
             padding-bottom: 0px;
             color: black;
@@ -18,16 +32,26 @@
         }
         &__link{
             color: #232227;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: row; 
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row; 
             margin-bottom: 50px;
             .interested{
                 padding-right: 5px;
                 text-align: left;
             }
             .nextButton {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                flex-direction: column-reverse;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: reverse;
+                    -ms-flex-direction: column-reverse;
+                        flex-direction: column-reverse;
                 width: 0;
                 height: 0;
                 border-top: 40px solid #232227;
@@ -51,7 +75,6 @@
             border-radius: 50%;
             position: relative;
             top: calc(5% + 15px);
-            // right: calc(50% - 5px);
             width: 10px;
             height: 10px;
             z-index: 100;
@@ -60,7 +83,7 @@
         }
     
         a{
-            color: orangered;
+            color: #F86C59;
             cursor: pointer;
         }
     
@@ -69,12 +92,7 @@
             text-align: left;
         }
     
-        // .title{
-        //     text-transform: lowercase;
-        // }
-    
         hr{
-            // border-top: 1px solid black;
             margin-top: 0px;
             margin-bottom: 0px;
             border-bottom: 1px solid #999999;
@@ -89,6 +107,8 @@
             color: #232227;
             text-align: left;
             padding: 10px 20px;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
         }
         .section:nth-child(1){
@@ -96,24 +116,37 @@
         }
         
         .team-members{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
 
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+
+            -webkit-box-direction: normal;
+
+                -ms-flex-direction: column;
+
+                    flex-direction: column;
             .team-member{ 
                 text-align: left;
                 padding-bottom: 10px;
                 padding-top: 10px;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                align-items: center;
-                flex-wrap: wrap;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
                 &__text{
-                    // font-size: 16px;
-                    flex: 1 1 10%;
+                    -webkit-box-flex: 1;
+                        -ms-flex: 1 1 10%;
+                            flex: 1 1 10%;
                 }
                 &__image{
                     color: blue;
                     border-radius: 5px;
-                    // flex: 1 1 10%;
                     img{
                         border-radius: 50%;
                         min-width: 10%;
@@ -130,4 +163,3 @@
     }
     
 }
-

@@ -39,9 +39,7 @@ function About() {
         <section className="team-members">
           {team}
         </section>
-
       </div>
-      <Footer style={style} />
     </>
   );
 }
