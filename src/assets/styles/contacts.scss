@@ -1,153 +1,132 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
+.contacts {
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 80%;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+	margin-top: 150px;
+	.user-data {
+		display: flex;
+		flex-direction: column;
+		width: 490px;
+		p {
+			color: #f86c59;
+		}
+		input {
+			margin-bottom: 10px;
+			border: 1px solid;
+			padding-left: 3px;
+		}
+		&__link {
+			color: #232227;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: row;
+			flex-direction: row;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			.interested {
+				padding-right: 5px;
+			}
+			.nextButton {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: reverse;
+				-ms-flex-direction: column-reverse;
+				flex-direction: column-reverse;
+				width: 0;
+				height: 0;
+				border-top: 50px solid #232227;
+				border-right: 130px solid transparent;
+				cursor: pointer;
+				position: relative;
+				div {
+					color: #f86c59;
+					position: relative;
+					top: -25px;
+					left: 0px;
+					margin: 0;
 
-.contacts{
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 65%;
-            flex: 1 1 65%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-    position: relative;
-    margin-top: 150px;
-    margin-left: 50px;
-    margin-bottom: 100px;
-    .user-data{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        width: 490px;
-        p{
-            color: #F86C59;
-        }
-        input{
-            margin-bottom: 10px;
-            border: 1px solid;
-            padding-left: 3px;
-        }
-        &__link{
-            color: #232227;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: row;
-                    flex-direction: row; 
-            -webkit-box-pack: justify; 
-                -ms-flex-pack: justify; 
-                    justify-content: space-between;
-            .interested{
-                padding-right: 5px;
-            }
-            .nextButton {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: reverse;
-                    -ms-flex-direction: column-reverse;
-                        flex-direction: column-reverse;
-                width: 0;
-                height: 0;
-                border-top: 50px solid #232227;
-                border-right: 130px solid transparent;
-                cursor: pointer;
-                position: relative;
-                div{
-                  color: #F86C59;
-                  position: relative;
-                  top: -25px;
-                  left: 0px;
-                  margin: 0;
-    
-                  &:hover{
-                      text-decoration: underline;
-                  }
-                }
-                a{
-                  color: #F86C59;
-                  position: relative;
-                  top: -27px;
-                  right: -3px;
-                }
-              }
-        }
-        
-    }
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+				a {
+					color: #f86c59;
+					position: relative;
+					top: -27px;
+					right: -3px;
+				}
+			}
+		}
+	}
 
-    a{
-        color: #F86C59;
-        cursor: pointer;
-    }
+	a {
+		color: #f86c59;
+		cursor: pointer;
+	}
 
-    h4{
-        color: #232227;
-        text-align: left;
-        font-weight: 500;
-    }
+	h4 {
+		text-align: left;
+		font-weight: 500;
+	}
 
-    hr{
-        margin-top: 0px;
-        margin-bottom: 0px;
-        border-bottom: 1px solid black;
-    }
+	hr {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		border-bottom: 1px solid black;
+	}
 
-    p{
-        color: #232227;
-        text-align: left;
-        margin-bottom: 0;
-    }
-    #reg-number{
-     margin-bottom: 10px;   
-     margin-top: 10px;   
-    }
-    #email{
-        text-align: center;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-    .or{
-        padding-top: 5px;
-        padding-bottom: 20px;
-    }
-    #message-name{
-        margin-top: 15px;
-    }
-    #message-field{
-        height: 250px;
-        border: 1px solid black;
-        margin-bottom: 5px;
-    }
-    button{
-        background-color: #F86C59;
-        border-color: #F86C59;
-        border-radius: 0;
-        opacity: 0.8;
-        
-        border-bottom: 1px solid black;
-        border-left: 1px solid black;
-        border-right: 1px solid black;
-        &:hover{
-            background-color: #F86C59;
-            border-bottom: 1px solid black;
-            border-left: 1px solid black;
-            border-right: 1px solid black;
-            border-radius: 0;
-            opacity: 1;
-        }
-    }
+	p {
+		text-align: left;
+		margin-bottom: 0;
+	}
+	#reg-number {
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	#email {
+		text-align: center;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	.or {
+		padding-top: 5px;
+		padding-bottom: 20px;
+	}
+	#message-name {
+		margin-top: 15px;
+	}
+	#message-field {
+		height: 250px;
+		border: 1px solid black;
+		margin-bottom: 5px;
+	}
+	button {
+		background-color: #f86c59;
+		border-color: #f86c59;
+		border-radius: 0;
+		opacity: 0.8;
+
+		border-bottom: 1px solid black;
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+		&:hover {
+			background-color: #f86c59;
+			border-bottom: 1px solid black;
+			border-left: 1px solid black;
+			border-right: 1px solid black;
+			border-radius: 0;
+			opacity: 1;
+		}
+	}
 }

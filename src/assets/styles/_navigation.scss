@@ -1,195 +1,139 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
-@media screen and (min-width: 32em) {
-  .container > * {
-    max-width: 52em;
-    padding: 20px;
-    font-family: "PT Sans Narrow";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 26px;
-    background: #f3f3f3;
-  }
+// @media screen and (min-width: 15em) {
+.container-fluid > * {
+	padding: 20px;
+	font-family: "PT Sans Narrow";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 26px;
+	background: #f3f3f3;
 }
 
-.container {
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background: #f3f3f3;
-  min-height: 100vh;
-  
-  
+.container-fluid {
+	color: white;
+	display: flex;
+	flex-direction: row;
+	background: #f3f3f3;
+	min-height: 100vh;
+	justify-content: flex-start;
 
-  .story .stories {
-    font-size: 0px;
-  }
-  .nfp {
-    color: black;
-    position: relative;
-    top: 100%;
-    left: 40%;
-  }
+	.story .stories {
+		font-size: 0px;
+	}
+	.nfp {
+		position: relative;
+		top: 100%;
+		left: 40%;
+	}
 
-  .login {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    color: black;
-    position: relative;
-    top: 100%;
-    left: 30%;
-    p{
-      padding-bottom: 10px;
-    }
-    button {
-      cursor: pointer;
-      padding-left: 5px;
-      padding: 5px;
-      border-radius: 5px;
-      background-color: lightblue;
-      border: 1px solid lightblue;
-    }
-    input {
-      margin: 0;
-      font-family: inherit;
-      font-size: inherit;
-      line-height: inherit;
-      margin-bottom: 10px;
-    }
-  }
+	.login {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		top: 100%;
+		left: 30%;
+		p {
+			padding-bottom: 10px;
+		}
+		button {
+			cursor: pointer;
+			padding-left: 5px;
+			padding: 5px;
+			border-radius: 5px;
+			background-color: lightblue;
+			border: 1px solid lightblue;
+		}
+		input {
+			margin: 0;
+			font-family: inherit;
+			font-size: inherit;
+			line-height: inherit;
+			margin-bottom: 10px;
+		}
+	}
 
-  @media screen and (min-width: 32em) {
-    .navigation {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-flex: 0;
-          -ms-flex: 0 1 25%;
-              flex: 0 1 25%;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      height: -webkit-fit-content;
-      height: -moz-fit-content;
-      height: fit-content;
-      z-index: 5;
-      &__logo {
-        width: 100%;
-        padding-bottom: 60px;
-        cursor: pointer;
-      }
-      &__deineMeinung {
-        text-align: right;
-        img {
-          min-width: 10%;
-          max-width: 70%;
-        }
-      }
-      &__menu {
-        background: #fefefe;
-        max-width: -webkit-fit-content;
-        max-width: -moz-fit-content;
-        max-width: fit-content;
-      }
-      .navbar {
-        background-color: #ffffff !important;
-        padding: 0px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: reverse;
-            -ms-flex-direction: row-reverse;
-                flex-direction: row-reverse;
-      }
-    }
-  }
-  .navigation-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: right;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 0px;
-            flex: 1 1 0;
-    background: #f3f3f3;    
-    &__link-item {
-      padding-right: 10px;
-      padding-left: 10px;
-      margin-bottom: 5px;
-      border-bottom: 1px solid #f86c59;
-      &:hover {
-        margin-bottom: 5px;
-      }
-    }
+	// @media screen and (min-width: 15em) {
+	.navigation {
+		display: flex;
+		flex: 0 1 20%;
+		flex-direction: column;
+		z-index: 5;
+		&__logo {
+			width: 100%;
+			padding-bottom: 60px;
+			cursor: pointer;
+		}
+		&__deineMeinung {
+			text-align: right;
+			img {
+				min-width: 10%;
+				max-width: 70%;
+			}
+		}
+		&__menu {
+			background: #fefefe;
+			max-width: fit-content;
+		}
+		.navbar {
+			background-color: #ffffff !important;
+			padding: 0px;
+			display: flex;
+			flex-direction: row-reverse;
+		}
+	}
+	.navigation-links {
+		display: flex;
+		flex-direction: column;
+		text-align: right;
+		flex: 1 1 0;
+		background: #f3f3f3;
+		&__link-item {
+			padding-right: 10px;
+			padding-left: 10px;
+			margin-bottom: 5px;
+			border-bottom: 1px solid #f86c59;
+			&:hover {
+				margin-bottom: 5px;
+			}
+		}
 
-    a {
-      color: #232227;
-      text-decoration: none;
-    }
-    a:hover {
-      border-bottom: 1px solid #f86c59;
-      margin-bottom: 5px;
-    }
-  }
+		a {
+			color: #232227;
+			text-decoration: none;
+		}
+		a:hover {
+			border-bottom: 1px solid #f86c59;
+			margin-bottom: 5px;
+		}
+	}
 
-  .navigation-links-hovered {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: right;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 0px;
-            flex: 1 1 0;
-    background: #f3f3f3;    
-    cursor: pointer;
-    &__link-item {
-      cursor: pointer;
-      padding-right: 10px;
-      padding-left: 10px;
-      margin-bottom: 5px;
-      &:hover{
-        margin-bottom: 5px;
-      }
-    }
+	.navigation-links-hovered {
+		display: flex;
+		flex-direction: column;
+		text-align: right;
+		flex: 1 1 0;
+		background: #f3f3f3;
+		cursor: pointer;
+		&__link-item {
+			cursor: pointer;
+			padding-right: 10px;
+			padding-left: 10px;
+			margin-bottom: 5px;
+			&:hover {
+				margin-bottom: 5px;
+			}
+		}
 
-    a {
-      color: #232227;
-      text-decoration: none;
-      cursor: pointer;
-      margin-bottom: 5px;
-      &:hover {
-        border-bottom: 1px solid #f86c59;
-        cursor: pointer;
-        margin-bottom: 5px;
-      }
-    }
-  }
+		a {
+			color: #232227;
+			text-decoration: none;
+			cursor: pointer;
+			margin-bottom: 5px;
+			&:hover {
+				border-bottom: 1px solid #f86c59;
+				cursor: pointer;
+				margin-bottom: 5px;
+			}
+		}
+	}
 }

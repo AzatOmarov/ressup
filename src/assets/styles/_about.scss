@@ -1,165 +1,109 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
+// @media screen and (min-width: 30em) {
+.about {
+	display: flex;
+	flex-wrap: wrap;
+	height: max-content;
+	position: relative;
+	margin-top: 145px;
 
-@media screen and (min-width: 30em) {
-    .about{
-        -webkit-box-flex: 1;
-            -ms-flex: 1 1 60%;
-                flex: 1 1 60%;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        height: -webkit-max-content;
-        height: -moz-max-content;
-        height: max-content;
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
-        text-align: center;
-        position: relative;
-        margin-top: 145px;
-        margin-left: 50px;
-        margin-bottom: 100px;
-        .pre-interested{
-            padding-bottom: 0px;
-            color: black;
-            text-align: left;
-            margin: 0;
-            padding-top: 40px;
-        }
-        &__link{
-            color: #232227;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: row;
-                    flex-direction: row; 
-            margin-bottom: 50px;
-            .interested{
-                padding-right: 5px;
-                text-align: left;
-            }
-            .nextButton {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: reverse;
-                    -ms-flex-direction: column-reverse;
-                        flex-direction: column-reverse;
-                width: 0;
-                height: 0;
-                border-top: 40px solid #232227;
-                border-right: 80px solid transparent;
-                cursor: pointer;
-                position: relative;
-                top: 7px;
-                a{
-                  color: #F86C59;
-                  position: relative;
-                  top: -18px;
-                  left: 5px;
-                  margin: 0;
-                }
-              }
-        }
+	.pre-interested {
+		padding-bottom: 0px;
+		text-align: left;
+		margin: 0;
+	}
 
-        #circle {
-            background-color: #F86C59;
-            border: 3px solid #F86C59;
-            border-radius: 50%;
-            position: relative;
-            top: calc(5% + 15px);
-            width: 10px;
-            height: 10px;
-            z-index: 100;
-            margin-bottom: 20px;
-            left: 49.3%;
-        }
-    
-        a{
-            color: #F86C59;
-            cursor: pointer;
-        }
-    
-        h4{
-            color: #232227;
-            text-align: left;
-        }
-    
-        hr{
-            margin-top: 0px;
-            margin-bottom: 0px;
-            border-bottom: 1px solid #999999;
-        }
-    
-        p{
-            color: #232227;
-            text-align: left;
-        }
-      
-        .section{
-            color: #232227;
-            text-align: left;
-            padding: 10px 20px;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-        }
-        .section:nth-child(1){
-            background: darkcyan;
-        }
-        
-        .team-members{
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
+	&__link {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 50px;
+		.interested {
+			padding-right: 5px;
+			text-align: left;
+		}
+		.nextButton {
+			display: flex;
+			flex-direction: column-reverse;
+			width: 0;
+			height: 0;
+			border-top: 40px solid #232227;
+			border-right: 80px solid transparent;
+			cursor: pointer;
+			position: relative;
+			top: 7px;
+			a {
+				color: #f86c59;
+				position: relative;
+				top: -18px;
+				left: 5px;
+				margin: 0;
+			}
+		}
+	}
 
-            -webkit-box-orient: vertical;
+	#circle {
+		background-color: #f86c59;
+		border: 3px solid #f86c59;
+		border-radius: 50%;
+		position: relative;
+		top: calc(5% + 15px);
+		width: 10px;
+		height: 10px;
+		z-index: 100;
+		margin-bottom: 20px;
+		left: 49.3%;
+	}
 
-            -webkit-box-direction: normal;
+	a {
+		color: #f86c59;
+		cursor: pointer;
+	}
 
-                -ms-flex-direction: column;
+	h4 {
+		text-align: left;
+	}
 
-                    flex-direction: column;
-            .team-member{ 
-                text-align: left;
-                padding-bottom: 10px;
-                padding-top: 10px;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-align: center;
-                    -ms-flex-align: center;
-                        align-items: center;
-                -ms-flex-wrap: wrap;
-                    flex-wrap: wrap;
-                &__text{
-                    -webkit-box-flex: 1;
-                        -ms-flex: 1 1 10%;
-                            flex: 1 1 10%;
-                }
-                &__image{
-                    color: blue;
-                    border-radius: 5px;
-                    img{
-                        border-radius: 50%;
-                        min-width: 10%;
-                        max-width: 70%;
-                    }
-                }
-    
-            }
-           
-        }
-       
-    
-    
-    }
-    
+	hr {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		border-bottom: 1px solid #999999;
+	}
+
+	p {
+		text-align: left;
+	}
+
+	.section {
+		text-align: left;
+		padding: 10px 20px;
+		display: flex;
+	}
+	.section:nth-child(1) {
+		background: darkcyan;
+	}
+
+	.team-members {
+		display: flex;
+		flex: 1 1 100%;
+		flex-direction: column;
+		.team-member {
+			text-align: left;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			&__text {
+				flex: 1 1 10%;
+			}
+			&__image {
+				color: blue;
+				border-radius: 5px;
+				img {
+					border-radius: 50%;
+					min-width: 10%;
+					max-width: 70%;
+				}
+			}
+		}
+	}
 }

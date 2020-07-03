@@ -1,153 +1,107 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 .story-item {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 65%;
-          flex: 1 1 65%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  position: relative;
-  margin-top: 132px;
-  margin-left: 50px;
-  margin-bottom: 100px;
+	height: max-content;
+	position: relative;
+	margin-top: 145px;
 
-  &__title {
-    text-align: left;
-    margin-bottom: 5px;
-    color: #232227;
-  }
+	&__title {
+		text-align: left;
+		margin-bottom: 5px;
+	}
 
-  &__text{
-    text-align: left;
-    margin-bottom: 20px;
-    color: #232227;
-  }
+	&__text {
+		text-align: left;
+		margin-bottom: 20px;
+	}
 
-  &__subTitle{
-    text-align: left;
-    margin-bottom: 20px !important;
-    color: #232227;
-  }
+	&__subTitle {
+		text-align: left;
+		margin-bottom: 20px !important;
+	}
 
-  a {
-    color: #F86C59;
-    cursor: pointer;
-  }
-  .carousel {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    .carousel-control-prev, .carousel-control-next{
-      opacity: 0;
-      &:hover{
-        opacity: 1;
-      }
-    }
-    .carousel-indicators{
-      bottom: -55px;
-    }
-    li{
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: #F86C59;
-      opacity: 1;
+	a {
+		color: #f86c59;
+		cursor: pointer;
+	}
+	.carousel {
+		display: flex;
+		flex: 1;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		justify-content: center;
+		.carousel-control-prev,
+		.carousel-control-next {
+			opacity: 0;
+			&:hover {
+				opacity: 1;
+			}
+		}
+		.carousel-indicators {
+			bottom: -55px;
+		}
+		li {
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: #f86c59;
+			opacity: 1;
+		}
+		.active {
+			background-color: black;
+		}
 
-    }
-    .active{
-      background-color: black;
-    }
+		&__item {
+			display: flex;
+			flex: 1 1 100%;
+			margin: 0 auto;
+			p {
+				display: none;
+			}
+		}
+		h3 {
+			font-size: 1.2rem;
+		}
+		.carousel-control-prev-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#F86C59' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+		}
 
-    &__item {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-flex: 1;
-          -ms-flex: 1 1 100%;
-              flex: 1 1 100%;
-      margin: 0 auto;
-      p{
-        display: none;
-      }
-    }
-    h3{
-      font-size: 1.2rem;
-    }
-    .carousel-control-prev-icon {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#F86C59' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-  }
-  
-  .carousel-control-next-icon {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#F86C59' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-  }
-  }
-  &__text-and-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    color: #232227;
-    
-    p {
-      -webkit-box-flex: 1;
-          -ms-flex: 1 1 100%;
-              flex: 1 1 100%;
-      color: #F86C59;
-      margin-left: 3px;
-      padding-bottom: 16px;
-    }
-    .description {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-flex: 1;
-          -ms-flex: 1 1 93%;
-              flex: 1 1 93%;
-      border-top: 1px solid 
-    }
-    .nextButton {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: column-reverse;
-              flex-direction: column-reverse;
-      width: 0;
-      height: 0;
-      border-top: 40px solid #232227;
-      border-right: 80px solid transparent;
-      cursor: pointer;
-      a{
-        color: #F86C59;
-        position: relative;
-        top: -18px;
-        left: 5px;
-        margin: 0;
-      }
-    }
-  }
-  hr {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-bottom: 1px solid black;
-  }
+		.carousel-control-next-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#F86C59' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+		}
+	}
+	&__text-and-button {
+		display: flex;
 
+		p {
+			flex: 1 1 100%;
+			color: #f86c59;
+			margin-left: 3px;
+			padding-bottom: 16px;
+		}
+		.description {
+			display: flex;
+			flex: 1 1 93%;
+			border-top: 1px solid;
+		}
+		.nextButton {
+			display: flex;
+			flex-direction: column-reverse;
+			width: 0;
+			height: 0;
+			border-top: 40px solid #232227;
+			border-right: 80px solid transparent;
+			cursor: pointer;
+			a {
+				color: #f86c59;
+				position: relative;
+				top: -18px;
+				left: 5px;
+				margin: 0;
+			}
+		}
+	}
+	hr {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		border-bottom: 1px solid black;
+	}
 }

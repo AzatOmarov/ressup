@@ -1,104 +1,89 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
+.join {
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex: 0 1 80%;
+	justify-content: center;
+	position: relative;
+	margin-top: 150px;
+	a {
+		color: #f86c59;
+		cursor: pointer;
+	}
+	.bank-details {
+		color: #f86c59;
+		padding-bottom: 5px;
+	}
+	.weLookingFor-title {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.weLookingFor-message-us {
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+	.people {
+		padding-bottom: 5px;
+	}
+	.important-title {
+		padding-bottom: 5px;
+	}
+	.message-us {
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+	.cooperation {
+		width: 485px;
+	}
+	.cooperation-title {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 18px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.cooperation-item {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
 
-.join{
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 65%;
-            flex: 1 1 65%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-    position: relative;
-    margin-top: 150px;
-    margin-left: 50px;
-    margin-bottom: 100px;
-    a{
-        color: #F86C59;
-        cursor: pointer;
-    }
-    .bank-details{
-        color: #F86C59;
-        padding-bottom: 5px;
-    }
-    .weLookingFor-title{
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-    .weLookingFor-message-us{
-        padding-top: 5px;
-        padding-bottom: 10px;
-    }
-    .people{
-        padding-bottom: 5px;
-    }
-    .important-title{
-        padding-bottom: 5px;
-    }
-    .message-us{
-        padding-top: 5px;
-        padding-bottom: 10px;
-    }
-    .cooperation{
-        width: 485px;
-    }
-    .cooperation-title{
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 18px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-    .cooperation-item{
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
+	h4 {
+		color: #232227;
+		text-align: left;
+		font-weight: 500;
+	}
 
+	hr {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		border-bottom: 1px solid black;
+	}
 
-    h4{
-        color: #232227;
-        text-align: left;
-        font-weight: 500;
-    }
-
-    hr{
-        margin-top: 0px;
-        margin-bottom: 0px;
-        border-bottom: 1px solid black;
-    }
-
-    p, ul{
-        color: #232227;
-        text-align: left;
-        margin-bottom: 0;
-    }
-    ul{
-        padding-left: 0px;
-        color: #232227;
-    }
-    ul li {
-        color: #F86C59;
-        list-style-type: disc;
-        margin-left: 2em;
-    }
-    ul li span {
-        color: #232227;
-    }
-    #reg-number{
-     margin-bottom: 10px;   
-     margin-top: 10px;   
-    }
-    #email{
-        text-align: center;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
+	p,
+	ul {
+		color: #232227;
+		text-align: left;
+		margin-bottom: 0;
+	}
+	ul {
+		padding-left: 0px;
+		color: #232227;
+	}
+	ul li {
+		color: #f86c59;
+		list-style-type: disc;
+		margin-left: 2em;
+	}
+	ul li span {
+		color: #232227;
+	}
+	#reg-number {
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	#email {
+		text-align: center;
+		display: flex;
+	}
 }

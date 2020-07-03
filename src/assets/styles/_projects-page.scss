@@ -1,86 +1,53 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 .projects-page {
-  display: inline-block;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 65%;
-          flex: 0 1 65%;
-  position: relative;
-  top: 12px;
-  z-index: 5;
-  margin-left: 50px;
-  margin-bottom: 100px;
-  .project-item {
-    padding: 10px 0px;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    -webkit-box-flex: 3;
-        -ms-flex: 3 1 0px;
-            flex: 3 1 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-    position: relative;
-    top: 132px;
-    color: #232227;
-    text-align: left;
+	display: flex;
+	flex: 0 1 80%;
+	z-index: 5;
+	.project-item {
+		padding: 10px 0px;
+		height: max-content;
+		flex: 3 1 0;
+		justify-content: center;
+		text-align: center;
+		position: relative;
+		top: 132px;
+		text-align: left;
 
-    &__image {
-      width: 100%;
-    }
-    &__text-and-button {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      p {
-        -webkit-box-flex: 1;
-            -ms-flex: 1 1 100%;
-                flex: 1 1 100%;
-        color: #F86C59;
-        margin-left: 3px;
-        padding-bottom: 16px;
-      }
-      .description {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-flex: 1;
-            -ms-flex: 1 1 93%;
-                flex: 1 1 93%;
-      }
-      .nextButton {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: reverse;
-            -ms-flex-direction: column-reverse;
-                flex-direction: column-reverse;
-        width: 0;
-        height: 0;
-        border-top: 40px solid #232227;
-        border-right: 80px solid transparent;
-        cursor: pointer;
-        a{
-          color: #F86C59;
-          position: relative;
-          top: -18px;
-          left: 2px;
-          margin: 0;
-        }
-      }
-    }
-    hr {
-      margin-top: 0px;
-      margin-bottom: 0px;
-      border-bottom: 1px solid black;
-    }
-  }
+		&__image {
+			width: 100%;
+		}
+		&__text-and-button {
+			display: flex;
+			p {
+				flex: 1 1 100%;
+				color: #f86c59;
+				margin-left: 3px;
+				padding-bottom: 16px;
+			}
+			.description {
+				display: flex;
+				flex: 1 1 93%;
+			}
+			.nextButton {
+				display: flex;
+				flex-direction: column-reverse;
+				width: 0;
+				height: 0;
+				border-top: 40px solid #232227;
+				border-right: 80px solid transparent;
+				cursor: pointer;
+				a {
+					color: #f86c59;
+					position: relative;
+					top: -18px;
+					left: 2px;
+					margin: 0;
+				}
+			}
+		}
+		hr {
+			margin-top: 0px;
+			margin-bottom: 0px;
+			border-bottom: 1px solid black;
+		}
+	}
 }
