@@ -55,14 +55,14 @@ function Navigation(props) {
           name="userName"
           value={userName}
           placeholder="Name"
-          onChange={(e) => {e.preventDefault(); setUserName(e.target.value)}}
+          onChange={(e) => { e.preventDefault(); setUserName(e.target.value); }}
         />
         <input
           type="password"
           name="password"
           value={password}
           placeholder="Password"
-          onChange={(e) => {e.preventDefault(); setPassword(e.target.value)}}
+          onChange={(e) => { e.preventDefault(); setPassword(e.target.value); }}
         />
         <button
           type="submit"
@@ -76,29 +76,31 @@ function Navigation(props) {
   );
 
   return (
-    isAuthenticated ? (
-      <div className="container">
-        <div className="navigation">
-          <img src={logo} alt="logo" className="navigation__logo" onClick={() => redirect('')} role="button" />
-          <Navbar>
-            <div className={isHovered ? 'navigation-links-hovered' : 'navigation-links'} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-              <Link to="/about" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>О нас</Link>
-              <Link to="/projects" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Наши проекты</Link>
-              <Link to="/stories" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Истории</Link>
-              <Link to="/join" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Участие</Link>
-              <Link to="/contacts" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Контакты</Link>
-              <Link to="/" />
-            </div>
-          </Navbar>
-          {!isQuestionarePage ? (
-            <div className="navigation__deineMeinung" role="link" onClick={(e) => { e.stopPropagation(); e.preventDefault(); redirect('questionaire'); }}>
-              <img src={deineMeinung} alt="deineMeinung" />
-            </div>
-          ) : null}
-        </div>
+    // isAuthenticated ? (
+    <div className="container-fluid">
+      <div className="navigation">
+        <img src={logo} alt="logo" className="navigation__logo" onClick={() => redirect('')} role="button" />
+        <Navbar>
+          <div className={isHovered ? 'navigation-links-hovered' : 'navigation-links'} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+            <Link to="/about" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>О нас</Link>
+            <Link to="/projects" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Наши проекты</Link>
+            <Link to="/stories" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Истории</Link>
+            <Link to="/join" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Участие</Link>
+            <Link to="/contacts" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Контакты</Link>
+            <Link to="/" />
+          </div>
+        </Navbar>
+        {!isQuestionarePage ? (
+          <div className="navigation__deineMeinung" role="link" onClick={(e) => { e.stopPropagation(); e.preventDefault(); redirect('questionaire'); }}>
+            <img src={deineMeinung} alt="deineMeinung" />
+          </div>
+        ) : null}
+      </div>
+      <div style={{position: 'relative', left: '30px', width: '969px', color: '#232227'}}>
         {props.children}
       </div>
-    ) : formInput
+    </div>
+    // ) : formInput
   );
 }
 

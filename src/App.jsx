@@ -24,60 +24,60 @@ export default function App() {
   const [isQuestionarePage, setIsQuestionarePage] = useState(false);
   return (
     <Router history={hist}>
-      <div className="wrapper">
-        <Navigation
-          history={hist}
-          isQuestionarePage={isQuestionarePage}
-          setIsQuestionarePage={setIsQuestionarePage}
-        >
-          <Switch>
-            <Route path="/" component={Home} exact />
-            <Route path="/about" component={About} />
-            <Route
-              exact
-              path="/projects"
-              render={() => (<ProjectsPage projects={projects} />)}
-            />
-            <Route
-              exact
-              path="/projects/:id"
-              render={(props) => {
-                let projectId = props.location.pathname.replace('/projects/', '');
-                projectId = parseInt(projectId, 10);
-                return (
-                  <Project
-                    index={projectId}
-                  />
-                );
-              }}
-            />
+      {/* <div className="wrapper"> */}
+      <Navigation
+        history={hist}
+        isQuestionarePage={isQuestionarePage}
+        setIsQuestionarePage={setIsQuestionarePage}
+      >
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/about" component={About} />
+          <Route
+            exact
+            path="/projects"
+            render={() => (<ProjectsPage projects={projects} />)}
+          />
+          <Route
+            exact
+            path="/projects/:id"
+            render={(props) => {
+              let projectId = props.location.pathname.replace('/projects/', '');
+              projectId = parseInt(projectId, 10);
+              return (
+                <Project
+                  index={projectId}
+                />
+              );
+            }}
+          />
 
-            <Route
-              exact
-              path="/stories"
-              render={() => (<StoriesPage />)}
-            />
-            <Route
-              exact
-              path="/stories/:id"
-              render={(props) => {
-                let storyId = props.location.pathname.replace('/stories/', '');
-                storyId = parseInt(storyId, 10);
-                return (
-                  <Story
-                    index={storyId}
-                  />
-                );
-              }}
-            />
-            <Route path="/join" component={Join} />
-            <Route path="/contacts" component={Contacts} />
-            <Route path="/questionaire" component={Questionaire} />
-            <Route component={NotFound} />
-          </Switch>
-          <Footer />
-        </Navigation>
-      </div>
+          <Route
+            exact
+            path="/stories"
+            render={() => (<StoriesPage />)}
+          />
+          <Route
+            exact
+            path="/stories/:id"
+            render={(props) => {
+              let storyId = props.location.pathname.replace('/stories/', '');
+              storyId = parseInt(storyId, 10);
+              return (
+                <Story
+                  index={storyId}
+                />
+              );
+            }}
+          />
+          <Route path="/join" component={Join} />
+          <Route path="/contacts" component={Contacts} />
+          <Route path="/questionaire" component={Questionaire} />
+          <Route component={NotFound} />
+        </Switch>
+        {/* <Footer /> */}
+      </Navigation>
+      {/* </div> */}
     </Router>
   );
 }

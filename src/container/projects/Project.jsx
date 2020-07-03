@@ -10,11 +10,6 @@ import {
 import QALine from './time-line/QALine';
 import ProjectHeader from '../../component/project/header/Header';
 import items from '../../staticData/projectImages';
-import Footer from '../footer/Footer2';
-
-const style = {
-  bottom: '-4%',
-};
 
 
 export default function Project(props) {
@@ -38,13 +33,13 @@ export default function Project(props) {
     setActiveIndex(newIndex);
   };
 
-  const slides = items.map((item, idx) => (
+  const slides = items.map((item) => (
     <CarouselItem
       onExiting={() => setAnimating(true)}
       onExited={() => setAnimating(false)}
       key={item.src}
     >
-      <img src={item.src} alt={item.altText} style={{ width: '100%', height: '400px' }} />
+      <img src={item.src} alt={item.altText} style={{ width: '100%', height: '600px' }} />
       <CarouselCaption captionHeader={item.caption} />
     </CarouselItem>
   ));
@@ -53,7 +48,7 @@ export default function Project(props) {
   return (
     <>
       <div className="projects">
-        <div className='projects__header'>
+        <div className="projects__header">
           <ProjectHeader index={index} />
           <QALine />
           <div id="circle" />
@@ -63,7 +58,11 @@ export default function Project(props) {
             <Carousel
               activeIndex={activeIndex}
             >
-              <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+              <CarouselIndicators
+                items={items}
+                activeIndex={activeIndex}
+                onClickHandler={goToIndex}
+              />
               {slides}
               <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
               <CarouselControl direction="next" directionText="Next" onClickHandler={next} />

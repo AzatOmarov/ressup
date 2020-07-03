@@ -3,14 +3,8 @@ import { Link } from 'react-router-dom';
 import Timeline from '../time-line/TimeLine';
 import data from '../../staticData/aboutUs';
 import teamMembers from '../../staticData/teamMembers';
-import Paragraph from '../../component/about-us-paragraph/index';
 import TeamMember from '../../component/team-member/TeamMember';
-import Footer from '../footer/Footer2';
 
-
-const style = {
-  bottom: '-10%',
-};
 
 function About() {
   const team = teamMembers.map((member) => (
@@ -23,16 +17,21 @@ function About() {
   return (
     <>
       <div className="about">
-        <Paragraph title={title} description={description} />
+        <h4 className="story__title">{title}</h4>
+        <div className="description">{description}</div>
         <Timeline />
-        <div id="circle" />
-        <Paragraph title={teamTitle} description={teamDescription} />
-        <div className="pre-interested">Если вам интересно узнать о предыдущих социальных проектах с нашим участием , то вы можете </div>
+        {/* <div id="circle" /> */}
+        <h4 className="story__title">{teamTitle}</h4>
+        <div className="description">{teamDescription}</div>
         <div className="about__link">
-          <div className="interested">почитать о них тут.</div>
+          <div className="interested">
+            Если вам интересно узнать о предыдущих социальных проектах с
+            нашим участием , то вы можете
+            почитать о них тут.
+          </div>
           <div className="nextButton">
             <Link to="https://www.youtube.com/channel/UCv-LYTGGNAytZRuGbJhPeRA" className="fill">
-            далее
+              далее
             </Link>
           </div>
         </div>

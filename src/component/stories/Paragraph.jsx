@@ -5,12 +5,11 @@ import fonts from '../../assets/img/blindFonts.svg';
 
 
 export default function Paragraph(props) {
-  const { title, description, index } = props;
+  const { description, index } = props;
   return (
     <div className="story">
       <div className="description">{description}</div>
       <img src={fonts} alt="ogorod" className="story__image" />
-      <h4 className="story__title">{title}</h4>
       <hr />
       <div className="story__text-and-button">
         <div className="nextButton">
@@ -24,7 +23,6 @@ export default function Paragraph(props) {
 }
 
 Paragraph.propTypes = {
-  title: string.isRequired,
   description: string.isRequired,
   index: number.isRequired,
 };

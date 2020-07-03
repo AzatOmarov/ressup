@@ -1,5 +1,4 @@
 import React from 'react';
-import { Row, Col } from 'reactstrap';
 import locale from '../../utils/locale';
 import facebook from '../../assets/img/facebook.svg';
 import instagram from '../../assets/img/instagram.svg';
@@ -7,8 +6,7 @@ import instagram from '../../assets/img/instagram.svg';
 export const t = (key, def = '') => locale(`Footer.${key}`, def);
 
 
-function Footer(props) {
-  
+export default function Footer() {
   return (
     <div className="footer-container">
       <div className="footer-container__social-media">
@@ -36,5 +34,3 @@ function Footer(props) {
     </div>
   );
 }
-
-export default Footer;

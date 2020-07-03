@@ -11,11 +11,6 @@ import { Link } from 'react-router-dom';
 
 import data from '../../staticData/stories';
 import items from '../../staticData/storyImages';
-import Footer from '../../container/footer/Footer2';
-
-const style = {
-  bottom: '-17%',
-};
 
 
 export default function Story(props) {
@@ -45,13 +40,19 @@ export default function Story(props) {
       <CarouselItem
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
-        key={idx++}
+        key={`item-${idx + 1}`}
       >
-        <img src={item.src} alt={item.altText} style={{ width: '100%', height: '400px' }} />
+        <div style={{ width: '929px' }}>
+          <img src={item.src} alt={item.altText} width="100%" />
+        </div>
         <CarouselCaption captionText="" captionHeader={item.caption} />
       </CarouselItem>
     ) : (
-      <div className="iframe" style={{ display: activeIndex === 4 ? 'block' : 'none' }} key={idx++}>
+      <div
+        className="iframe"
+        style={{ display: activeIndex === 4 ? 'block' : 'none' }}
+        key={`item-${idx + 1}`}
+      >
         <iframe
           width="100%"
           height="400"
