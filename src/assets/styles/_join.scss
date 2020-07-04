@@ -1,8 +1,9 @@
 .join {
-	
-	
-	flex: 0 1 90%;
-	flex-wrap: wrap;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 90%;
+	        flex: 0 1 90%;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin-top: 150px;
 	a {
 		color: #f86c59;
@@ -81,6 +82,8 @@
 	}
 	#email {
 		text-align: center;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 }

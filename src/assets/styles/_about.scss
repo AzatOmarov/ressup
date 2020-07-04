@@ -1,6 +1,9 @@
 // @media screen and (min-width: 30em) {
+
 .about {
-	flex: 0 1 90%;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 90%;
+	        flex: 0 1 90%;
 	margin-top: 145px;
 	margin-bottom: 80px;
 
@@ -11,16 +14,26 @@
 	}
 
 	&__link {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 		margin-bottom: 50px;
 		.interested {
 			padding-right: 5px;
 			text-align: left;
 		}
 		.nextButton {
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			flex-direction: column-reverse;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: reverse;
+			    -ms-flex-direction: column-reverse;
+			        flex-direction: column-reverse;
 			width: 0;
 			height: 0;
 			border-top: 40px solid #232227;
@@ -73,6 +86,8 @@
 	.section {
 		text-align: left;
 		padding: 10px 20px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 	.section:nth-child(1) {
@@ -80,18 +95,32 @@
 	}
 
 	.team-members {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex: 1 1 100%;
-		flex-direction: column;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 1 100%;
+		        flex: 1 1 100%;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		.team-member {
 			text-align: left;
 			padding-bottom: 10px;
 			padding-top: 10px;
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			align-items: center;
-			flex-wrap: wrap;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			-ms-flex-wrap: wrap;
+			    flex-wrap: wrap;
 			&__text {
-				flex: 1 1 10%;
+				-webkit-box-flex: 1;
+				    -ms-flex: 1 1 10%;
+				        flex: 1 1 10%;
 			}
 			&__image {
 				color: blue;

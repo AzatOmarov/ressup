@@ -23,7 +23,6 @@ export default function App() {
   const [isQuestionarePage, setIsQuestionarePage] = useState(false);
   return (
     <Router history={hist}>
-      {/* <div className="wrapper"> */}
       <Navigation
         history={hist}
         isQuestionarePage={isQuestionarePage}
@@ -74,10 +73,7 @@ export default function App() {
           <Route path="/questionaire" component={Questionaire} />
           <Route component={NotFound} />
         </Switch>
-        
       </Navigation>
-
-      {/* </div> */}
     </Router>
   );
 }

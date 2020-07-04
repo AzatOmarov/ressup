@@ -1,9 +1,13 @@
 .projects-page {
-	flex: 0 1 90%;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 90%;
+	        flex: 0 1 90%;
 	margin-top: 145px;
 	.project-item {
 		padding: 10px 0px;
-		justify-content: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		text-align: center;
 		position: relative;
 		text-align: left;
@@ -12,20 +16,33 @@
 			width: 100%;
 		}
 		&__text-and-button {
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
 			p {
-				flex: 1 1 100%;
+				-webkit-box-flex: 1;
+				    -ms-flex: 1 1 100%;
+				        flex: 1 1 100%;
 				color: #f86c59;
 				margin-left: 3px;
 				padding-bottom: 16px;
 			}
 			.description {
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex;
-				flex: 1 1 93%;
+				-webkit-box-flex: 1;
+				    -ms-flex: 1 1 93%;
+				        flex: 1 1 93%;
 			}
 			.nextButton {
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex;
-				flex-direction: column-reverse;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: reverse;
+				    -ms-flex-direction: column-reverse;
+				        flex-direction: column-reverse;
 				width: 0;
 				height: 0;
 				border-top: 40px solid #232227;
