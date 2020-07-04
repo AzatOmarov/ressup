@@ -14,7 +14,6 @@ import ProjectsPage from './container/projects-page/Projects';
 import StoriesPage from './container/stories/StoriesPage';
 import Story from './component/story/Story';
 import Questionaire from './component/questionaire/Questionaire';
-import Footer from './container/footer/Footer3';
 import './assets/App.scss';
 import projects from './staticData/projects';
 
@@ -75,8 +74,9 @@ export default function App() {
           <Route path="/questionaire" component={Questionaire} />
           <Route component={NotFound} />
         </Switch>
-        {/* <Footer /> */}
+        
       </Navigation>
+
       {/* </div> */}
     </Router>
   );

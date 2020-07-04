@@ -1,11 +1,11 @@
 .home {
 	position: relative;
-	top: 184px;
+	margin-top: 184px;
 	display: flex;
 	justify-content: center;
 	margin-bottom: 100px;
 	&__title {
-		width: 570px;
+		flex: 0 1 570px;
 		text-align: center;
 		h1 {
 			font-size: 3.5rem;

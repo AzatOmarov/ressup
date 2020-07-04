@@ -6,7 +6,7 @@ import instagram from '../../assets/img/instagram.svg';
 export const t = (key, def = '') => locale(`Footer.${key}`, def);
 
 
-export default function Footer() {
+function Footer() {
   return (
     <div className="footer-container">
       <div className="footer-container__social-media">
@@ -18,19 +18,19 @@ export default function Footer() {
         </a>
       </div>
       <div className="footer-container__established">
-        <div className="policy">
-          <p>Политика конфиденциальности</p>
-          <p>Импрессум</p>
+        <div className="footer-links">
+          <div className="footer-links__policy">Политика конфиденциальности</div>
+          <div>Импрессум</div>
         </div>
-        <p>
-          <span className="copyright">
-            <i className="fa fa-copyright" style={{ paddingRight: '5px' }} aria-hidden="true" />
+        <div className="company">
+          <span className="company__copyright">
+            <i className="fa fa-copyright" style={{ paddingRight: '5px', color: 'black' }} aria-hidden="true" />
           </span>
-          {' '}
-            2020 Ressup
-        </p>
+          <span className="company__name">2020 Ressup</span>
+        </div>
       </div>
-      <div className="triangle" />
     </div>
   );
 }
+
+export default Footer;

@@ -1,10 +1,8 @@
 // @media screen and (min-width: 30em) {
 .about {
-	display: flex;
-	flex-wrap: wrap;
-	height: max-content;
-	position: relative;
+	flex: 0 1 90%;
 	margin-top: 145px;
+	margin-bottom: 80px;
 
 	.pre-interested {
 		padding-bottom: 0px;

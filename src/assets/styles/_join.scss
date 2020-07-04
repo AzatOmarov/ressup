@@ -1,11 +1,8 @@
 .join {
-	height: max-content;
-	display: flex;
-	flex-direction: column;
+	
+	
+	flex: 0 1 90%;
 	flex-wrap: wrap;
-	flex: 0 1 80%;
-	justify-content: center;
-	position: relative;
 	margin-top: 150px;
 	a {
 		color: #f86c59;

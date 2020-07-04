@@ -1,14 +1,14 @@
-/* eslint-disable jsx-a11y/interactive-supports-focus */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-noninteractive-element-to-interactive-role */
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar } from 'reactstrap';
+import { string, bool, number } from 'prop-types';
 import logo from '../assets/img/logo.svg';
 import deineMeinung from '../assets/img/mein.png';
+import Footer from './footer/Footer';
 
 
 function Navigation(props) {
+  const { isQuestionarePage: nIsQuestionarePage, children } = props;
   const [isHovered, setIsHovered] = useState(false);
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
@@ -25,7 +25,7 @@ function Navigation(props) {
       setIsQuestionarePage(false);
       props.setIsQuestionarePage(false);
     }
-  }, [props.isQuestionarePage, window.location.pathname, isQuestionarePage, userName, password]);
+  }, [nIsQuestionarePage, window.location.pathname, isQuestionarePage, userName, password]);
 
   const redirect = (to) => {
     const { location } = window;
@@ -78,30 +78,49 @@ function Navigation(props) {
   return (
     // isAuthenticated ? (
     <div className="container-fluid">
-      <div className="navigation">
-        <img src={logo} alt="logo" className="navigation__logo" onClick={() => redirect('')} role="button" />
-        <Navbar>
-          <div className={isHovered ? 'navigation-links-hovered' : 'navigation-links'} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-            <Link to="/about" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>О нас</Link>
-            <Link to="/projects" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Наши проекты</Link>
-            <Link to="/stories" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Истории</Link>
-            <Link to="/join" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Участие</Link>
-            <Link to="/contacts" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Контакты</Link>
-            <Link to="/" />
+      <div className="d-flex flex-column justify-content-between" style={{ flex: '1' }}>
+        <div className="d-flex flex-wrap p-3">
+          <div className="navigation">
+            <img src={logo} alt="logo" className="navigation__logo" onClick={() => redirect('')} role="button" />
+            <Navbar>
+              <div className={isHovered ? 'navigation-links-hovered' : 'navigation-links'} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+                <Link to="/about" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>О нас</Link>
+                <Link to="/projects" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Наши проекты</Link>
+                <Link to="/stories" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Истории</Link>
+                <Link to="/join" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Участие</Link>
+                <Link to="/contacts" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Контакты</Link>
+                <Link to="/" />
+              </div>
+            </Navbar>
+            {!isQuestionarePage ? (
+              <div className="navigation__deineMeinung" role="link" onClick={(e) => { e.stopPropagation(); e.preventDefault(); redirect('questionaire'); }}>
+                <img src={deineMeinung} alt="deineMeinung" />
+              </div>
+            ) : null}
           </div>
-        </Navbar>
-        {!isQuestionarePage ? (
-          <div className="navigation__deineMeinung" role="link" onClick={(e) => { e.stopPropagation(); e.preventDefault(); redirect('questionaire'); }}>
-            <img src={deineMeinung} alt="deineMeinung" />
+          <div
+            className="d-flex justify-content-center"
+            style={{
+              position: 'relative', left: '30px', color: '#232227', flex: '0 1 80%',
+            }}
+          >
+            <div className="clearfix" />
+            {children}
           </div>
-        ) : null}
-      </div>
-      <div style={{position: 'relative', left: '30px', width: '969px', color: '#232227'}}>
-        {props.children}
+        </div>
+
+        <Footer />
       </div>
     </div>
     // ) : formInput
   );
 }
+
+Navigation.propTypes = {
+  nIsQuestionarePage: bool.isRequired,
+  description: string.isRequired,
+  index: number.isRequired,
+};
+
 
 export default Navigation;

@@ -1,15 +1,11 @@
 .projects-page {
-	display: flex;
-	flex: 0 1 80%;
-	z-index: 5;
+	flex: 0 1 90%;
+	margin-top: 145px;
 	.project-item {
 		padding: 10px 0px;
-		height: max-content;
-		flex: 3 1 0;
 		justify-content: center;
 		text-align: center;
 		position: relative;
-		top: 132px;
 		text-align: left;
 
 		&__image {
