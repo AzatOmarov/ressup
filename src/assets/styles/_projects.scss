@@ -5,6 +5,7 @@
 	text-align: center;
 	position: relative;
 	margin-top: 132px;
+	max-width: 86%;
 	a {
 		color: #f86c59;
 		cursor: pointer;
@@ -165,7 +166,7 @@
 		    -ms-flex-direction: column;
 		        flex-direction: column;
 		position: relative;
-		margin-bottom: 0;
+		margin-bottom: 5px;
 		.qa-wrapper {
 			display: -webkit-box;
 			display: -ms-flexbox;
@@ -181,8 +182,8 @@
 				border-radius: 50%;
 				position: relative;
 				top: calc(5% + 15px);
-				width: 10px;
-				height: 10px;
+				width: 7px;
+				height: 7px;
 				z-index: 100;
 				margin-top: 16px;
 			}
@@ -355,8 +356,8 @@
 		position: absolute;
 		top: calc(6% - 8px);
 		right: -35px;
-		width: 10px;
-		height: 10px;
+		width: 7px;
+		height: 7px;
 		z-index: 100;
 	}
 
@@ -365,16 +366,16 @@
 		left: -5px;
 	}
 
-	#circle {
+	#circle2 {
 		background-color: #f86c59;
 		border: 3px solid #f86c59;
 		border-radius: 50%;
 		position: relative;
 		top: calc(5% + 15px);
-		width: 10px;
-		height: 10px;
+		width: 7px;
+		height: 7px;
 		z-index: 100;
 		margin-bottom: 20px;
-		left: 49.3%;
+		left: calc(49.3% + 7px);
 	}
 }

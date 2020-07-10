@@ -4,6 +4,8 @@
 	height: max-content;
 	position: relative;
 	margin-top: 145px;
+	width: 929px;
+	right: 175px;
 
 	&__title {
 		text-align: left;
@@ -84,6 +86,7 @@
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
+		font-size: 20px;
 
 		p {
 			-webkit-box-flex: 1;
@@ -115,12 +118,15 @@
 			border-top: 40px solid #232227;
 			border-right: 80px solid transparent;
 			cursor: pointer;
+			color: white;
+			font-size: 20px;
 			a {
 				color: #f86c59;
 				position: relative;
 				top: -18px;
 				left: 5px;
 				margin: 0;
+				font-size: 20px;
 			}
 		}
 	}

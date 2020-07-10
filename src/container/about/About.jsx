@@ -20,7 +20,7 @@ function About() {
         <h4 className="story__title">{title}</h4>
         <div className="description">{description}</div>
         <Timeline />
-        {/* <div id="circle" /> */}
+        <div id="circle" />
         <h4 className="story__title">{teamTitle}</h4>
         <div className="description">{teamDescription}</div>
         <div className="about__link">
