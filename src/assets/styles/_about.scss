@@ -56,12 +56,11 @@
 		border: 3px solid #f86c59;
 		border-radius: 50%;
 		position: relative;
-		top: calc(5% + 15px);
-		width: 10px;
-		height: 10px;
+		width: 7px;
+		height: 7px;
 		z-index: 100;
 		margin-bottom: 20px;
-		left: 49.3%;
+		left: calc(49.3% + 3px);
 	}
 
 	a {
