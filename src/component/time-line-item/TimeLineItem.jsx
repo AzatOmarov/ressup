@@ -15,7 +15,7 @@ function TimelineItem(props) {
   return (
     <div className="timeline-item">
       <div className="timeline-item-content">
-        <time>{data.title}</time>
+        <div className='title'>{data.title}</div>
         <span className="circle" />
         <ul>
           { returnText() }

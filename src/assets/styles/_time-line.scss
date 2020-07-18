@@ -158,6 +158,9 @@
     max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
     max-width: fit-content;
+    .title{
+        font-size: 1.5rem;
+    }
 }
 
 .timeline-item-content::after {

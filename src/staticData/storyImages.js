@@ -1,6 +1,6 @@
 import lorain1 from '../assets/img/font-story/lorain1.png';
-import lorain2 from '../assets/img/font-story/lorain2.jpg';
-import lorain3 from '../assets/img/font-story/lorain3.jpg';
+import lorain2 from '../assets/img/font-story/lorain2.png';
+import lorain3 from '../assets/img/font-story/lorain3.png';
 import lorain4 from '../assets/img/font-story/lorain4.png';
 
 

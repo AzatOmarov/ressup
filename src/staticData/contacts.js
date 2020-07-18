@@ -1,5 +1,5 @@
 const data = {
-  title: 'Контакты',
+  title: 'Контакт',
   howToContactUs: 'Связаться с нами можно, написав на',
   email: 'contact@ressup.org',
   or: 'или используя форму ниже',

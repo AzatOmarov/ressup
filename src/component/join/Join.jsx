@@ -12,9 +12,9 @@ function Join() {
   return (
     <div className="join">
       <h4>{title}</h4>
-      <p>{description}</p>
+      <p className='mb-2'>{description}</p>
       <p className="weLookingFor-title">{weLookingFor.title}</p>
-      <ul>
+      <ul className='mb-2'>
         {people}
       </ul>
       <p className="weLookingFor-message-us">{weLookingFor.messageUs}</p>
@@ -26,9 +26,9 @@ function Join() {
         {messageUs}
       </p>
       <div className="cooperation">
-        <p className="cooperation-title">
+        <h4 className='ml-2 mt-4'>
           {cooperation.title}
-        </p>
+        </h4>
         <p className="cooperation-item">
           {cooperation.messageUs}
           {' '}
