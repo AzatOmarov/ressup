@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e1c6ae8b7a1cd96dca07dd8949103d2f",
+    "revision": "8a0f98ba876683b52fac5f0f6d18b776",
     "url": "/index.html"
   },
   {
-    "revision": "b8a0f776b895ec6bb069",
-    "url": "/static/css/main.2813cb77.chunk.css"
+    "revision": "9ca37ed7431b6411b504",
+    "url": "/static/css/main.59e3b490.chunk.css"
   },
   {
     "revision": "1008e9e01675d78c34ba",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.21c33822.chunk.js.LICENSE"
   },
   {
-    "revision": "b8a0f776b895ec6bb069",
-    "url": "/static/js/main.bec276e0.chunk.js"
+    "revision": "9ca37ed7431b6411b504",
+    "url": "/static/js/main.b9984e00.chunk.js"
   },
   {
     "revision": "886206c221dc3472652f",
@@ -56,10 +56,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/azat.9282c73d.svg"
   },
   {
-    "revision": "f028fc67ecb4eac9a2fce4b09e7572f5",
-    "url": "/static/media/blindFonts.f028fc67.svg"
-  },
-  {
     "revision": "a88ec1db4489dcad407df37f70fc029f",
     "url": "/static/media/btnMeinung.a88ec1db.png"
   },
@@ -82,6 +78,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4c0df579048f33f7371606fb6433eb48",
     "url": "/static/media/logo.4c0df579.svg"
+  },
+  {
+    "revision": "9d8081fb841cdaa7206baae1b1104497",
+    "url": "/static/media/lorain.9d8081fb.png"
   },
   {
     "revision": "70a741a6331540246148b2b4f7dde4b9",
