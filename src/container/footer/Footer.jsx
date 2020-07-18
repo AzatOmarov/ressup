@@ -2,6 +2,7 @@ import React from 'react';
 import locale from '../../utils/locale';
 import facebook from '../../assets/img/facebook.svg';
 import instagram from '../../assets/img/instagram.svg';
+import { Link } from 'react-router-dom';
 
 export const t = (key, def = '') => locale(`Footer.${key}`, def);
 
@@ -20,7 +21,18 @@ function Footer() {
       <div className="footer-container__established">
         <div className="footer-links">
           <div className="footer-links__policy">Политика конфиденциальности</div>
-          <div>Импрессум</div>
+          <div>
+          <Link to="/impressum" 
+          // className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}
+          >
+            Импрессум</Link>
+            {/* <a
+              className="fill"
+              href={'www.ya.ru'}
+            >
+              Импрессум
+              </a> */}
+          </div>
         </div>
         <div className="company">
           <span className="company__copyright">
