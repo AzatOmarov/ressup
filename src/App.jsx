@@ -7,6 +7,7 @@ import About from './container/about/About';
 import Contacts from './component/contacts/Contacts';
 import Home from './container/home/Home';
 import Join from './component/join/Join';
+import Impressum from './component/impressum/Impressum';
 import NotFound from './component/notFound/NotFound';
 import Navigation from './container/Navigation';
 import Project from './container/projects/Project';
@@ -71,6 +72,7 @@ export default function App() {
           <Route path="/join" component={Join} />
           <Route path="/contacts" component={Contacts} />
           <Route path="/questionaire" component={Questionaire} />
+          <Route path="/impressum" component={Impressum} />
           <Route component={NotFound} />
         </Switch>
       </Navigation>

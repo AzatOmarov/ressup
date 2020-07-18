@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { string, number } from 'prop-types';
-import fonts from '../../assets/img/blindFonts.svg';
+import fonts from '../../assets/img/font-story/lorain.png';
 
 
 export default function Paragraph(props) {

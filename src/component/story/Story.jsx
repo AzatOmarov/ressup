@@ -88,11 +88,6 @@ export default function Story(props) {
 
       <div className="story-item__text-and-button">
         <a href="https://www.homelessfonts.org/" target="_blank" rel="noopener noreferrer" className="description">Сайт проекта</a>
-        <div className="nextButton">
-          <Link to={`/stories/${index}`} className="fill">
-            далее
-          </Link>
-        </div>
       </div>
     </div>
   );
