@@ -129,9 +129,9 @@
 .timeline-item:nth-child(even) {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     padding-left: 0px;
     padding-right: 0;
     text-align: right;
@@ -241,9 +241,9 @@
     border-radius: 50%;
     position: absolute;
     top: calc(6% - 8px);
-    right: -8px;
-    width: 7px;
-    height: 7px;
+    right: -6px;
+    width: 9px;
+    height: 9px;
     z-index: 100;
 }
 

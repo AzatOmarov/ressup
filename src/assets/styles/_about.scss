@@ -4,7 +4,7 @@
 	-webkit-box-flex: 0;
 	    -ms-flex: 0 1 90%;
 	        flex: 0 1 90%;
-	margin-top: 145px;
+	margin-top: 8rem;
 	margin-bottom: 80px;
 
 	.pre-interested {
@@ -56,11 +56,12 @@
 		border: 3px solid #f86c59;
 		border-radius: 50%;
 		position: relative;
-		width: 7px;
-		height: 7px;
+		// top: calc(5% + 15px);
+		width: 9px;
+		height: 9px;
 		z-index: 100;
 		margin-bottom: 20px;
-		left: calc(49.3% + 3px);
+		left: 49.8%;
 	}
 
 	a {

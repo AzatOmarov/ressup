@@ -182,8 +182,8 @@
 				border-radius: 50%;
 				position: relative;
 				top: calc(5% + 15px);
-				width: 7px;
-				height: 7px;
+				width: 9px;
+				height: 9px;
 				z-index: 100;
 				margin-top: 16px;
 			}
@@ -356,14 +356,16 @@
 		position: absolute;
 		top: calc(6% - 8px);
 		right: -35px;
-		width: 7px;
-		height: 7px;
+		width: 10px;
+		height: 10px;
 		z-index: 100;
 	}
 
 	.timeline-item:nth-child(odd) .timeline-item-content .circle {
 		right: auto;
 		left: -5px;
+		width: 9px;
+		height: 9px;
 	}
 
 	#circle2 {
@@ -372,8 +374,8 @@
 		border-radius: 50%;
 		position: relative;
 		top: calc(5% + 15px);
-		width: 7px;
-		height: 7px;
+		width: 9px;
+		height: 9px;
 		z-index: 100;
 		margin-bottom: 20px;
 		left: calc(49.3% + 7px);
