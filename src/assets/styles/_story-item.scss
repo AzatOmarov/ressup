@@ -102,8 +102,9 @@
 			display: flex;
 			-webkit-box-flex: 1;
 			    -ms-flex: 1 1 93%;
-			        flex: 1 1 93%;
-			border-top: 1px solid;
+					flex: 1 1 93%;
+					color: black;
+			// border-top: 1px solid;
 		}
 		.nextButton {
 			display: -webkit-box;
