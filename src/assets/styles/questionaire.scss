@@ -1,128 +1,107 @@
-.questionaire{
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 65%;
-            flex: 1 1 65%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-    position: relative;
-    top: 70px;
-    color: black;
-    text-align: left;
-    width: 400px;
-    margin-bottom: 100px;
+.questionaire {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 1 34%;
+	flex: 0 1 34%;
+	color: black;
+	text-align: left;
+	margin-right: 50%;
 
-    &__logo{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        img{
-            position: relative;
-            left: -27px;
-            top: -19px;
-        }
-    }
-    &__textBlock{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        position: relative;
-        top: -70px;
-        left: 101px;
-        width: 400px;
-        p{
-            padding-bottom: 20px;
-        }
-    }
-    &__form{
-        p{
-            padding-bottom: 5px;
-        }
-        padding-bottom: 20px;
-        .form-group, .form-group2{
-            padding-bottom: 0;
-            margin: 0;
-        }
-        .form-group2{
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: row;
-                    flex-direction: row;
-            padding-bottom: 0;
-            margin: 0;
-            .custom-checkbox{
-                margin-right: 15px;
-            }
-        }
+	&__logo {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+        position: absolute;
+        top: 15px;
+        left: 302px;
+	}
+	&__textBlock {
+		p {
+			padding-bottom: 20px;
+		}
+	}
+	&__form {
+		p {
+			padding-bottom: 5px;
+		}
+		padding-bottom: 20px;
+		.form-group,
+		.form-group2 {
+			padding-bottom: 0;
+			margin: 0;
+		}
+		.form-group2 {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: row;
+			flex-direction: row;
+			padding-bottom: 0;
+			margin: 0;
+			.custom-checkbox {
+				margin-right: 15px;
+			}
+		}
+	}
+	&__message {
+		p {
+			padding: 0;
+			padding-bottom: 5px;
+		}
+		textarea {
+			width: 100%;
+			border: 1px solid black;
+			outline-color: white;
+			height: 250px;
+		}
+	}
+	&__link {
+		color: #232227;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-box-pack: end;
+		-ms-flex-pack: end;
+		justify-content: flex-end;
+		.interested {
+			padding-right: 5px;
+		}
+		.nextButton {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: reverse;
+			-ms-flex-direction: column-reverse;
+			flex-direction: column-reverse;
+			width: 0;
+			height: 0;
+			border-top: 50px solid #232227;
+			border-right: 130px solid transparent;
+			cursor: pointer;
+			position: relative;
+			font-size: 20px;
+			div {
+				color: #f86c59;
+				position: relative;
+				left: 0px;
+				margin: 0;
 
-    }
-    &__message{
-        p{
-            padding: 0;
-            padding-bottom: 5px;
-        }
-        textarea{
-            width: 100%;
-            border: 1px solid black;
-            outline-color: white;
-            height: 250px;
-        }
-    }
-    &__link{
-        color: #232227;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row; 
-        -webkit-box-pack: end; 
-            -ms-flex-pack: end; 
-                justify-content: flex-end;
-        .interested{
-            padding-right: 5px;
-        }
-        .nextButton {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: reverse;
-                -ms-flex-direction: column-reverse;
-                    flex-direction: column-reverse;
-            width: 0;
-            height: 0;
-            border-top: 45px solid #232227;
-            border-right: 115px solid transparent;
-            cursor: pointer;
-            position: relative;
-            div{
-              color: #F86C59;
-              position: relative;
-              left: 0px;
-              margin: 0;
-
-              &:hover{
-                  text-decoration: underline;
-              }
-            }
-            a{
-              color: #F86C59;
-              position: relative;
-              top: -23px;
-            }
-          }
-    }
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+			a {
+				color: #f86c59;
+				position: relative;
+				top: -27px;
+				left: 4px;
+			}
+		}
+	}
 }

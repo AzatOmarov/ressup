@@ -44,7 +44,7 @@ function Contacts() {
   return (
     <>
       <div className="contacts">
-        <h4>{data.title}</h4>
+        <h2>{data.title}</h2>
         <p>{data.howToContactUs}</p>
         <span id="email">
           <a href="mailto:contact@ressup.org">{data.email}</a>

@@ -1,13 +1,12 @@
 import React from 'react';
+import landing from '../../assets/img/landingImage.svg';
 
 
 function Home() {
   return (
     <>
       <div className="home">
-        <div className="home__title">
-          <h1>Все дело в вдохновении и поддержке.</h1>
-        </div>
+      <img src={landing} alt="logo" className='ml-3 pl-1' width='100%' />
       </div>
     </>
   );

@@ -4,7 +4,6 @@
 	height: max-content;
 	text-align: center;
 	position: relative;
-	margin-top: 132px;
 	max-width: 86%;
 	a {
 		color: #f86c59;
@@ -92,6 +91,7 @@
 		height: 0;
 		border-top: 40px solid red;
 		border-right: 66px solid transparent;
+		font-size: 20px;
 		&__text {
 			position: relative;
 			left: 71.56%;
@@ -378,6 +378,6 @@
 		height: 9px;
 		z-index: 100;
 		margin-bottom: 20px;
-		left: calc(49.3% + 7px);
+		left: calc(49.7%);
 	}
 }

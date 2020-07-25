@@ -17,11 +17,11 @@ function About() {
   return (
     <>
       <div className="about">
-        <h4 className="story__title">{title}</h4>
+        <h2>{title}</h2>
         <div className="description">{description}</div>
         <Timeline />
         <div id="circle" />
-        <h4 className="story__title">{teamTitle}</h4>
+        <h2 className="about__title">{teamTitle}</h2>
         <div className="description">{teamDescription}</div>
         <div className="about__link">
           <div className="interested">

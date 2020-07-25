@@ -37,7 +37,7 @@ function TeamMember(props) {
     <>
       <div className="team-member" style={{color: 'black'}}>
         <div className="team-member__text">
-          <h4>{name}</h4>
+          <h2>{name}</h2>
           <hr />
           <p>{text}</p>
         </div>

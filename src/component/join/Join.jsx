@@ -11,7 +11,7 @@ function Join() {
   const email = <a href="mailto:contact@ressup.org">contact@ressup.org</a>;
   return (
     <div className="join">
-      <h4>{title}</h4>
+      <h2>{title}</h2>
       <p className='mb-2'>{description}</p>
       <p className="weLookingFor-title">{weLookingFor.title}</p>
       <ul className='mb-2'>
@@ -26,9 +26,9 @@ function Join() {
         {messageUs}
       </p>
       <div className="cooperation">
-        <h4 className='ml-2 mt-4'>
+        <h2 className='ml-2 mt-4'>
           {cooperation.title}
-        </h4>
+        </h2>
         <p className="cooperation-item">
           {cooperation.messageUs}
           {' '}

@@ -1,14 +1,13 @@
 .home {
 	position: relative;
-	margin-top: 184px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	// background-image: url('../img/landingImage.svg');
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
-	        justify-content: center;
-	margin-bottom: 100px;
+			justify-content: center;
+			align-items: center;
 	&__title {
 		-webkit-box-flex: 0;
 		    -ms-flex: 0 1 570px;
