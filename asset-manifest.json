@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.59e3b490.chunk.css",
-    "main.js": "/static/js/main.b9984e00.chunk.js",
-    "main.js.map": "/static/js/main.b9984e00.chunk.js.map",
+    "main.css": "/static/css/main.3e85f559.chunk.css",
+    "main.js": "/static/js/main.07826e41.chunk.js",
+    "main.js.map": "/static/js/main.07826e41.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7458fde4.js",
     "runtime-main.js.map": "/static/js/runtime-main.7458fde4.js.map",
-    "static/js/2.21c33822.chunk.js": "/static/js/2.21c33822.chunk.js",
-    "static/js/2.21c33822.chunk.js.map": "/static/js/2.21c33822.chunk.js.map",
+    "static/js/2.b18753d7.chunk.js": "/static/js/2.b18753d7.chunk.js",
+    "static/js/2.b18753d7.chunk.js.map": "/static/js/2.b18753d7.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.3c5972903dada920e73e0ec13587af7f.js": "/precache-manifest.3c5972903dada920e73e0ec13587af7f.js",
+    "precache-manifest.69995400e7106b874ecedf0eca96559b.js": "/precache-manifest.69995400e7106b874ecedf0eca96559b.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.59e3b490.chunk.css.map": "/static/css/main.59e3b490.chunk.css.map",
-    "static/js/2.21c33822.chunk.js.LICENSE": "/static/js/2.21c33822.chunk.js.LICENSE",
+    "static/css/main.3e85f559.chunk.css.map": "/static/css/main.3e85f559.chunk.css.map",
+    "static/js/2.b18753d7.chunk.js.LICENSE": "/static/js/2.b18753d7.chunk.js.LICENSE",
     "static/media/1.jpg": "/static/media/1.db97956b.jpg",
     "static/media/2.jpg": "/static/media/2.0149f9fa.jpg",
     "static/media/3.jpg": "/static/media/3.1e900619.jpg",
@@ -25,6 +25,7 @@
     "static/media/facebook.svg": "/static/media/facebook.d99368ca.svg",
     "static/media/instagram.svg": "/static/media/instagram.5b23a837.svg",
     "static/media/irene.svg": "/static/media/irene.c8ee31d8.svg",
+    "static/media/landingImage.svg": "/static/media/landingImage.039f77ff.svg",
     "static/media/logo.svg": "/static/media/logo.4c0df579.svg",
     "static/media/lorain.png": "/static/media/lorain.9d8081fb.png",
     "static/media/lorain1.png": "/static/media/lorain1.70a741a6.png",
@@ -40,8 +41,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7458fde4.js",
-    "static/js/2.21c33822.chunk.js",
-    "static/css/main.59e3b490.chunk.css",
-    "static/js/main.b9984e00.chunk.js"
+    "static/js/2.b18753d7.chunk.js",
+    "static/css/main.3e85f559.chunk.css",
+    "static/js/main.07826e41.chunk.js"
   ]
 }
