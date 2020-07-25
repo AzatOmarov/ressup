@@ -51,6 +51,7 @@
 				border-right: 130px solid transparent;
 				cursor: pointer;
 				position: relative;
+				font-size: 18px;
 				div {
 					color: #f86c59;
 					position: relative;
@@ -65,8 +66,8 @@
 				a {
 					color: #f86c59;
 					position: relative;
-					top: -27px;
-					right: -3px;
+					top: -26px;
+					right: -5px;
 				}
 			}
 		}
@@ -77,15 +78,18 @@
 		cursor: pointer;
 	}
 
-	h4 {
+	h3 {
 		text-align: left;
-		font-weight: 500;
+		font-weight: normal;
 	}
 
 	hr {
 		margin-top: 0px;
 		margin-bottom: 0px;
 		border-bottom: 1px solid black;
+	}
+	.custom-control-label{
+		font-size: 20px;
 	}
 
 	p {
