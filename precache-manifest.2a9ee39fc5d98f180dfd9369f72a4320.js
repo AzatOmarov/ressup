@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5caa6833f041584fcce14c6009bc7afa",
+    "revision": "1835ec1f2263831dcea6d1f5ac51b4c8",
     "url": "/index.html"
   },
   {
-    "revision": "bb80ba6fffa10af64b91",
+    "revision": "34da3b4f2c4dea2e1708",
     "url": "/static/css/main.3e85f559.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.b18753d7.chunk.js.LICENSE"
   },
   {
-    "revision": "bb80ba6fffa10af64b91",
-    "url": "/static/js/main.07826e41.chunk.js"
+    "revision": "34da3b4f2c4dea2e1708",
+    "url": "/static/js/main.3dfb0dac.chunk.js"
   },
   {
     "revision": "886206c221dc3472652f",
@@ -124,7 +124,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ogorod.d206b643.svg"
   },
   {
-    "revision": "ac2c7fe1fc0476d9e2132f15d55870fb",
-    "url": "/static/media/saltanat.ac2c7fe1.svg"
+    "revision": "a5360d0ed273367b7e3b75678efe0cd3",
+    "url": "/static/media/saltanat.a5360d0e.svg"
   }
 ]);
