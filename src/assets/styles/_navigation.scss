@@ -13,7 +13,7 @@
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
-	line-height: 26px;
+	line-height: 30px;
 	background: #f3f3f3;
 	
 }
@@ -78,18 +78,14 @@
 		display: -ms-flexbox;
 		display: flex;
 		-webkit-box-flex: 0;
-		    -ms-flex: 0 1 20%;
-		        flex: 0 1 20%;
+		    -ms-flex: 0 1 14%;
+		        flex: 0 1 14%;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
 		        flex-direction: column;
 		z-index: 5;
-		&__logo {
-			width: 100%;
-			padding-bottom: 60px;
-			cursor: pointer;
-		}
+		
 		&__deineMeinung {
 			text-align: right;
 			img {

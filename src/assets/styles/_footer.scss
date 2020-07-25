@@ -9,9 +9,10 @@
 	-webkit-box-align: center;
 		-ms-flex-align: center;
 			align-items: center;
-	margin-top: 50px;
 	-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
+		position: relative;
+		bottom: -20px;
 
 	&__social-media {
 		display: -webkit-box;
@@ -53,7 +54,18 @@
 			&__policy {
 				line-height: initial;
 				margin-right: 20px;
-				margin-bottom: 10px;
+			}
+			&__impressum {
+				line-height: initial;
+				margin-right: 20px;
+				a{
+					margin: 0;
+					padding: 0;
+					color: inherit;
+					&:hover{
+						color: #f86c59;
+					}
+				}
 			}
 		}
 		.company{

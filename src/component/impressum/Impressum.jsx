@@ -1,16 +1,8 @@
 import React from 'react';
-import data from '../../staticData/join';
 
-function Join() {
-    const {
-        title, description, cooperation, weLookingFor, messageUs,
-        important,
-    } = data;
-    const importants = important.items.map((item, id) => <li className="people" key={id++}><span>{item}</span></li>);
-    const people = weLookingFor.people.map((item, id) => <li className="people" key={id++}><span>{item}</span></li>);
-    const email = <a href="mailto:contact@ressup.org">contact@ressup.org</a>;
+function Impressum() {
     return (
-        <div className="join">
+        <div className="impressum">
             <h4>Импрессум</h4>
             <p className='mb-3' style={{ width: '610px' }}>Международная общественная организация
             по исследованию и поддержке социальных проектов
@@ -33,4 +25,4 @@ function Join() {
     );
 }
 
-export default Join;
+export default Impressum;

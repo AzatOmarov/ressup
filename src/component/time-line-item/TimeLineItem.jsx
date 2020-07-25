@@ -3,10 +3,10 @@ import { objectOf, object } from 'prop-types';
 
 
 function TimelineItem(props) {
-  const { data } = props;
+  const { data: {title, text} } = props;
   const returnText = () => {
-    const data2 = data.text.map((i) => (
-      <li>
+    const data2 = text.map((i, idx) => (
+      <li key={idx}>
         {i}
       </li>
     ));
@@ -15,9 +15,9 @@ function TimelineItem(props) {
   return (
     <div className="timeline-item">
       <div className="timeline-item-content">
-        <div className='title'>{data.title}</div>
+        <h2>{title}</h2>
         <span className="circle" />
-        <ul>
+        <ul style={{width: '500px'}}>
           { returnText() }
         </ul>
       </div>
@@ -25,8 +25,8 @@ function TimelineItem(props) {
   );
 }
 
-TimelineItem.propTypes = {
-  data: objectOf(object).isRequired,
-};
+// TimelineItem.propTypes = {
+//   data: objectOf(object).isRequired,
+// };
 
 export default TimelineItem;

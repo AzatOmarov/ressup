@@ -79,9 +79,14 @@ function Navigation(props) {
     // isAuthenticated ? (
     <div className="container-fluid">
       <div className="d-flex flex-column justify-content-between" style={{ flex: '1' }}>
-        <div className="d-flex flex-wrap p-3">
+        <div className="d-flex flex-wrap flex-column">
+          
+          <div className='d-flex align-self-start mb-4'>
+            <img src={logo} alt="logo" className='ml-3 pl-1' width='100%' onClick={() => redirect('')} role="button" />
+          </div>
+
+          <div className='d-flex ml-3 mr-3 flex-wrap justify-content-between'>
           <div className="navigation">
-            <img src={logo} alt="logo" className="navigation__logo" onClick={() => redirect('')} role="button" />
             <Navbar>
               <div className={isHovered ? 'navigation-links-hovered' : 'navigation-links'} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                 <Link to="/about" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>О нас</Link>
@@ -101,12 +106,12 @@ function Navigation(props) {
           <div
             className="d-flex justify-content-center"
             style={{
-              position: 'relative', left: '30px', color: '#232227', flex: '0 1 80%',
+              left: '30px', color: '#232227', flex: '0 1 86%',
             }}
           >
-            <div className="clearfix" />
             {children}
           </div>
+        </div>  
         </div>
 
         <Footer />
@@ -117,9 +122,9 @@ function Navigation(props) {
 }
 
 Navigation.propTypes = {
-  nIsQuestionarePage: bool.isRequired,
-  description: string.isRequired,
-  index: number.isRequired,
+  nIsQuestionarePage: bool,
+  description: string,
+  index: number,
 };
 
 

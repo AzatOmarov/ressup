@@ -241,7 +241,7 @@
     border-radius: 50%;
     position: absolute;
     top: calc(6% - 8px);
-    right: -6px;
+    right: -5px;
     width: 9px;
     height: 9px;
     z-index: 100;
@@ -249,7 +249,7 @@
 
 .timeline-item:nth-child(odd) .timeline-item-content .circle {
     right: auto;
-    left: -3px;
+    left: -4px;
 }
 
 

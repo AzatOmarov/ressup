@@ -21,7 +21,7 @@ function Footer() {
       <div className="footer-container__established">
         <div className="footer-links">
           <div className="footer-links__policy">Политика конфиденциальности</div>
-          <div>
+          <div className="footer-links__impressum">
           <Link to="/impressum" 
           // className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}
           >
