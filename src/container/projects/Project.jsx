@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { number } from 'prop-types';
 import {
   Carousel,
@@ -16,6 +16,11 @@ export default function Project(props) {
   const { index } = props;
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
+
+  useEffect(() => {
+    document.getElementById("main").className = 'container-fluid'
+  }, [])
+
   const next = () => {
     if (animating) return;
     const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;

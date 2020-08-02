@@ -76,8 +76,8 @@ function Navigation(props) {
   );
 
   return (
-    isAuthenticated ? (
-    <div className="container-fluid">
+    // isAuthenticated ? (
+    <div id='main' className={"container-fluid"}>
       <div className="d-flex flex-column justify-content-between" style={{ flex: '1' }}>
         <div className="d-flex flex-wrap flex-column">
           
@@ -89,11 +89,11 @@ function Navigation(props) {
           <div className="navigation">
             <Navbar>
               <div className={isHovered ? 'navigation-links-hovered' : 'navigation-links'} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-                <Link to="/about" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>О нас</Link>
-                <Link to="/projects" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Проекты</Link>
-                <Link to="/stories" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Истории</Link>
-                <Link to="/join" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Участие</Link>
-                <Link to="/contacts" className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Контакты</Link>
+                <Link to="/about" onClick={() => localStorage.setItem('pathname', 'x')} className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>О нас</Link>
+                <Link to="/projects" onClick={() => localStorage.setItem('pathname', 'x')} className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Проекты</Link>
+                <Link to="/stories" onClick={() => localStorage.setItem('pathname', 'x')} className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Истории</Link>
+                <Link to="/join" onClick={() => localStorage.setItem('pathname', 'x')} className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Участие</Link>
+                <Link to="/contacts" onClick={() => localStorage.setItem('pathname', 'x')} className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}>Контакты</Link>
                 <Link to="/" />
               </div>
             </Navbar>
@@ -117,7 +117,7 @@ function Navigation(props) {
         <Footer />
       </div>
     </div>
-    ) : formInput
+    // ) : formInput
   );
 }
 

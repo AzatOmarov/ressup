@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import data from '../../staticData/join';
 
 function Join() {
@@ -9,6 +9,11 @@ function Join() {
   const importants = important.items.map((item, id) => <li className="people" key={id++}><span>{item}</span></li>);
   const people = weLookingFor.people.map((item, id) => <li className="people" key={id++}><span>{item}</span></li>);
   const email = <a href="mailto:contact@ressup.org">contact@ressup.org</a>;
+
+  useEffect(() => {
+    document.getElementById("main").className = 'container-fluid'
+  }, [])
+
   return (
     <div className="join">
       <h2>{title}</h2>

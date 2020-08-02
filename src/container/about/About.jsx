@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Timeline from '../time-line/TimeLine';
 import data from '../../staticData/aboutUs';
@@ -14,6 +14,11 @@ function About() {
   ));
   const { title, description } = data.ressup;
   const { title: teamTitle, text: teamDescription } = data.team;
+
+  useEffect(() => {
+    document.getElementById("main").className = 'container-fluid'
+  }, [])
+
   return (
     <>
       <div className="about">
