@@ -1,6 +1,4 @@
 import React, { useEffect } from 'react';
-import IconButton from '@material-ui/core/IconButton';
-
 
 function Home(props) {
 
@@ -10,9 +8,7 @@ function Home(props) {
 
   return (
     <>
-      <div className="home" >
-        <IconButton aria-label='expand row' size='small' onClick={() => console.info('object')}>OPEN</IconButton>
-      </div>
+      <div className="home" />
     </>
   );
 }
