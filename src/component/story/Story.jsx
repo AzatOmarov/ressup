@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Carousel,
   CarouselItem,
@@ -18,6 +18,11 @@ export default function Story(props) {
   const { title, subTitle, text } = data[index];
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
+
+  useEffect(() => {
+    document.getElementById("main").className = 'container-fluid'
+  }, [])
+
   const next = () => {
     if (animating) return;
     const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;

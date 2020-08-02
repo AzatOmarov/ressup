@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function Impressum() {
+    useEffect(() => {
+        document.getElementById("main").className = 'container-fluid'
+      }, [])
     return (
         <div className="impressum">
             <h4>Импрессум</h4>

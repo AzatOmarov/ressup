@@ -22,7 +22,7 @@ const hist = createBrowserHistory();
 
 export default function App() {
   const [isQuestionarePage, setIsQuestionarePage] = useState(false);
-  return (
+   return (
     <Router history={hist}>
       <Navigation
         history={hist}
@@ -81,5 +81,5 @@ export default function App() {
 }
 
 App.propTypes = {
-  location: objectOf(object).isRequired,
+  location: objectOf(object),
 };

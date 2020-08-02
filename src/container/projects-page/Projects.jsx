@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { objectOf, object } from 'prop-types';
 import Paragraph from '../../component/project/paragraph/index';
 
 
 export default function ProjectsPage(props) {
+  
+  useEffect(() => {
+    document.getElementById("main").className = 'container-fluid'
+  }, [])
+
   function renderProjects() {
     return props.projects.map((project, index) => {
       let p = null;

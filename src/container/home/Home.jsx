@@ -1,13 +1,15 @@
-import React from 'react';
-import landing from '../../assets/img/landingImage.svg';
+import React, { useEffect } from 'react';
 
 
-function Home() {
+function Home(props) {
+
+  useEffect(() => {
+    document.getElementById("main").className = 'container-fluid-main'
+  }, [])
+
   return (
     <>
-      <div className="home">
-      <img src={landing} alt="logo" className='ml-3 pl-1' width='100%' />
-      </div>
+      <div className="home" />
     </>
   );
 }

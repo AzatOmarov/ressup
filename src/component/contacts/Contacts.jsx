@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import data from '../../staticData/contacts';
 
 
@@ -8,6 +8,11 @@ function Contacts() {
   const [company, setCompany] = useState('');
   const [isAgreed, setIsAgreed] = useState('');
   const [isAgreedCon, setIsAgreedCon] = useState('');
+
+  useEffect(() => {
+    document.getElementById("main").className = 'container-fluid'
+  }, [])
+
 
   const setIsAgreedConverted = (checked) => {
     if (checked) {
