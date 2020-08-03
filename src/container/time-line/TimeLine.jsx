@@ -65,6 +65,6 @@ const events = [
 
 export default class AwesomeTimeline extends React.Component {
   render() {
-    return <Timeline events={events} />;
+    return <Timeline styles={{ rightCard: { textAlign: 'left' } }} events={events} />;
   }
 }
