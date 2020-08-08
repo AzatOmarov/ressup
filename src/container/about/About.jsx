@@ -25,7 +25,6 @@ function About() {
         <h2>{title}</h2>
         <div className="description">{description}</div>
         <Timeline />
-        <div id="circle" />
         <h2 className="about__title">{teamTitle}</h2>
         <div className="description">{teamDescription}</div>
         <div className="about__link">
