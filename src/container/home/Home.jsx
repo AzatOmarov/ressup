@@ -8,7 +8,9 @@ function Home(props) {
 
   return (
     <>
-      <div className="home" />
+      <div className="home">
+        <div className='title'>Всё дело в вдохновении и поддержке.</div>
+      </div>
     </>
   );
 }
