@@ -76,7 +76,7 @@ function Navigation(props) {
   );
 
   return (
-    // isAuthenticated ? (
+    isAuthenticated ? (
     <div id='main' className={"container-fluid"}>
       <div className="d-flex flex-column justify-content-between" style={{ flex: '1' }}>
         <div className="d-flex flex-wrap flex-column">
@@ -118,7 +118,7 @@ function Navigation(props) {
         
       </div>
     </div>
-    // ) : formInput
+    ) : formInput
   );
 }
 
