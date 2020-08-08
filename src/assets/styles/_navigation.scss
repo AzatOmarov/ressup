@@ -22,11 +22,12 @@
 }
 
 .container-fluid-main > * {
-	background: url("landing.svg") no-repeat center center fixed;
+	// background: url("landing.svg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	
 }
 
 .container-fluid,
@@ -111,7 +112,7 @@
 			text-align: right;
 			img {
 				min-width: 10%;
-				max-width: 70%;
+				max-width: 100%;
 			}
 		}
 		&__menu {
@@ -202,3 +203,15 @@
 		}
 	}
 }
+
+// .container-fluid-main{
+// 	#triangle {
+// 		position: absolute;
+// 		bottom: 50px;
+// 		width: 200px;
+// 		height: 200px;
+// 		background: linear-gradient(to bottom right, #f3f3f3 0%, #f3f3f3 50%, #f86c59 50%, #f86c59 100%);
+// 		z-index: 1001;
+// 	}
+// }
+

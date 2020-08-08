@@ -18,4 +18,14 @@
 			margin: 0;
 		}
 	}
+	
+}
+
+@media only screen and (max-width: 768px) {
+	.home{
+		max-width: 300px;
+	}
+	.home > *{
+		max-width: 300px;
+	}
 }

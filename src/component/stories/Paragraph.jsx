@@ -9,7 +9,7 @@ export default function Paragraph(props) {
   return (
     <div className="story">
       <div className="description">{description}</div>
-      <img src={fonts} alt="ogorod" className="story__image" />
+      <img src={fonts} alt="ogorod" className="img-fluid" />
       <h2 className="description">{title}</h2>
       <hr />
       <div className="story__text-and-button">
