@@ -3,6 +3,7 @@ import locale from '../../utils/locale';
 import facebook from '../../assets/img/facebook.svg';
 import instagram from '../../assets/img/instagram.svg';
 import { Link } from 'react-router-dom';
+import CopyrightIcon from '@material-ui/icons/Copyright';
 
 export const t = (key, def = '') => locale(`Footer.${key}`, def);
 
@@ -35,9 +36,7 @@ function Footer() {
           </div>
         </div>
         <div className="company">
-          <span className="company__copyright">
-            <i className="fa fa-copyright" style={{ paddingRight: '5px', color: 'black' }} aria-hidden="true" />
-          </span>
+          <CopyrightIcon color='inherit' className='mr-1' style={{color: '#232227'}} />
           <span className="company__name">2020 Ressup</span>
         </div>
       </div>
