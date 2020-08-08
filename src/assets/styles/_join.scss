@@ -1,7 +1,7 @@
 .join {
 	-webkit-box-flex: 0;
-	    -ms-flex: 0 1 90%;
-	        flex: 0 1 90%;
+	    -ms-flex: 0 1 86%;
+	        flex: 0 1 86%;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	// font-size: 24px;
@@ -91,3 +91,16 @@
 		color: red;
 	}
 }
+// .join > *{
+// 	word-break: break-word;
+// 	min-width: 0%;
+// }
+
+@media only screen and (max-width: 768px) {
+	.join {
+		max-width: 300px;
+	}
+	.join > * {
+		max-width: 300px;
+	}
+  }
