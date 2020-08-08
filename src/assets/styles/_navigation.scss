@@ -215,3 +215,14 @@
 // 	}
 // }
 
+@media only screen and (max-width: 768px) {
+	.container-fluid,
+	.container-fluid-main > * {
+		font-size: 18px;
+		line-height: 22px;
+		h2{
+			font-size: 26px;
+		}
+	}
+}
+

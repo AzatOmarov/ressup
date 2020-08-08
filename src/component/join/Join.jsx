@@ -31,7 +31,7 @@ function Join() {
         {messageUs}
       </p>
       <div className="cooperation">
-        <h2 className='ml-2 mt-4'>
+        <h2 className='mt-4'>
           {cooperation.title}
         </h2>
         <p className="cooperation-item">
