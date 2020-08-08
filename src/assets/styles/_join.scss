@@ -5,12 +5,12 @@
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	// font-size: 24px;
+	margin-top: -2px;
 	a {
 		color: #f86c59;
 		cursor: pointer;
 	}
 	.bank-details {
-		margin-left: .5rem;
 		color: #f86c59;
 		padding-bottom: 5px;
 	}
@@ -42,7 +42,6 @@
 		padding-bottom: 5px;
 	}
 	.cooperation-item {
-		margin-left: .5rem;
 		padding-top: 5px;
 		padding-bottom: 5px;
 	}

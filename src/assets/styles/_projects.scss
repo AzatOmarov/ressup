@@ -14,16 +14,16 @@
 		display: -ms-flexbox;
 		display: flex;
 		-webkit-box-flex: 1;
-		    -ms-flex: 1;
-		        flex: 1;
+		-ms-flex: 1;
+		flex: 1;
 		margin-bottom: 100px;
 		&__item {
 			display: -webkit-box;
 			display: -ms-flexbox;
 			display: flex;
 			-webkit-box-flex: 1;
-			    -ms-flex: 1;
-			        flex: 1;
+			-ms-flex: 1;
+			flex: 1;
 			margin: 0 auto;
 			img {
 				width: 100%;
@@ -100,8 +100,8 @@
 			bottom: 28.57%;
 			background: #000000;
 			-webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
-			    -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
-			        transform: matrix(-1, 0, 0, 1, 0, 0);
+			-ms-transform: matrix(-1, 0, 0, 1, 0, 0);
+			transform: matrix(-1, 0, 0, 1, 0, 0);
 		}
 	}
 
@@ -123,8 +123,8 @@
 		display: flex;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
 		.team-member {
 			text-align: left;
 			padding-bottom: 10px;
@@ -134,18 +134,18 @@
 			display: -ms-flexbox;
 			display: flex;
 			-webkit-box-align: center;
-			    -ms-flex-align: center;
-			        align-items: center;
+			-ms-flex-align: center;
+			align-items: center;
 			&__text {
 				-webkit-box-flex: 1;
-				    -ms-flex: 1 0 70%;
-				        flex: 1 0 70%;
+				-ms-flex: 1 0 70%;
+				flex: 1 0 70%;
 			}
 			&__image {
 				color: blue;
 				-webkit-box-flex: 1;
-				    -ms-flex: 1 0 auto;
-				        flex: 1 0 auto;
+				-ms-flex: 1 0 auto;
+				flex: 1 0 auto;
 				border-radius: 5px;
 				img {
 					border-radius: 50%;
@@ -163,8 +163,8 @@
 		display: flex;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
 		position: relative;
 		margin-bottom: 5px;
 		.qa-wrapper {
@@ -173,8 +173,8 @@
 			display: flex;
 			p {
 				-webkit-box-flex: 1;
-				    -ms-flex: 1 0 0px;
-				        flex: 1 0 0;
+				-ms-flex: 1 0 0px;
+				flex: 1 0 0;
 			}
 			.circle {
 				background-color: #f86c59;
@@ -199,8 +199,8 @@
 					display: flex;
 					-webkit-box-orient: vertical;
 					-webkit-box-direction: normal;
-					    -ms-flex-direction: column;
-					        flex-direction: column;
+					-ms-flex-direction: column;
+					flex-direction: column;
 					padding: 10px;
 					position: relative;
 					background: #f3f3f3;
@@ -217,8 +217,8 @@
 					display: flex;
 					-webkit-box-orient: vertical;
 					-webkit-box-direction: normal;
-					    -ms-flex-direction: column;
-					        flex-direction: column;
+					-ms-flex-direction: column;
+					flex-direction: column;
 					padding: 10px;
 					position: relative;
 					background: #f3f3f3;
@@ -250,10 +250,10 @@
 
 	.timeline-item:nth-child(odd) {
 		-ms-flex-item-align: end;
-		    align-self: flex-end;
+		align-self: flex-end;
 		-webkit-box-pack: start;
-		    -ms-flex-pack: start;
-		        justify-content: flex-start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
 		padding-left: 0px;
 		padding-right: 0;
 	}
@@ -265,8 +265,8 @@
 		display: flex;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
 		padding: 0px 15px 15px 25px;
 		position: relative;
 		width: -webkit-fit-content;
@@ -281,13 +281,13 @@
 
 	.timeline-item-content::after {
 		-webkit-box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
-		        box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+		box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
 		position: absolute;
 		right: -7.5px;
 		top: calc(6% - 7.5px);
 		-webkit-transform: rotate(45deg);
-		    -ms-transform: rotate(45deg);
-		        transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
 		width: 15px;
 		height: 15px;
 	}
@@ -295,15 +295,15 @@
 	.timeline-item:nth-child(1) .timeline-item-content {
 		text-align: left;
 		-webkit-box-align: start;
-		    -ms-flex-align: start;
-		        align-items: flex-start;
+		-ms-flex-align: start;
+		align-items: flex-start;
 	}
 
 	.timeline-item:nth-child(odd) .timeline-item-content::after {
 		right: auto;
 		left: -7.5px;
 		-webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
-		        box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+		box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
 	}
 
 	.timeline-item-content .tag {
@@ -379,5 +379,14 @@
 		z-index: 100;
 		margin-bottom: 20px;
 		left: calc(49.7%);
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.projects {
+		max-width: 300px;
+	}
+	.projects > * {
+		max-width: 300px;
 	}
 }

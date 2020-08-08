@@ -82,7 +82,7 @@ function Navigation(props) {
         <div className="d-flex flex-wrap flex-column">
           
           <div className='d-flex align-self-start mb-4'>
-            <img src={logo} alt="logo" className='ml-3 pl-1' width='100%' onClick={() => redirect('')} role="button" />
+            <img src={logo} alt="logo" style={{zIndex: '1'}} className='img-fluid ml-3 pl-1' onClick={() => redirect('')} role="button" />
           </div>
 
           <div className='d-flex ml-3 mr-3 flex-wrap justify-content-between'>
@@ -115,6 +115,7 @@ function Navigation(props) {
         </div>
 
         <Footer />
+        
       </div>
     </div>
     // ) : formInput
