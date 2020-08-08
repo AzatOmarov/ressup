@@ -18,6 +18,7 @@
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
+		align-items: center;
 		-webkit-box-flex: 1;
 			-ms-flex: 1;
 				flex: 1;
@@ -78,4 +79,26 @@
 	a {
 		padding: 2px;
 	}
+}
+
+@media only screen and (max-width: 768px) {
+	.footer-container {
+		padding: 20px 15px;
+		display: flex;
+		flex-direction: column;
+		&__established{
+			font-size: 18px;
+			.company{
+				&__name{
+					display: flex;
+				}
+			}
+		}
+		&__social-media{
+			justify-content: center;
+			margin-top: 20px;
+			margin-bottom: 40px;
+		}
+	}
+
 }

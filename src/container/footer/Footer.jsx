@@ -24,20 +24,15 @@ function Footer() {
           <div className="footer-links__policy">Политика конфиденциальности</div>
           <div className="footer-links__impressum">
           <Link to="/impressum" 
-          // className={isHovered ? 'navigation-links-hovered__link-item' : 'navigation-links__link-item'}
           >
             Импрессум</Link>
-            {/* <a
-              className="fill"
-              href={'www.ya.ru'}
-            >
-              Импрессум
-              </a> */}
           </div>
         </div>
         <div className="company">
+          
+          <div className="company__name">
           <CopyrightIcon color='inherit' className='mr-1' style={{color: '#232227'}} />
-          <span className="company__name">2020 Ressup</span>
+            <div>2020 Ressup</div></div>
         </div>
       </div>
     </div>
