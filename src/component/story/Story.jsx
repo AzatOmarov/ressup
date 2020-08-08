@@ -47,8 +47,8 @@ export default function Story(props) {
         onExited={() => setAnimating(false)}
         key={`item-${idx + 1}`}
       >
-        <div style={{ width: '929px' }}>
-          <img src={item.src} alt={item.altText} width="100%" />
+        <div style={{ maxWidth: '929px' }}>
+          <img src={item.src} alt={item.altText} className='img-fluid' />
         </div>
         <CarouselCaption captionText="" captionHeader={item.caption} />
       </CarouselItem>
