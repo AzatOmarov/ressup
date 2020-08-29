@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4b7a4363fb1f6eb5f17abd6bf91bc8c9",
+    "revision": "16a773742d27c38e994cb6b72296741d",
     "url": "/index.html"
   },
   {
-    "revision": "4f0f57b286117db1b757",
-    "url": "/static/css/main.71ab2820.chunk.css"
+    "revision": "42398af6c2dc013b14e6",
+    "url": "/static/css/main.ebfe454c.chunk.css"
   },
   {
     "revision": "7c1b9dfe36a3ed5196ba",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.92382a7e.chunk.js.LICENSE"
   },
   {
-    "revision": "4f0f57b286117db1b757",
-    "url": "/static/js/main.7e5559cf.chunk.js"
+    "revision": "42398af6c2dc013b14e6",
+    "url": "/static/js/main.b237dd62.chunk.js"
   },
   {
     "revision": "886206c221dc3472652f",
@@ -84,8 +84,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/logo.4c0df579.svg"
   },
   {
-    "revision": "9d8081fb841cdaa7206baae1b1104497",
-    "url": "/static/media/lorain.9d8081fb.png"
+    "revision": "772415b6d4218ee830ea22c82ce8d4d7",
+    "url": "/static/media/lorain.772415b6.svg"
   },
   {
     "revision": "70a741a6331540246148b2b4f7dde4b9",
