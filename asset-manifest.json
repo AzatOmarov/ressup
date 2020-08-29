@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.8e6231f8.chunk.css",
-    "main.js": "/static/js/main.a602cad6.chunk.js",
-    "main.js.map": "/static/js/main.a602cad6.chunk.js.map",
+    "main.css": "/static/css/main.71ab2820.chunk.css",
+    "main.js": "/static/js/main.476705f1.chunk.js",
+    "main.js.map": "/static/js/main.476705f1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7458fde4.js",
     "runtime-main.js.map": "/static/js/runtime-main.7458fde4.js.map",
-    "static/js/2.507dce40.chunk.js": "/static/js/2.507dce40.chunk.js",
-    "static/js/2.507dce40.chunk.js.map": "/static/js/2.507dce40.chunk.js.map",
+    "static/js/2.6f63f324.chunk.js": "/static/js/2.6f63f324.chunk.js",
+    "static/js/2.6f63f324.chunk.js.map": "/static/js/2.6f63f324.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4d6b7308b6cce1b8f80429f7b8029448.js": "/precache-manifest.4d6b7308b6cce1b8f80429f7b8029448.js",
+    "precache-manifest.157e4c00ced6824343e2116fd0990124.js": "/precache-manifest.157e4c00ced6824343e2116fd0990124.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.8e6231f8.chunk.css.map": "/static/css/main.8e6231f8.chunk.css.map",
-    "static/js/2.507dce40.chunk.js.LICENSE": "/static/js/2.507dce40.chunk.js.LICENSE",
+    "static/css/main.71ab2820.chunk.css.map": "/static/css/main.71ab2820.chunk.css.map",
+    "static/js/2.6f63f324.chunk.js.LICENSE": "/static/js/2.6f63f324.chunk.js.LICENSE",
     "static/media/1.jpg": "/static/media/1.db97956b.jpg",
     "static/media/2.jpg": "/static/media/2.0149f9fa.jpg",
     "static/media/3.jpg": "/static/media/3.1e900619.jpg",
@@ -25,6 +25,7 @@
     "static/media/facebook.svg": "/static/media/facebook.d99368ca.svg",
     "static/media/instagram.svg": "/static/media/instagram.5b23a837.svg",
     "static/media/irene.svg": "/static/media/irene.c8ee31d8.svg",
+    "static/media/App.scss": "/static/media/landing.a8737a05.svg",
     "static/media/logo.svg": "/static/media/logo.4c0df579.svg",
     "static/media/lorain.png": "/static/media/lorain.9d8081fb.png",
     "static/media/lorain1.png": "/static/media/lorain1.70a741a6.png",
@@ -40,8 +41,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7458fde4.js",
-    "static/js/2.507dce40.chunk.js",
-    "static/css/main.8e6231f8.chunk.css",
-    "static/js/main.a602cad6.chunk.js"
+    "static/js/2.6f63f324.chunk.js",
+    "static/css/main.71ab2820.chunk.css",
+    "static/js/main.476705f1.chunk.js"
   ]
 }
