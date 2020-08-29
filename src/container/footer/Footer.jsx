@@ -23,16 +23,17 @@ function Footer() {
         <div className="footer-links">
           <div className="footer-links__policy">Политика конфиденциальности</div>
           <div className="footer-links__impressum">
-          <Link to="/impressum" 
-          >
-            Импрессум</Link>
+            <Link to="/impressum"
+            >
+              Импрессум</Link>
           </div>
         </div>
         <div className="company">
           
           <div className="company__name">
-          <CopyrightIcon color='inherit' className='mr-1' style={{color: '#232227'}} />
-            <div>2020 Ressup</div></div>
+            <span className='pr-2'>Ressup</span>
+            <CopyrightIcon color='inherit' className='mr-1' style={{ color: '#232227' }} />
+            <div>2020</div></div>
         </div>
       </div>
     </div>
