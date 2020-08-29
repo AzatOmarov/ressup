@@ -204,6 +204,7 @@
 					padding: 10px;
 					position: relative;
 					background: #f3f3f3;
+					padding-top: 6px;
 				}
 			}
 			.qa-wrapper-right-item {
@@ -222,6 +223,7 @@
 					padding: 10px;
 					position: relative;
 					background: #f3f3f3;
+					padding-top: 6px;
 				}
 			}
 		}
@@ -234,7 +236,7 @@
 		top: 25px;
 		left: calc(50%);
 		width: 1px;
-		height: 99.5%;
+		height: 100%;
 	}
 
 	.timeline-item {
@@ -373,12 +375,14 @@
 		border: 3px solid #f86c59;
 		border-radius: 50%;
 		position: relative;
-		top: calc(5% + 15px);
+		// top: calc(5% + 15px);
 		width: 9px;
 		height: 9px;
 		z-index: 100;
-		margin-bottom: 20px;
-		left: calc(49.7%);
+		margin-bottom: 40px;
+		left: 50%;
+		transform: translate(-50%, 50%);
+		bottom: -8px;
 	}
 }
 

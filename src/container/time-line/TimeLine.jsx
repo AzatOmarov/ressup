@@ -6,23 +6,6 @@ import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import PeopleIcon from '@material-ui/icons/People';
 import GolfCourseIcon from '@material-ui/icons/GolfCourse';
 
-// const icon =
-
-// const events = [
-//   {
-//     title: 'Event 1',
-//     subheader: new Date().toDateString(),
-//     description: [ 'Some description for event 1' ],
-//     icon: <Avatar><Icon>work</Icon></Avatar>,
-//   },
-//   {
-//     title: 'Event 2',
-//     subheader: new Date().toDateString(),
-//     description: [ 'Some description for event 2' ],
-//     icon: <Avatar><Icon>home</Icon></Avatar>,
-//   }
-// ];
-
 const theme = createMuiTheme({
   overrides: {
     MuiPaper: {

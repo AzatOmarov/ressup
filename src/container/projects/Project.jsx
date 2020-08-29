@@ -10,7 +10,7 @@ import {
 import QALine from './time-line/QALine';
 import ProjectHeader from '../../component/project/header/Header';
 import items from '../../staticData/projectImages';
-
+import projects from '../../staticData/projects';
 
 export default function Project(props) {
   const { index } = props;
@@ -55,7 +55,7 @@ export default function Project(props) {
       <div className="projects">
         <div className="projects__header">
           <ProjectHeader index={index} />
-          <QALine />
+          <QALine data={projects}/>
           <div id="circle2" />
         </div>
         <div className="carousel">

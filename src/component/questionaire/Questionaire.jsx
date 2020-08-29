@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import data from '../../staticData/questionaire';
 import deineMeinung from '../../assets/img/btnMeinung.png';
 
 
-function Questionaire() {
+export default function Questionaire(props) {
   const [companyType, setCompanyType] = useState(false);
   const [isSocialOranization, setIsSocialOranization] = useState(false);
   const [isSocialEnterprenuer, setIsSocialEnterprenuer] = useState(false);
@@ -27,6 +27,10 @@ function Questionaire() {
     isInterestedToShare: '',
     isInterestedToShareNo: '',
   });
+
+  useEffect(() => {
+    document.getElementById("main").className = 'container-fluid'
+  }, [])
 
   const handleChange = (name, value) => {
     const body = messageBody;
@@ -141,100 +145,102 @@ function Questionaire() {
   return (
     <>
       <div className="questionaire">
-        <div className="questionaire__logo">
-          <img src={deineMeinung} alt="deineMeinung" />
-        </div>
-        <div className="questionaire__textBlock">
-          <p>
-            Мы хотим работать с пользой для тех, кому интересны идеи и проекты в социальной сфере,
-            кто хотел бы адаптировать существующие проекты под себя и реализовать свой социальный проект.
-            Поэтому нам важно узнать ваше мнение!
+        <div>
+          {/* <div className="questionaire__logo">
+            <img src={deineMeinung} alt="deineMeinung" id='importantToKnow' />
+          </div> */}
+          <div className="questionaire__textBlock">
+            <p>
+              Мы хотим работать с пользой для тех, кому интересны идеи и проекты в социальной сфере,
+              кто хотел бы адаптировать существующие проекты под себя и реализовать свой социальный проект.
+              Поэтому нам важно узнать ваше мнение!
           </p>
-          <p>Мы не сохраняем ваши персональные данные и все запросы поступают к нам на анонимной основе.</p>
-          <div className="questionaire__form">
-            <p>Вы:</p>
-            <div className="form-group">
-              <div className="custom-control custom-checkbox">
-                {returnCheckBox('companyType', setCompanyType, companyType, 'частное лицо')}
+            <p>Мы не сохраняем ваши персональные данные и все запросы поступают к нам на анонимной основе.</p>
+            <div className="questionaire__form">
+              <p>Вы:</p>
+              <div className="form-group">
+                <div className="custom-control custom-checkbox">
+                  {returnCheckBox('companyType', setCompanyType, companyType, 'частное лицо')}
+                </div>
+              </div>
+              <div className="form-group">
+                <div className="custom-control custom-checkbox">
+                  {returnCheckBox('isSocialOranization', setIsSocialOranization, isSocialOranization, 'общественная организация')}
+                </div>
+              </div>
+              <div className="form-group">
+                <div className="custom-control custom-checkbox">
+                  {returnCheckBox('isSocialEnterprenuer', setIsSocialEnterprenuer, isSocialEnterprenuer, 'социальная предпренимательница/ социальный предпрениматель')}
+                </div>
               </div>
             </div>
-            <div className="form-group">
-              <div className="custom-control custom-checkbox">
-                {returnCheckBox('isSocialOranization', setIsSocialOranization, isSocialOranization, 'общественная организация')}
-              </div>
-            </div>
-            <div className="form-group">
-              <div className="custom-control custom-checkbox">
-                {returnCheckBox('isSocialEnterprenuer', setIsSocialEnterprenuer, isSocialEnterprenuer, 'социальная предпренимательница/ социальный предпрениматель')}
-              </div>
-            </div>
-          </div>
 
-          <div className="questionaire__form">
-            <p>
-              интересно ли вам узнавать о социальных проектах и общественных инициативах
+            <div className="questionaire__form">
+              <p>
+                интересно ли вам узнавать о социальных проектах и общественных инициативах
             </p>
-            <div className="form-group2">
-              <div className="custom-control custom-checkbox">
-                {returnCheckBox('isInterestedToKnowYes', setIsInterestedToKnowYes, isInterestedToKnowYes, 'да')}
-              </div>
-              <div className="custom-control custom-checkbox">
-                {returnCheckBox('isInterestedToKnowNo', setIsInterestedToKnowNo, isInterestedToKnowNo, 'нет')}
+              <div className="form-group2">
+                <div className="custom-control custom-checkbox">
+                  {returnCheckBox('isInterestedToKnowYes', setIsInterestedToKnowYes, isInterestedToKnowYes, 'да')}
+                </div>
+                <div className="custom-control custom-checkbox">
+                  {returnCheckBox('isInterestedToKnowNo', setIsInterestedToKnowNo, isInterestedToKnowNo, 'нет')}
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="questionaire__form">
-            <p>
-              Хотелось бы вам получать информацию из разных социальных сфер
-              (например: люди с особенностями развития, дети с различными заболеваниями, пожилые люди, бездомные люди и т.д.)
+            <div className="questionaire__form">
+              <p>
+                Хотелось бы вам получать информацию из разных социальных сфер
+                (например: люди с особенностями развития, дети с различными заболеваниями, пожилые люди, бездомные люди и т.д.)
             </p>
-            <div className="form-group2">
-              <div className="custom-control custom-checkbox">
-                {returnCheckBox('isInterestedToBeInformed', setIsInterestedToBeInformed, isInterestedToBeInformed, 'да')}
-              </div>
-              <div className="custom-control custom-checkbox">
-                {returnCheckBox('isInterestedToBeInformedNo', setIsInterestedToBeInformedNo, isInterestedToBeInformedNo, 'нет')}
+              <div className="form-group2">
+                <div className="custom-control custom-checkbox">
+                  {returnCheckBox('isInterestedToBeInformed', setIsInterestedToBeInformed, isInterestedToBeInformed, 'да')}
+                </div>
+                <div className="custom-control custom-checkbox">
+                  {returnCheckBox('isInterestedToBeInformedNo', setIsInterestedToBeInformedNo, isInterestedToBeInformedNo, 'нет')}
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="questionaire__form">
-            <p>
-              Если у вас уже был опыт адаптации проектов и идей
-              из других стран в своем городе, регионе или стране,
-              поделитесь с чем вам пришлось столкнуться.
+            <div className="questionaire__form">
+              <p>
+                Если у вас уже был опыт адаптации проектов и идей
+                из других стран в своем городе, регионе или стране,
+                поделитесь с чем вам пришлось столкнуться.
             </p>
-            <div className="form-group2">
-              <div className="custom-control custom-checkbox">
-                {returnCheckBox('isInterestedToShare', setIsInterestedToShare, isInterestedToShare, 'да')}
-              </div>
-              <div className="custom-control custom-checkbox">
-                {returnCheckBox('isInterestedToShareNo', setIsInterestedToShareNo, isInterestedToShareNo, 'нет')}
+              <div className="form-group2">
+                <div className="custom-control custom-checkbox">
+                  {returnCheckBox('isInterestedToShare', setIsInterestedToShare, isInterestedToShare, 'да')}
+                </div>
+                <div className="custom-control custom-checkbox">
+                  {returnCheckBox('isInterestedToShareNo', setIsInterestedToShareNo, isInterestedToShareNo, 'нет')}
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="questionaire__message">
-            <p id="message-name">{data.yourMessage}</p>
-            <textarea
-              id="message-field"
-              type="text"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            />
-          </div>
-          <div className="questionaire__link">
-            <div
-              className="nextButton"
-              onClick={() => onClick()}
-            >
-              <a
-                className="fill"
-                href={`mailto:contact@ressup.org?subject=Для ressup - важно знать&body=${message}%0D%0A${messageBody.companyType}%0D%0A${messageBody.isSocialOranization}%0D%0A${messageBody.isSocialEnterprenuer}%0D%0A${messageBody.isInterestedToKnowYes}%0D%0A${messageBody.isInterestedToBeInformed}%0D%0A${messageBody.isInterestedToShare}`}
+            <div className="questionaire__message">
+              <p id="message-name">{data.yourMessage}</p>
+              <textarea
+                id="message-field"
+                type="text"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              />
+            </div>
+            <div className="questionaire__link">
+              <div
+                className="nextButton"
+                onClick={() => onClick()}
               >
-                отправить
+                <a
+                  className="fill"
+                  href={`mailto:contact@ressup.org?subject=Для ressup - важно знать&body=${message}%0D%0A${messageBody.companyType}%0D%0A${messageBody.isSocialOranization}%0D%0A${messageBody.isSocialEnterprenuer}%0D%0A${messageBody.isInterestedToKnowYes}%0D%0A${messageBody.isInterestedToBeInformed}%0D%0A${messageBody.isInterestedToShare}`}
+                >
+                  отправить
               </a>
+              </div>
             </div>
           </div>
         </div>
@@ -242,4 +248,4 @@ function Questionaire() {
     </>
   );
 }
-export default Questionaire;
+

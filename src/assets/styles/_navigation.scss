@@ -22,7 +22,7 @@
 }
 
 .container-fluid-main > * {
-	// background: url("landing.svg") no-repeat center center fixed;
+	background: url("../img/landing.svg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -109,7 +109,8 @@
 		z-index: 5;
 
 		&__deineMeinung {
-			text-align: right;
+			display: flex;
+			justify-content: flex-end;
 			img {
 				min-width: 10%;
 				max-width: 100%;
@@ -133,7 +134,8 @@
 			flex-direction: row-reverse;
 		}
 	}
-	.navigation-links {
+	.navigation-links,
+	.navigation-links-hovered {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -150,7 +152,7 @@
 			padding-right: 10px;
 			padding-left: 10px;
 			margin-bottom: 5px;
-			border-bottom: 1px solid #f86c59;
+			border-bottom: 1px solid #f3f3f3;
 			&:hover {
 				margin-bottom: 5px;
 			}
@@ -167,39 +169,8 @@
 	}
 
 	.navigation-links-hovered {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		text-align: right;
-		-webkit-box-flex: 1;
-		-ms-flex: 1 1 0px;
-		flex: 1 1 0;
-		background: #f3f3f3;
-		cursor: pointer;
 		&__link-item {
-			cursor: pointer;
-			padding-right: 10px;
-			padding-left: 10px;
-			margin-bottom: 5px;
-			&:hover {
-				margin-bottom: 5px;
-			}
-		}
-
-		a {
-			color: #232227;
-			text-decoration: none;
-			cursor: pointer;
-			margin-bottom: 5px;
-			&:hover {
-				border-bottom: 1px solid #f86c59;
-				cursor: pointer;
-				margin-bottom: 5px;
-			}
+			border-bottom: 1px solid #f86c59;
 		}
 	}
 }

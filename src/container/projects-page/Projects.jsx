@@ -27,6 +27,6 @@ export default function ProjectsPage(props) {
   );
 }
 
-ProjectsPage.propTypes = {
-  projects: objectOf(object).isRequired,
-};
+// ProjectsPage.propTypes = {
+//   projects: objectOf(object).isRequired,
+// };
