@@ -1,7 +1,7 @@
 import React from 'react';
 import { string, number } from 'prop-types';
 import fonts from '../../assets/img/font-story/lorain.png';
-import Link from '@material-ui/core/Link';
+import { Link } from 'react-router-dom';
 
 
 export default function Paragraph(props) {
