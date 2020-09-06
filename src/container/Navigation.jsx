@@ -68,15 +68,16 @@ function Navigation(props) {
   return (
     // isAuthenticated ? (
     <div id='main' className={"container-fluid"}>
-        <div className='row row-cols-2'>
+      <div>
+        <div className='row row-cols-2 pb-4'>
           <section className='col-3'>
             <Link to='/' onClick={() => setCurrenPage('2')}>
-              <img src={logo} alt="logo" style={{ zIndex: '1' }} className='img-fluid ml-3 pl-1' role="button" />
+              <img src={logo} alt="logo" style={{ zIndex: '1' }} role="button"  className='img-fluid' />
             </Link>
           </section>
           <section className='col-9' />
         </div>
-        <div className='row' style={{minHeight: '80vh'}}>
+        <div className='row'>
           <div className='col-3'>
             <nav className='navbar'>
               <div className='navbar-nav'>
@@ -109,14 +110,15 @@ function Navigation(props) {
           </div>
           <div className='col-9'>
             <div>
-            {children}
+              {children}
             </div>
           </div>
 
         </div>
-        <div className='row'>
-          <Footer />
-        </div>
+      </div>
+      <div className='row'>
+        <Footer />
+      </div>
 
     </div>
     // ) : formInput
