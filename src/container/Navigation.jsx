@@ -72,14 +72,14 @@ function Navigation(props) {
         <div className='row row-cols-2 pb-4'>
           <section className='col-3'>
             <Link to='/' onClick={() => setCurrenPage('2')}>
-              <img src={logo} alt="logo" style={{ zIndex: '1' }} role="button"  className='img-fluid' />
+              <img src={logo} alt="logo" style={{ zIndex: '1' }} role="button" className='img-fluid' />
             </Link>
           </section>
           <section className='col-9' />
         </div>
         <div className='row'>
           <div className='col-3'>
-            <nav className='navbar'>
+            <nav className='navbar pt-0'>
               <div className='navbar-nav'>
                 <a
                   href="/about"
@@ -109,9 +109,7 @@ function Navigation(props) {
             </nav>
           </div>
           <div className='col-9'>
-            <div>
-              {children}
-            </div>
+            {children}
           </div>
 
         </div>

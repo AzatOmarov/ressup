@@ -103,10 +103,11 @@
 		align-items: baseline;
 		// flex: 0 1 13%;
 		&-nav{
-			flex: 1;
+			flex: 0 1 90%;
 			padding-left: 8px;
 			padding-right: 8px;
 			.nav-item{
+				padding-top: 0;
 				border-bottom: 2px solid #f86c59;
 				text-align: right;
 				color: #000000;
