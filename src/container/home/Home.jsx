@@ -9,7 +9,11 @@ function Home(props) {
   return (
     <>
       <div className="home">
-        <div className='title'>Всё дело в вдохновении и поддержке.</div>
+        <div>
+          <div className='title'>Всё дело </div>
+          <div className='title'>в вдохновении</div>
+          <div className='title'>и поддержке.</div>
+        </div>
       </div>
     </>
   );
