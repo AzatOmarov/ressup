@@ -15,10 +15,13 @@
 	font-weight: normal;
 	font-size: 24px;
 	line-height: 30px;
+	height: 100%;
 }
 
 .container-fluid > * {
 	background: #f3f3f3;
+	height: 100%;
+	color: #000000;
 }
 
 .container-fluid-main > * {
@@ -27,7 +30,7 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	
+	height: 100%;
 }
 
 .container-fluid,
@@ -39,12 +42,13 @@
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: row;
-	flex-direction: row;
+	flex-direction: column;
 	background: #f3f3f3;
 	min-height: 98vh;
 	-webkit-box-pack: start;
 	-ms-flex-pack: start;
 	justify-content: flex-start;
+	height: 100%;
 
 	// .TimelineBase-cardDecoratorLeft-6{
 	// 	border-left: 16px solid red !important;
@@ -99,7 +103,9 @@
 		align-items: baseline;
 		// flex: 0 1 13%;
 		&-nav{
-			flex: 0 1 13%;
+			flex: 1;
+			padding-left: 8px;
+			padding-right: 8px;
 			.nav-item{
 				border-bottom: 2px solid #f86c59;
 				text-align: right;
@@ -112,84 +118,84 @@
 		
 	}
 
-	.navigation {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		// -webkit-box-flex: 1;
-		// -ms-flex: 1 1 14%;
-		flex: 0 1 20%;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		z-index: 5;
+	// .navigation {
+	// 	display: -webkit-box;
+	// 	display: -ms-flexbox;
+	// 	display: flex;
+	// 	// -webkit-box-flex: 1;
+	// 	// -ms-flex: 1 1 14%;
+	// 	flex: 0 1 20%;
+	// 	-webkit-box-orient: vertical;
+	// 	-webkit-box-direction: normal;
+	// 	-ms-flex-direction: column;
+	// 	flex-direction: column;
+	// 	z-index: 5;
 
-		&__deineMeinung {
-			display: flex;
-			justify-content: flex-end;
-			img {
-				min-width: 10%;
-				max-width: 100%;
-			}
-		}
-		&__menu {
-			background: #fefefe;
-			max-width: -webkit-fit-content;
-			max-width: -moz-fit-content;
-			max-width: fit-content;
-		}
-		.navbar {
-			background-color: #ffffff !important;
-			padding: 0px;
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-orient: horizontal;
-			-webkit-box-direction: reverse;
-			-ms-flex-direction: row-reverse;
-			flex-direction: row-reverse;
-		}
-	}
-	.navigation-links,
-	.navigation-links-hovered {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		text-align: right;
-		-webkit-box-flex: 1;
-		-ms-flex: 1 1 0px;
-		flex: 1 1 0;
-		background: #f3f3f3;
-		&__link-item {
-			padding-right: 10px;
-			padding-left: 10px;
-			margin-bottom: 5px;
-			border-bottom: 1px solid #f3f3f3;
-			&:hover {
-				margin-bottom: 5px;
-			}
-		}
+	// 	&__deineMeinung {
+	// 		display: flex;
+	// 		justify-content: flex-end;
+	// 		img {
+	// 			min-width: 10%;
+	// 			max-width: 100%;
+	// 		}
+	// 	}
+	// 	&__menu {
+	// 		background: #fefefe;
+	// 		max-width: -webkit-fit-content;
+	// 		max-width: -moz-fit-content;
+	// 		max-width: fit-content;
+	// 	}
+	// 	.navbar {
+	// 		background-color: #ffffff !important;
+	// 		padding: 0px;
+	// 		display: -webkit-box;
+	// 		display: -ms-flexbox;
+	// 		display: flex;
+	// 		-webkit-box-orient: horizontal;
+	// 		-webkit-box-direction: reverse;
+	// 		-ms-flex-direction: row-reverse;
+	// 		flex-direction: row-reverse;
+	// 	}
+	// }
+	// .navigation-links,
+	// .navigation-links-hovered {
+	// 	display: -webkit-box;
+	// 	display: -ms-flexbox;
+	// 	display: flex;
+	// 	-webkit-box-orient: vertical;
+	// 	-webkit-box-direction: normal;
+	// 	-ms-flex-direction: column;
+	// 	flex-direction: column;
+	// 	text-align: right;
+	// 	-webkit-box-flex: 1;
+	// 	-ms-flex: 1 1 0px;
+	// 	flex: 1 1 0;
+	// 	background: #f3f3f3;
+	// 	&__link-item {
+	// 		padding-right: 10px;
+	// 		padding-left: 10px;
+	// 		margin-bottom: 5px;
+	// 		border-bottom: 1px solid #f3f3f3;
+	// 		&:hover {
+	// 			margin-bottom: 5px;
+	// 		}
+	// 	}
 
-		a {
-			color: #232227;
-			text-decoration: none;
-		}
-		a:hover {
-			border-bottom: 1px solid #f86c59;
-			margin-bottom: 5px;
-		}
-	}
+	// 	a {
+	// 		color: #232227;
+	// 		text-decoration: none;
+	// 	}
+	// 	a:hover {
+	// 		border-bottom: 1px solid #f86c59;
+	// 		margin-bottom: 5px;
+	// 	}
+	// }
 
-	.navigation-links-hovered {
-		&__link-item {
-			border-bottom: 1px solid #f86c59;
-		}
-	}
+	// .navigation-links-hovered {
+	// 	&__link-item {
+	// 		border-bottom: 1px solid #f86c59;
+	// 	}
+	// }
 }
 
 // .container-fluid-main{

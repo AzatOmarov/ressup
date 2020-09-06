@@ -2,6 +2,7 @@
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex: 1;
 	-webkit-box-pack: justify;
 		-ms-flex-pack: justify;
 			justify-content: space-between;
@@ -13,6 +14,7 @@
 		flex-wrap: wrap;
 		position: relative;
 		bottom: -20px;
+		background-color: rgba(196, 196, 196, 0.4);
 
 	&__social-media {
 		display: -webkit-box;
