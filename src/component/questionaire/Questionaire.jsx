@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import data from '../../staticData/questionaire';
 import deineMeinung from '../../assets/img/btnMeinung.png';
+import CheckBox from '../ui/Checkbox';
 
 
 export default function Questionaire(props) {
@@ -103,15 +104,13 @@ export default function Questionaire(props) {
 
   const returnCheckBox = (name, cb, checked, label) => (
     <>
-      <input
-        type="checkbox"
-        className="custom-control-input"
-        name={name}
-        id={name}
-        onChange={(e) => handleChange(name, e.target.checked)}
-        checked={checked}
-      />
-      <label className="custom-control-label" htmlFor={name}>{label}</label>
+      <div>
+        <CheckBox
+          label={label}
+          onChange={(e) => handleChange(name, e.target.checked)}
+          checked={checked}
+        />
+      </div>
     </>
   );
 
@@ -153,24 +152,24 @@ export default function Questionaire(props) {
             <p>
               Мы хотим работать с пользой для тех, кому интересны идеи и проекты в социальной сфере,
               кто хотел бы адаптировать существующие проекты под себя и реализовать свой социальный проект.
-              Поэтому нам важно узнать ваше мнение!
-          </p>
+              Поэтому нам <span className='emphasized'>важно узнать</span> ваше мнение!
+            </p>
             <p>Мы не сохраняем ваши персональные данные и все запросы поступают к нам на анонимной основе.</p>
             <div className="questionaire__form">
               <p>Вы:</p>
               <div className="form-group">
-                <div className="custom-control custom-checkbox">
-                  {returnCheckBox('companyType', setCompanyType, companyType, 'частное лицо')}
+                <div className="custom-control custom-checkbox pl-1">
+                  {returnCheckBox('companyType', setCompanyType, companyType, <span style={{ color: companyType && '#f86c59' }}>{'частное лицо'}</span>)}
                 </div>
               </div>
               <div className="form-group">
-                <div className="custom-control custom-checkbox">
-                  {returnCheckBox('isSocialOranization', setIsSocialOranization, isSocialOranization, 'общественная организация')}
+                <div className="custom-control custom-checkbox pl-1">
+                  {returnCheckBox('isSocialOranization', setIsSocialOranization, isSocialOranization, <span style={{ color: isSocialOranization && '#f86c59' }}>{'общественная организация'}</span>)}
                 </div>
               </div>
               <div className="form-group">
-                <div className="custom-control custom-checkbox">
-                  {returnCheckBox('isSocialEnterprenuer', setIsSocialEnterprenuer, isSocialEnterprenuer, 'социальная предпренимательница/ социальный предпрениматель')}
+                <div className="custom-control custom-checkbox pl-1">
+                  {returnCheckBox('isSocialEnterprenuer', setIsSocialEnterprenuer, isSocialEnterprenuer, <span style={{ color: isSocialEnterprenuer && '#f86c59' }}>{'социальная предпренимательница/ социальный предпрениматель'}</span>)}
                 </div>
               </div>
             </div>
@@ -180,11 +179,11 @@ export default function Questionaire(props) {
                 интересно ли вам узнавать о социальных проектах и общественных инициативах
             </p>
               <div className="form-group2">
-                <div className="custom-control custom-checkbox">
-                  {returnCheckBox('isInterestedToKnowYes', setIsInterestedToKnowYes, isInterestedToKnowYes, 'да')}
+                <div className="custom-control custom-checkbox pl-1">
+                  {returnCheckBox('isInterestedToKnowYes', setIsInterestedToKnowYes, isInterestedToKnowYes, <span style={{ color: isInterestedToKnowYes && '#f86c59' }}>{'да'}</span>)}
                 </div>
-                <div className="custom-control custom-checkbox">
-                  {returnCheckBox('isInterestedToKnowNo', setIsInterestedToKnowNo, isInterestedToKnowNo, 'нет')}
+                <div className="custom-control custom-checkbox pl-1">
+                  {returnCheckBox('isInterestedToKnowNo', setIsInterestedToKnowNo, isInterestedToKnowNo, <span style={{ color: isInterestedToKnowNo && '#f86c59' }}>{'нет'}</span>)}
                 </div>
               </div>
             </div>
@@ -195,11 +194,11 @@ export default function Questionaire(props) {
                 (например: люди с особенностями развития, дети с различными заболеваниями, пожилые люди, бездомные люди и т.д.)
             </p>
               <div className="form-group2">
-                <div className="custom-control custom-checkbox">
-                  {returnCheckBox('isInterestedToBeInformed', setIsInterestedToBeInformed, isInterestedToBeInformed, 'да')}
+                <div className="custom-control custom-checkbox pl-1">
+                  {returnCheckBox('isInterestedToBeInformed', setIsInterestedToBeInformed, isInterestedToBeInformed, <span style={{ color: isInterestedToBeInformed && '#f86c59' }}>{'да'}</span>)}
                 </div>
-                <div className="custom-control custom-checkbox">
-                  {returnCheckBox('isInterestedToBeInformedNo', setIsInterestedToBeInformedNo, isInterestedToBeInformedNo, 'нет')}
+                <div className="custom-control custom-checkbox pl-1">
+                  {returnCheckBox('isInterestedToBeInformedNo', setIsInterestedToBeInformedNo, isInterestedToBeInformedNo, <span style={{ color: isInterestedToBeInformedNo && '#f86c59' }}>{'да'}</span>)}
                 </div>
               </div>
             </div>
@@ -211,17 +210,17 @@ export default function Questionaire(props) {
                 поделитесь с чем вам пришлось столкнуться.
             </p>
               <div className="form-group2">
-                <div className="custom-control custom-checkbox">
-                  {returnCheckBox('isInterestedToShare', setIsInterestedToShare, isInterestedToShare, 'да')}
+                <div className="custom-control custom-checkbox pl-1">
+                  {returnCheckBox('isInterestedToShare', setIsInterestedToShare, isInterestedToShare, <span style={{ color: isInterestedToShare && '#f86c59' }}>{'да'}</span>)}
                 </div>
-                <div className="custom-control custom-checkbox">
-                  {returnCheckBox('isInterestedToShareNo', setIsInterestedToShareNo, isInterestedToShareNo, 'нет')}
+                <div className="custom-control custom-checkbox pl-1">
+                  {returnCheckBox('isInterestedToShareNo', setIsInterestedToShareNo, isInterestedToShareNo, <span style={{ color: isInterestedToShareNo && '#f86c59' }}>{'да'}</span>)}
                 </div>
               </div>
             </div>
 
             <div className="questionaire__message">
-              <p id="message-name">{data.yourMessage}</p>
+              <p id="message-body">{data.yourMessage}</p>
               <textarea
                 id="message-field"
                 type="text"

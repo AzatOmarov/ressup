@@ -1,5 +1,5 @@
 import React from 'react';
-import { string } from 'prop-types';
+import { array, string } from 'prop-types';
 
 function QAItem(props) {
   const { question, answer } = props;
@@ -14,7 +14,9 @@ function QAItem(props) {
         <span className="circle" />
         <p className="qa-wrapper-right-item">
           <span className="qa-wrapper-right-item-content">
-            {answer}
+            {answer.map((element, index) => (
+              <span key={`index - ${index}`}>{element}</span>
+            ))}
           </span>
         </p>
 
@@ -24,7 +26,7 @@ function QAItem(props) {
 }
 
 QAItem.propTypes = {
-  answer: string.isRequired,
+  answer: array.isRequired,
   question: string.isRequired,
 };
 
