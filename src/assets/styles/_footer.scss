@@ -1,20 +1,14 @@
 .footer-container {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	flex: 1;
-	-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-			justify-content: space-between;
+	font-size: 18px;
+	justify-content: space-between;
 	color: #232227;
-	-webkit-box-align: center;
-		-ms-flex-align: center;
-			align-items: center;
-	-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		position: relative;
-		bottom: -20px;
-		background-color: rgba(196, 196, 196, 0.4);
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+	bottom: -24px;
+	background-color: rgba(196, 196, 196, 0.4);
 
 	&__social-media {
 		display: -webkit-box;
@@ -22,17 +16,17 @@
 		display: flex;
 		align-items: center;
 		-webkit-box-flex: 1;
-			-ms-flex: 1;
-				flex: 1;
+		-ms-flex: 1;
+		flex: 1;
 		// margin-bottom: 20px;
 		-webkit-box-pack: start;
-			-ms-flex-pack: start;
-				justify-content: flex-start;
-			img {
-				border-radius: 50%;
-				padding-bottom: 0px;
-				width: 26px;
-			}
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+		img {
+			border-radius: 50%;
+			padding-bottom: 0px;
+			width: 26px;
+		}
 	}
 	&__established {
 		display: -webkit-box;
@@ -40,11 +34,11 @@
 		display: flex;
 		text-transform: lowercase;
 		-webkit-box-flex: 1;
-			-ms-flex: 1 1 80%;
-				flex: 1 1 80%;
+		-ms-flex: 1 1 80%;
+		flex: 1 1 80%;
 		-webkit-box-pack: end;
-			-ms-flex-pack: end;
-				justify-content: flex-end;
+		-ms-flex-pack: end;
+		justify-content: flex-end;
 		.footer-links {
 			display: -webkit-box;
 			display: -ms-flexbox;
@@ -52,8 +46,8 @@
 			padding-right: 50px;
 			text-transform: none;
 			-ms-flex-wrap: wrap;
-				flex-wrap: wrap;
-			
+			flex-wrap: wrap;
+
 			&__policy {
 				line-height: initial;
 				margin-right: 20px;
@@ -61,22 +55,22 @@
 			&__impressum {
 				line-height: initial;
 				margin-right: 20px;
-				a{
+				a {
 					margin: 0;
 					padding: 0;
 					color: inherit;
-					&:hover{
+					&:hover {
 						color: #f86c59;
 					}
 				}
 			}
 		}
-		.company{
+		.company {
 			line-height: initial;
 			&__copyright {
 				font-size: 12px;
 			}
-			&__name{
+			&__name {
 				align-items: center;
 				display: flex;
 			}
@@ -92,19 +86,22 @@
 		padding: 20px 15px;
 		display: flex;
 		flex-direction: column;
-		&__established{
+		background-color: inherit;
+		&__established {
 			font-size: 18px;
-			.company{
-				&__name{
+			.company {
+				&__name {
 					display: flex;
 				}
 			}
 		}
-		&__social-media{
+		&__social-media {
 			justify-content: center;
-			margin-top: 20px;
-			margin-bottom: 40px;
+			// margin-top: 10px;
+			margin-bottom: 30px;
+			img{
+				width: 30px;
+			}
 		}
 	}
-
 }

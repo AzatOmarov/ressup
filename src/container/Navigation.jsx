@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { Navbar } from 'reactstrap';
 import { string, bool, number } from 'prop-types';
 import logo from '../assets/img/logo.svg';
 import deineMeinung from '../assets/img/mein.png';
 import Footer from './footer/Footer';
 
+const paths = ['/', '/impressum', '/questionaire'];
 
 function Navigation(props) {
   const { isQuestionarePage: nIsQuestionarePage, children } = props;
@@ -15,17 +14,23 @@ function Navigation(props) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isQuestionarePage, setIsQuestionarePage] = useState(false);
   const [currentPage, setCurrenPage] = useState('1');
+  const [active, setActive] = useState(null);
 
-  // useEffect(() => {
-  //   if (currentPage == 2) {
-  //     document.getElementById('deineMeinung').style.display = 'block'
-  //   } else {
-  //     document.getElementById('deineMeinung').style.display = 'none'
-  //   }
-  // }, [currentPage]);
+  const { pathname } = props.history.location;
+
+  useEffect(() => {
+    const elm = document.getElementById('deineMeinung')
+    if (currentPage == 2 && elm) {
+      elm.style.display = 'block'
+    }
+    if (currentPage == 1 && elm) {
+      elm.style.display = 'block'
+    }
+  }, [currentPage]);
 
   const authenticate = () => {
     if (userName && userName === 'admin' && password && password === 'ressup') {
+      localStorage.setItem('isAdmin', true);
       return true;
     }
     return false;
@@ -66,60 +71,47 @@ function Navigation(props) {
   );
 
   return (
-    // isAuthenticated ? (
-    <div id='main' className={"container-fluid"}>
-      <div>
-        <div className='row row-cols-2 pb-4'>
-          <section className='col-3'>
-            <Link to='/' onClick={() => setCurrenPage('2')}>
-              <img src={logo} alt="logo" style={{ zIndex: '1' }} role="button" className='img-fluid' />
-            </Link>
-          </section>
-          <section className='col-9' />
+    isAuthenticated || localStorage.getItem('isAdmin') ? (
+      <div id='main' className='container-fluid'>
+        <div className='app'>
+
+          <div>
+            <div className='app__logo'>
+              <a onClick={() => setActive('/')} href='/' >
+                <img src={logo} alt="logo" style={{ zIndex: '1' }} role="button" className='img-fluid' />
+              </a>
+            </div>
+          </div>
+
+          <div className='app__wrapper'>
+            <div className='app__wrapper__navigation'>
+              <nav className='navbar pt-0 pl-0'>
+                <ul className='navbar-nav'>
+                  <li className='nav-item'><a onClick={() => setActive('about')} href="/about" className={`nav-link ${paths.some(i => i == pathname) ? 'inactive' : pathname == '/about' ? 'active' : ''}`}  >О нас</a></li>
+                  <li className='nav-item'><a onClick={() => setActive('projects')} href="/projects" className={`nav-link ${paths.some(i => i == pathname) ? 'inactive' : pathname == '/projects' ? 'active' : ''}`} >Проекты</a></li>
+                  <li className='nav-item'><a onClick={() => setActive('stories')} href="/stories" className={`nav-link ${paths.some(i => i == pathname) ? 'inactive' : pathname == '/stories' ? 'active' : ''}`} >Истории</a></li>
+                  <li className='nav-item'><a onClick={() => setActive('join')} href="/join" className={`nav-link ${paths.some(i => i == pathname) ? 'inactive' : pathname == '/join' ? 'active' : ''}`} >Участие</a></li>
+                  <li className='nav-item'><a onClick={() => setActive('contacts')} href="/contacts" className={`nav-link ${paths.some(i => i == pathname) ? 'inactive' : pathname == '/contacts' ? 'active' : ''}`} >Контакты</a></li>
+                  {!isQuestionarePage ? (
+                    <a href='/questionaire' onClick={() => setCurrenPage(1)} className='nav-item nav-link'>
+                      <img src={deineMeinung} alt="deineMeinung" id='deineMeinung' />
+                    </a>
+                  ) : null}
+                </ul>
+              </nav>
+            </div>
+            <div className='app__wrapper__childs'>
+              {children}
+            </div>
+
+          </div>
         </div>
         <div className='row'>
-          <div className='col-3'>
-            <nav className='navbar pt-0'>
-              <div className='navbar-nav'>
-                <a
-                  href="/about"
-                  className='nav-item nav-link'
-                  onClick={() => setCurrenPage('2')}>О нас</a>
-                <a onClick={() => setCurrenPage('2')} href="/projects" className='nav-item nav-link'>Проекты</a>
-                <a onClick={() => setCurrenPage('2')} href="/stories" className='nav-item nav-link'>Истории</a>
-                <a onClick={() => setCurrenPage('2')} href="/join" className='nav-item nav-link'>Участие</a>
-                <a onClick={() => setCurrenPage('2')} href="/contacts" className='nav-item nav-link'>Контакты</a>
-                <a href="/" />
-              </div>
-              {/* {!isQuestionarePage ? (
-                <div className="navigation__deineMeinung" role="link">
-                  <Link to='/questionaire' onClick={() => setCurrenPage('1')}>
-                    <img src={deineMeinung} alt="deineMeinung" id='deineMeinung' />
-                  </Link>
-                </div>
-              ) : null} */}
-              <div
-                className="d-flex justify-content-center"
-                style={{
-                  left: '30px', color: '#232227', flex: '0 1 80%',
-                }}
-              >
-
-              </div>
-            </nav>
-          </div>
-          <div className='col-9'>
-            {children}
-          </div>
-
+          <Footer />
         </div>
-      </div>
-      <div className='row'>
-        <Footer />
-      </div>
 
-    </div>
-    // ) : formInput
+      </div>
+    ) : formInput
   );
 }
 

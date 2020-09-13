@@ -1,24 +1,29 @@
 .questionaire {
-	-webkit-box-flex: 0;
-	-ms-flex: 0 1 86%;
-	flex: 0 1 86%;
+	flex: 0 1 546px;
 	color: black;
 	text-align: left;
-	// margin-right: 50%;
+	margin-bottom: 50px;
+
+	p{
+		margin-bottom: 0;
+	}
 
 	&__logo {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-        position: absolute;
-        top: 15px;
-        left: 302px;
+		position: absolute;
+		top: 15px;
+		left: 302px;
 	}
 	&__textBlock {
 		display: flex;
 		flex-direction: column;
 		p {
 			padding-bottom: 20px;
+			.emphasized{
+				color:  #f86c59;
+			}
 		}
 	}
 	&__form {
@@ -105,5 +110,8 @@
 				left: 4px;
 			}
 		}
+	}
+	#message-body{
+		margin-bottom: 5px;
 	}
 }

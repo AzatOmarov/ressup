@@ -38,7 +38,6 @@ function About() {
         <h2>{title}</h2>
         <div className="description">{description}</div>
         <QALine data={data2} />
-        <div id="circle" />
         <h2 className="about__title">{teamTitle}</h2>
         <div className="description">{teamDescription}</div>
         <div className="about__link">
@@ -47,7 +46,7 @@ function About() {
             нашим участием , то вы можете
             почитать о них тут <Link href="https://www.youtube.com/channel/UCv-LYTGGNAytZRuGbJhPeRA" rel="noopener noreferrer" target="_blank">
               {<OpenInNewIcon />}
-            </Link>.
+            </Link>
 
           </div>
 

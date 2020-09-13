@@ -1,7 +1,7 @@
 import React from 'react';
 import { string, number } from 'prop-types';
 import fonts from '../../assets/img/font-story/lorain.svg';
-import { Link } from 'react-router-dom';
+import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 
 
 export default function Paragraph(props) {
@@ -15,11 +15,14 @@ export default function Paragraph(props) {
       <h2 className="description">{title}</h2>
       <hr />
       <div className="story__text-and-button">
-        <div className="nextButton">
+        <a className='ml-1' href={`/stories/${index}`} rel="noopener noreferrer">
+          {<OpenInNewIcon />}
+        </a>
+        {/* <div className="nextButton">
           <Link to={`/stories/${index}`} className="fill">
             далее
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

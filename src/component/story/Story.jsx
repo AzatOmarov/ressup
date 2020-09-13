@@ -7,11 +7,9 @@ import {
   CarouselCaption,
 } from 'reactstrap';
 import { number } from 'prop-types';
-import { Link } from 'react-router-dom';
-
 import data from '../../staticData/stories';
 import items from '../../staticData/storyImages';
-
+import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 
 export default function Story(props) {
   const { index } = props;
@@ -53,22 +51,22 @@ export default function Story(props) {
         <CarouselCaption captionText="" captionHeader={item.caption} />
       </CarouselItem>
     ) : (
-      <div
-        className="iframe"
-        style={{ display: activeIndex === 4 ? 'block' : 'none' }}
-        key={`item-${idx + 1}`}
-      >
-        <iframe
-          width="100%"
-          height="400"
-          src={activeIndex === 4 ? 'https://www.youtube.com/embed/NqQ4bFkb9FU' : ''}
-          frameBorder="0"
-          allow="autoplay; encrypted-media"
-          allowFullScreen
-          title="video"
-        />
-      </div>
-    )
+        <div
+          className="iframe"
+          style={{ display: activeIndex === 4 ? 'block' : 'none' }}
+          key={`item-${idx + 1}`}
+        >
+          <iframe
+            width="100%"
+            height="400"
+            src={activeIndex === 4 ? 'https://www.youtube.com/embed/NqQ4bFkb9FU' : ''}
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            title="video"
+          />
+        </div>
+      )
 
   ));
 
@@ -92,7 +90,12 @@ export default function Story(props) {
       </div>
 
       <div className="story-item__text-and-button">
-        <a href="https://www.homelessfonts.org/" target="_blank" rel="noopener noreferrer" className="description">Сайт проекта</a>
+        <a
+          href="https://www.homelessfonts.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="description"
+        >Сайт проекта <span className='d-flex ml-2'>{<OpenInNewIcon />}</span></a>
       </div>
     </div>
   );
