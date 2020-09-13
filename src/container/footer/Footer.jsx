@@ -3,6 +3,7 @@ import locale from '../../utils/locale';
 import facebook from '../../assets/img/facebook.svg';
 import instagram from '../../assets/img/instagram.svg';
 import CopyrightIcon from '@material-ui/icons/Copyright';
+import { Link } from 'react-router-dom';
 
 export const t = (key, def = '') => locale(`Footer.${key}`, def);
 
@@ -22,7 +23,7 @@ function Footer() {
         <div className="footer-links">
           <div className="footer-links__policy">Политика конфиденциальности</div>
           <div className="footer-links__impressum">
-            <a href="/impressum">Импрессум</a>
+            <Link to="/impressum">Импрессум</Link>
           </div>
         </div>
         <div className="company">
